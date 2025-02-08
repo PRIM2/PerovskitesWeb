@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cálculo de tolerancia</h1>
+        <form id="datosForm">
+            <div class="form-group">
+                <label for="volum">Volumen: </label>
+                <input type="number" id="volum" step="any" placeholder="Enter a volume" />
+
+                <label for="units">Select Units:  </label>
+                <select id="units">
+                    <option value="m³"> m³ </option>
+                    <option value="A³"> A³ </option>
+                </select>
+                
+                <!--onclick estoy llamando a la funcion calculo del script.js -->
+                <button onclick="calculo()" type="submit">Sumar</button> 
+            </div>
+        </form>
+
+        <p id="resultado"> FUNCIONA ESTO DE SUBIR COSAS</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <br><br><hr>
+
+</body>
+</html>
