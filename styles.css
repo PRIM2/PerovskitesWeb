@@ -2,44 +2,56 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #34495E; /* Color de fondo */
-    display: flex;
     margin-top: 35px;
-    margin-left: 2%;
-    margin-right: 1%;
+    margin-left: 35px;
+    margin-right: 40px;
 }
 
+
+/* HEADER */
+header {
+    background: #211a1a;
+    padding: 18px;
+    margin-bottom: 30px;
+
+    color: white;
+    text-align: right;
+    border-radius: 10px;
+}
+
+
 /* Estilos para el contenedor principal del formulario */
-.container {
-    width: 71%; /* Toma el 70% del ancho disponible */
+.containerDatosEntrada {
+    width: 70%; /* Toma el 70% del ancho disponible */
     padding: 20px;
     background-color: #BDC3C7; /* Fondo blanco */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     box-sizing: border-box;
+    float:left;
 }
 /* Estilos para el título */
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilos para el formulario y sus elementos */
-.form-group {
-    display: flex;
-    flex-wrap: wrap; /* Permite el ajuste de los elementos a la siguiente línea */
-    gap: 15px; /* Espacio entre los elementos */
-    align-items: center; /* Alineación vertical */
+    margin-bottom: 16px;
 }
 
 /* Estilo para los campos de entrada (input) y select */
 input[type="number"], select {
-    flex: 1;
     padding: 12px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-right: 10px;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.form-group2 {
+    padding: 15px;
 }
 
 /* Estilo para el botón */
@@ -61,21 +73,20 @@ button:hover {
 
 /* Estilo para el resultado */
 #resultado {
-    margin-top: 20px;
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
     text-align: center;
     font-size: 1.2rem;
     color: #333; /* Color de texto */
 }
 
-/* Añadir espacio entre el formulario y el resultado */
-form {
-    margin-bottom: 20px;
-}
+
 
 /* ASIDE */
 aside {
-    width: 20%;
-    margin-left: 5%;
+    float: right;
+    width: 26%;
+    margin-left: 2%;
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 5px;
@@ -103,4 +114,30 @@ aside a {
 
 aside a:hover {
     background-color: #e2e2e2;
+}
+
+
+
+
+
+
+/* Personaliza la caja de selección */
+.select2-container {
+    width: 50% !important; /* Asegura que ocupe todo el espacio disponible */
+}
+
+
+
+.option-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.rb {
+    margin-right: 5%;
+}
+
+span.nombre {
+    margin-left: 1%;
 }
