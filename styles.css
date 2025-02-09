@@ -1,27 +1,22 @@
 /* Estilos generales para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #c93838; /* Color de fondo */
-    margin: 0;
-    padding: 0;
+    background-color: #34495E; /* Color de fondo */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    margin-top: 35px;
+    margin-left: 2%;
+    margin-right: 1%;
 }
 
 /* Estilos para el contenedor principal del formulario */
 .container {
-    background-color: #e2dede; /* Fondo blanco */
-    padding: 30px;
-    margin-left: 20%;
-    margin-right: 30%;
+    width: 71%; /* Toma el 70% del ancho disponible */
+    padding: 20px;
+    background-color: #BDC3C7; /* Fondo blanco */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    width: 100%;
-    max-width: 500px; /* Limita el ancho máximo */
+    box-sizing: border-box;
 }
-
 /* Estilos para el título */
 h1 {
     text-align: center;
@@ -30,41 +25,38 @@ h1 {
 
 /* Estilos para el formulario y sus elementos */
 .form-group {
-    display: flex; /* Flexbox para alineación */
+    display: flex;
     flex-wrap: wrap; /* Permite el ajuste de los elementos a la siguiente línea */
-    gap: 10px; /* Espacio entre los elementos */
+    gap: 15px; /* Espacio entre los elementos */
     align-items: center; /* Alineación vertical */
 }
 
 /* Estilo para los campos de entrada (input) y select */
 input[type="number"], select {
-    flex: 1; /* Hace que los elementos crezcan para llenar el espacio disponible */
-    padding: 10px;
+    flex: 1;
+    padding: 12px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    box-sizing: border-box;
+    margin-right: 10px;
 }
 
-/* Espacio adicional entre los elementos de entrada */
-input[type="number"], select {
-    margin-right: 10px; /* Separación entre el input y el select */
-}
-
-/* Estilos para el botón */
+/* Estilo para el botón */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50; /* Verde */
+    width: 60%;
+    padding: 12px;
+    background-color: #3a2959; /* Verde */
     color: white;
     font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049; /* Un verde más oscuro al pasar el ratón */
+    background-color: #221639; /* Un verde más oscuro al pasar el ratón */
 }
 
 /* Estilo para el resultado */
@@ -78,4 +70,37 @@ button:hover {
 /* Añadir espacio entre el formulario y el resultado */
 form {
     margin-bottom: 20px;
+}
+
+/* ASIDE */
+aside {
+    width: 20%;
+    margin-left: 5%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Enlaces del aside */
+aside a {
+    text-decoration: none;
+    color: #007bff; /* Azul moderno */
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 5px;
+}
+
+aside a:hover {
+    background-color: #e2e2e2;
 }
