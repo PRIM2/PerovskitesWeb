@@ -1,0 +1,112 @@
+/* HEADER */
+header {
+    width: 96%; /* Igual que .main-container */
+    background: #211a1a;
+    border-radius: 8px;
+    color: white;
+    text-align: right;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 35px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+
+}
+
+
+/* Contenedor principal que engloba el formulario y el aside */
+.main-container {
+    width: 96%;  /* Ajusta el ancho del contenedor principal */
+    margin: 0 auto;  /* Lo centra horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de datos (lado izquierdo) */
+.containerDatosEntrada {
+    width: 70%; /* Mantiene el tamaño principal */
+    padding: 30px;
+    background-color: #BDC3C7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 500px; /* Se redujo para evitar problemas en móviles */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ASIDE (Lado derecho) */
+aside {
+    width: 26%; /* Mantiene aside a la derecha */
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 500px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el título dentro de aside */
+aside h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Enlaces dentro de aside */
+aside a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 5px;
+}
+
+aside a:hover {
+    background-color: #e2e2e2;
+}
+
+/* FOOTER */
+footer {
+    width: 96%;
+    margin: 0 auto;
+    background: #211a1a;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra interna */
+    
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80px; /* Ajusta la altura del footer */
+}
+
+footer h2 {
+    font-style: italic;
+    font-size: 15px;
+    color: #a6a0a0;
+    margin: 0; /* Evita que haya márgenes que desplacen el texto */
+}
+
+
+/* 📌 HACER TODO RESPONSIVO PARA MÓVILES */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerDatosEntrada, aside {
+        width: 90%; /* Ambos ocupan casi todo el ancho en móviles */
+        min-height: auto; /* Permite que se ajuste mejor */
+    }
+
+    footer {
+        width: 100%;
+    }
+}

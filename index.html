@@ -3,127 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PeroWeb</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 
-
-    <!-- Agregar el CSS de Select2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="inidependencies.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Formulario de Contacto</h1>
-        <p>Inicio de sesión(futuro) &nbsp&nbsp Contacto </p>
+        <h1>Estructuras derivadas perovskitas (admito sugerencias de nombre)</h1>
+        <p id="dereha">Inicio de sesión(futuro) &nbsp&nbsp Contacto </p>
 
 
     </header>
+    <div class="main-container">
+        <div class="containerDatosEntrada">
+            <h1>Cálculo de tolerancia</h1>
+
+
+            <h2>Factor de Tolerancia Extendido</h2>
+
+            <p> 
+                La fórmula extendida para el factor de tolerancia de Goldschmidt es: 
+                \[  \alpha = \frac{r_{A,\text{eff}} + r_{X,\text{eff}}}{\sqrt{2} \left( r_B + 0.5 h_{X,\text{eff}} \right)}  \]
+                donde:
+                <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px;">
+                    <li>\(r_{A,\text{eff}}\) es el radio efectivo del cation A</li>
+                    <li>\(r_B\) es el radio del cation B </li>
+                    <li>\(r_{X,\text{eff}}\) es el radio efectivo del anión X</li>
+                    <li>\(h_{X,\text{eff}}\) es el radio del anión X</li>
+                </ul>
+                Se debe tener en cuenta la globularidad del Catión A para mayor precisión.
+                <br><br
+            </p>
+
+            <hr><br>
+
+
+            <form id="datosForm">
+                <div class="form-group">
+                    <label for="units">Select Units: (demomento esta todo en amstrong no afecta la decision)  </label>
+                    <select id="units">
+                        <option value="A³"> Å³ </option>
+                        <option value="m³"> m³ </option> 
+                    </select>
+                    <br><br>
+
+                    <label for="globularity">Globularity: aun no sirve para nada </label>
+                    <input type="number" id="globularity" step="any" placeholder="Enter a globularity" />
+
+
+                    <br><br><hr>
+                    
+                    <!-- Fomulario de Cation A -->
+                    <h2>Cation A</h2>
+                    <select id="cationA"></select>   
+
+                    <br><br>
+
+                    <!-- Obtengo el volumen del cation -->
+                    <label for="cationManualA">Volumen Cation A: </label> 
+                    <input class= "inputs" type="number" id="volumenCationManualA" step="any" placeholder="Introducir valor manualmente" /> 
+                    \(\;\;\;\;\;\;\; V_{a} = \frac{4}{3} \pi r_{a}^3\; ;\;\; r_{a} = \sqrt[3]{\frac{3·V_{a}}{4\pi}}\)
+                    <br>
+
+                    
+
+                </div>
+
+
+                <hr>
+
+                <div class="form-group2">
+                    <!-- Fomulario de Cation B -->
+                    <h2>Cation B</h2>
+                    <select id="cationB"></select>       
+                    <br><br>
+
+                    <label for="cationManualB">\(r_B\): </label>
+                    <input class= "inputs" type="number" id="cationManualB" step="any" placeholder="Enter Cation a mano" />
+                    <br><br><hr>
+
+                    <!-- Fomulario de AnionX -->
+                    <h2>Anion</h2>
+
+                    <label for="anion"></label>  
+                    <select id="anion"></select>
+                    <br><br>
+                    
+                    <label for="anionManualR ">\(r_{X,\text{eff}}:\)</label>
+                    <input class= "inputs" type="number" id="anionManualR" step="any" placeholder="Introducir valor manualmente" />
+
+                    <label for="anionManualR">\(h_{X,\text{eff}}:\) </label>
+                    <input class= "inputs" type="number" id="anionManualH" step="any" placeholder="Introducir valor manualmente" />
+                    <br> <br>
+
+
+
+
+
+
+                </div>
+                <br>
+                <!--onclick estoy llamando a la funcion calculo del script.js -->
+                <button onclick="calculo()" type="submit">Calcular tolerancia</button> 
+                <p id="resultado"></p>
+                <p id="rango" style=" text-align: center;"></p>
+
+
+
+            </form>
+
+
+        </div>
+
+
+
+
+        <!-- Aside -->
+        <aside>
+            <h2>Aqui estaran enlaces a descargas, cambios de pagina etc</h2>
+            <a href="#">Ver base de datos</a>
+            <a href="#">Descargar resultados</a>
+            <a href="#">Ir a hacer graficas</a>
+            <a href="#">BLA BLE BLI</a>
+            <br><br>
+            <p style="margin-left: 10px; margin-right: 15px; text-align: justify;">Aqui pondré una lista de resultados que se quieran guardar para luego utilizarlos o ir acumulandolos</p>
+        </aside>
+    </div>    
+
+
+
+
     
-    <div class="containerDatosEntrada">
-        <h1>Cálculo de tolerancia</h1>
-        <form id="datosForm">
-            <div class="form-group">
-                <label for="volum">Volumen: </label>
-                <input type="number" id="volum" step="any" placeholder="Enter a volume" />
+    <footer>
+        <h2>
+            ~€¬@ Creditos y cosas asi :) ~€¬@
+        </h2>
+    </footer>
 
-                <label for="units">Select Units:  </label>
-                <select id="units">
-                    <option value="A³"> Å³ </option>
-                    <option value="m³"> m³ </option>
-                </select>
-                <br><br>
-                <label for="globularity">Globularity: </label>
-                <input type="number" id="volum" step="any" placeholder="Enter a globularity" />
-            </div>
-
-
-            <hr>
-
-            <div class="form-group2">
-                <!-- Fomulario de AnionX -->
-                <label for="ANIONX"> Anión  X:</label>  
-                <select class= "selectDatos" id="ANIONX"></select>
-
-                <br> <br>
-
-                <!-- Fomulario de Cation A -->
-                <label for="CATIONA" class="selectionlabel">Catión A:</label>
-                <select id="CATIONA"></select>      
-
-                <br> <br>
-
-                <!-- Fomulario de Cation B -->
-                <label for="CATIONB" class="selectionlabel">Catión B:</label>
-                <select id="CATIONB"></select>                
-            </div>
-            <br>
-            <!--onclick estoy llamando a la funcion calculo del script.js -->
-            <button onclick="calculo()" type="submit">Calcular tolerancia</button> 
-            <p id="resultado"></p>
-  
-
-
-
-        </form>
-
- 
-    <br>  
-    <hr>
-    <br>   
-    <h2>Factor de Tolerancia Extendido</h2>
-    <p>
-        La fórmula extendida para el factor de tolerancia de Goldschmidt es:
-    </p>
-
-    <p>
-        \[
-        \alpha = \frac{r_{A,\text{eff}} + r_{X,\text{eff}}}{\sqrt{2} \left( r_B + 0.5 h_{X,\text{eff}} \right)}
-        \]
-    </p>
-
-    </div>
-
-
-
-
-    <!-- Aside -->
-    <aside>
-        <h2>Titulo</h2>
-        <a href="#">Enlace 1</a>
-        <a href="#">Enlace 2</a>
-    </aside>
-
-
-
-
-
-    <!-- Agregar el JS de Select2 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
-    <!-- Para usar LaTeX en la página -->
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-
-
-    <script src="tolerancia.js"></script>
-    <script src="cationb.js"></script>
-    <script src="anionx.js"></script>
-    <script src="cationa.js"></script>
-
-    <script>
-
-        window.onload = function() {
-            llenarCationB();  // Llenamos el select con los cationB
-            llenarAnion();   // Llenamos el select con los AnionX
-            llenarCationA();  // Llenamos el select con los cationA
-
-            };
-    </script>
-    <br><br>
-    
+    <script src="dependencies.js"></script>
 </body>
 </html>
