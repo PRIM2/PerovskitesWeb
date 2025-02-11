@@ -17,9 +17,6 @@ for (let i = 0; i < archivosCSS.length; i++) {
 
 
 // ________ *** SCRIPTS .js *** ________
-// Carga MathJax para LaTeX
-document.write('<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>');
-
 // Carga los scripts internos
 document.write('<script src="scripts/selectBoton.js"><\/script>');
 document.write('<script src="scripts/tolerancia.js"><\/script>');

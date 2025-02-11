@@ -93,7 +93,6 @@ footer h2 {
     margin: 0; /* Evita que haya márgenes que desplacen el texto */
 }
 
-
 /* 📌 HACER TODO RESPONSIVO PARA MÓVILES */
 @media (max-width: 768px) {
     .main-container {
@@ -104,9 +103,21 @@ footer h2 {
     .containerDatosEntrada, aside {
         width: 90%; /* Ambos ocupan casi todo el ancho en móviles */
         min-height: auto; /* Permite que se ajuste mejor */
+        margin-bottom: 25px; /* Añade separación entre el contenedor y el aside */
+
     }
 
     footer {
         width: 100%;
+    }
+}
+
+.saltoMovil {
+    display: none; /* No aparece en escritorio */
+}
+
+@media (max-width: 850px) {
+    .saltoMovil {
+        display: inline; /* Se activa en móviles */
     }
 }
