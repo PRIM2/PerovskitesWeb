@@ -10,7 +10,7 @@ function loadCSS(href) {
 
 // Cargar estilos personalizados
 directorio = "styles/"
-archivosCSS = ["general.css", "contenedores.css", "body/forms.css", "body/generalbody.css", "body/select2.css"];
+archivosCSS = ["general.css", "contenedores.css", "body/forms.css", "body/select2.css"];
 for (let i = 0; i < archivosCSS.length; i++) {
     loadCSS(directorio + archivosCSS[i]);
 }

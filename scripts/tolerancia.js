@@ -1,5 +1,4 @@
 function calculo() {
-    // Script para manejar el envío del formulario
     document.getElementById("datosForm").addEventListener("submit", function(event) {
         event.preventDefault();  // Prevenir el comportamiento por defecto del formulario
         
@@ -26,8 +25,8 @@ function calculo() {
             anionr = parseFloat(document.getElementById("anionManualR").value);
         }
 
-        // Realizar el cálculo
-        let tolerancia = (cationA + anionr) / ((cationB + anionh / 2) ** 2);  // Calcular la tolerancia
+        // Realizar el cálculo tolerancia
+        let tolerancia = (cationA + anionr) / ((cationB + anionh / 2) * 2**(1/2));  
 
         // Mostrar el resultado
         if (isNaN(tolerancia)){
