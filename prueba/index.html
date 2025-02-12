@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <!-- Cargar la CDN de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <h1>Registro de Usuarios</h1>
+    Password
+    <input id="mail"></input>
+    Mail
+    <input id="password"></input>
+    <button id="btn-signup">Registrar Usuario</button>
+    
+    <!-- Aquí puedes mostrar el resultado -->
+    <div id="output"></div>
+
+    <script>
+        // Crear la instancia de Supabase
+        const supabase = window.supabase.createClient(
+            'https://slcmugpuaomtuucyaiia.supabase.co',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsY211Z3B1YW9tdHV1Y3lhaWlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzkzNTgxNDAsImV4cCI6MjA1NDkzNDE0MH0.f4NAhJuzBK-inQZEYi90if7pFtpHWKCuHtsea5X7g_w'
+        );
+
+        // Función para registrar un usuario
+        async function registrarUsuario() {
+            const email = 'lajefa@gmail.com'; // Cambia esto por el correo del nuevo usuario
+            const password = 'aakjnakcnamcokm'; // Cambia esto por la contraseña del nuevo usuario
+
+            const { data, error } = await supabase.auth.signUp({ email, password });
+
+            const output = document.getElementById('output');
+            if (error) {
+                output.textContent = `Error: ${error.message}`;
+            } else {
+                output.textContent = `Usuario registrado: ${JSON.stringify(data)}`;
+            }
+        }
+
+        // Asignar la función al botón
+        document.getElementById('btn-signup').addEventListener('click', registrarUsuario);
+    </script>
+</body>
+</html>
