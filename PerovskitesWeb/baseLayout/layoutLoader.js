@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     
-  let dir ="/baseLayout/"
+  let dir ="/PerovskitesWeb/baseLayout/"
 
   // Cargar el header
     fetch(`${dir}header.html`)
@@ -35,7 +35,7 @@ function loadCSS(href) {
 
 
 // Cargar estilos personalizados
-directorio = "/baseLayout/styles/"
+directorio = "/PerovskitesWeb/baseLayout/styles/"
 archivosCSS = ["text.css", "contenedores.css"];
 for (let i = 0; i < archivosCSS.length; i++) {
   loadCSS(directorio + archivosCSS[i]);

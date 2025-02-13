@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PeroWeb Log In</title>
-    <link rel="icon" type="image/jpg" href="/baseLayout/icono.jpg">
+    <link rel="icon" type="image/jpg" href="/PerovskitesWeb/baseLayout/icono.jpg">
 
-    <link href="/sesion/signIn/signIn.css" rel="stylesheet" />
+    <link href="/PerovskitesWeb/sesion/signIn/signIn.css" rel="stylesheet" />
 
     <!-- Select2 & jQuery -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
@@ -104,15 +104,28 @@
                     return true;
                 }
 
+                function validarContrasena() {
+                    let password = document.getElementById("password").value;
+                    let repassword = document.getElementById("repassword").value;
+                    let mensajeError = document.getElementById("mensajeError");
+
+                    if (password !== repassword) {
+                        mensajeError.style.display = "block"; // Muestra el mensaje de error
+                        return false; // Indica que las contraseñas no coinciden
+                    } else {
+                        mensajeError.style.display = "none"; // Oculta el mensaje si las contraseñas coinciden
+                        return true; // Indica que las contraseñas son iguales
+                    }
+                }
 
                 function crearCuenta() {
                     if (comprobarCampos()) {
-                        window.location.href = "/sesion/logIn/logIn.html"; // Redirige si las contraseñas coinciden
+                        window.location.href = "/PerovskitesWeb/sesion/logIn/logIn.html"; // Redirige si las contraseñas coinciden
                     }
                 }
             </script>
             
-            <a href="/sesion/logIn/logIn.html">¿Ya tienes cuenta?</a>
+            <a href="/PerovskitesWeb/sesion/logIn/logIn.html">¿Ya tienes cuenta?</a>
 
         </div>
 
@@ -125,7 +138,7 @@
 
 
     <!-- ___ *** Librerias .js ___ *** -->
-    <script src="/baseLayout/layoutLoader.js"></script>
+    <script src="/PerovskitesWeb/baseLayout/layoutLoader.js"></script>
 
 </body>
 </html>
