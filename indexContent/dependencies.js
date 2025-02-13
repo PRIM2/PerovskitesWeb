@@ -9,7 +9,7 @@ function loadCSS(href) {
 
 
 // Cargar estilos personalizados
-directorio = "/PerovskitesWeb/indexContent/styles/"
+directorio = "indexContent/styles/"
 archivosCSS = ["forms.css", "select2.css"];
 for (let i = 0; i < archivosCSS.length; i++) {
     loadCSS(directorio + archivosCSS[i]);
@@ -18,9 +18,9 @@ for (let i = 0; i < archivosCSS.length; i++) {
 
 // ________ *** SCRIPTS .js *** ________
 // Carga los scripts internos
-document.write('<script src="/PerovskitesWeb/indexContent/scripts/selectBoton.js"><\/script>');
-document.write('<script src="/PerovskitesWeb/indexContent/scripts/tolerancia.js"><\/script>');
+document.write('<script src="indexContent/scripts/selectBoton.js"><\/script>');
+document.write('<script src="indexContent/scripts/tolerancia.js"><\/script>');
 
 // Carga los archivos de datos
-document.write('<script src="/PerovskitesWeb/indexContent/datos/aniones.js"><\/script>');
-document.write('<script src="/PerovskitesWeb/indexContent/datos/cationes.js"><\/script>');
+document.write('<script src="indexContent/datos/aniones.js"><\/script>');
+document.write('<script src="indexContent/datos/cationes.js"><\/script>');
