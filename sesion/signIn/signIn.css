@@ -1,0 +1,61 @@
+/* Estilos para los inputs */
+.styled-inputS {
+    padding: 13px;
+    width: 94%;
+    border: 2px solid #aaa5a5;
+    border-radius: 20px; /* Bordes redondeados */
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 15px;
+    background: rgb(249, 246, 246);
+
+}
+
+/* Efecto al hacer clic en el input */
+.styled-input:focus {
+    border-color: #074a93;
+    box-shadow: 0px 0px 8px rgba(2, 61, 124, 0.5);
+}
+
+/* Efecto hover */
+.styled-input:hover {
+    border-color: #032142;
+}
+
+
+
+/* Contenedor del botón */
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilos del botón */
+.styled-button {
+    background: linear-gradient(135deg, #02254a, #0056b3); /* Degradado azul */
+    color: rgb(252, 252, 252);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px 24px;
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 300px;
+}
+
+/* Efecto hover */
+.styled-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Efecto al hacer clic */
+.styled-button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

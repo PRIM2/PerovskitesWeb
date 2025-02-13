@@ -1,0 +1,61 @@
+<header>
+    <style>
+        /* Fondo oscuro al abrir el modal */
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilos del modal */
+        dialog {
+            border: none;
+            border-radius: 12px;
+            padding: 30px; /* Aumenta el padding general */
+            width: 450px; /* Un poco más ancho */
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-family: Arial, sans-serif;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Título */
+        dialog h2 {
+            margin: 0;
+            color: #333;
+            font-size: 22px; /* Un poco más grande */
+        }
+
+        /* Texto del modal */
+        dialog p {
+            font-size: 16px; /* Más legible */
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+    </style>
+
+    <p><img src="/baseLayout/logo.png" alt="Descripción" style="margin-right: 8px; width: 7%; border-radius: 12px; float: right;">
+    <img src="/baseLayout/logo.png" alt="Descripción" style="margin-left: 8px; width: 7%; border-radius: 12px; float: left;"></p>
+    
+    <h1>Hybrid Perovskite Computational Tool</h1>
+    
+    <h2 style="text-align: center; ">Versión 2.0</h2>
+    <p id="dereha">
+        <a href="/sesion/logIn/logIn.html">Inicio de sesión</a> &nbsp;&nbsp;&nbsp; 
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"  style="border-radius: 8px;" alt="GitHub Logo" width="16"></image>
+        <a href="https://github.com/PRIM2/PerovskitesWeb" target="_blank" style="margin-bottom: 15px;">Source code</a> &nbsp;&nbsp;&nbsp;
+        <a href="#" onclick="document.getElementById('modal').showModal()">Contacto</a>  
+    </p>
+    
+    <dialog id="modal">
+        <h2>HOLAAAA</h2>
+        <p>Mi correo electrónico es este: <br> ferran.gb.04@gmail.com<br></p>
+
+        <button onclick="document.getElementById('modal').close()">Cerrar</button>
+        
+    </dialog>
+    </p>
+</header>
+
