@@ -40,3 +40,4 @@ archivosCSS = ["text.css", "contenedores.css"];
 for (let i = 0; i < archivosCSS.length; i++) {
   loadCSS(directorio + archivosCSS[i]);
 }
+

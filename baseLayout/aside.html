@@ -1,15 +1,51 @@
+<style>
+    .mi-lista {
+        list-style-type: none; /* ❌ Quitar los puntos de la lista */
+        padding: 0;
+        margin: 10px 0 20px;
+    }
+
+    .mi-lista li {
+        background-color: #f9f9f9;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        border-left: 4px solid #ff5733; /* 🔹 Agregar un borde decorativo */
+    }
+
+    .mi-lista li strong {
+        display: block;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .detalles {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #666;
+        padding-left: 10px;
+    }
+
+</style>
+
+
 <aside>
     <h2>Aqui estaran enlaces a descargas, cambios de pagina etc</h2>
-    <a href="index.html">Index</a>
+    <a href="index.html">Iniciar Sesion</a>
     <a href="template.html">Template</a>
+    <!-- <a href="dataBase/prueba.html">Prueba</a> -->
 
     <br><hr><br> 
-    <p style="margin-left: 10px; margin-right: 15px; text-align: justify;">
-        Aqui pondré una lista de resultados que se quieran guardar para luego utilizarlos o ir acumulandolos <br> <br><hr><br><br>
+    <p style="margin-left: 10px; margin-right: 15px; text-align: justify; color: gray; font-style: italic;" id="listaGuardado">
+        Aun un hay datos guardados
+        <br> <br><hr><br><br>
 
         <p style="font-weight: bold;">Versión 2.0    </p>  
         <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px; line-height: 1.5;">
-            <li></li>
+            <li>Ya se puede registrar, iniciar sesión y ver los datos, pero no modificarlos.</li>
+            <li>Mejoras en todo y diseño final. :)</li>
         </ul>
 
         <p style="font-weight: bold;">Versión 1.2 </p>  

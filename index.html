@@ -23,7 +23,6 @@
     <!-- ___ *** HEADER *** ___ -->
     <div id="header"></div>
 
-
     <div class="main-container">
         <div class="containerDatosEntrada">
             <!-- ___ *** MAIN *** ___ -->
@@ -67,7 +66,7 @@
                     <br><br>
 
                     <!-- Volumen Cation A (opcional) -->
-                    <label for="cationManualA">Volumen Cation A: </label> 
+                    <label for="volumenCationManualA">Volumen Cation A: </label> 
                     <input class= "inputs" type="number" id="volumenCationManualA" step="any" placeholder="Introducir valor manualmente" /> 
                     \(\;\;\;\;\;\;\; V_{a} = \frac{4}{3} \pi r_{a}^3\; ;\;\; r_{a} = \sqrt[3]{\frac{3·V_{a}}{4\pi}}\)
                     <br>
@@ -98,7 +97,7 @@
                     <label for="anionManualR ">\(r_{X,\text{eff}}:\)</label>
                     <input class= "inputs" type="number" id="anionManualR" step="any" placeholder="Introducir valor manualmente" />
                     <br class="saltoMovil"><br class="saltoMovil">
-                    <label for="anionManualR">\(h_{X,\text{eff}}:\) </label>
+                    <label for="anionManualH">\(h_{X,\text{eff}}:\) </label>
                     <input class= "inputs" type="number" id="anionManualH" step="any" placeholder="Introducir valor manualmente" />
                     <br> <br>
 
@@ -131,5 +130,8 @@
     <!-- ___ *** Librerias .js ___ *** -->
     <script src="indexContent/dependencies.js"></script>
     <script src="baseLayout/layoutLoader.js"></script>
+    <script type="module" src="baseLayout/upheader.js"></script>
+
+    
 </body>
 </html>

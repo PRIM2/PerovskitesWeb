@@ -46,30 +46,31 @@
                     <br><br>
                     <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contraseña:</label>
                     <br>
-                    <input id="password" type="password" class="styled-inputS" oninput="validarContrasena()">
+                    <input id="password" type="password" class="styled-inputS">
                     <br><br>
                     <label for="repassword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repetir contraseña:</label>
                     <br>
-                    <input id="repassword" type="password" class="styled-inputS" oninput="validarContrasena()">
+                    <input id="repassword" type="password" class="styled-inputS">
                 </div>
             
                 <p id="mensajeError" style="color: red; display: none;">⚠️ Las contraseñas no coinciden</p>
             
                 <div class="button-container">
-                    <button type="button" class="styled-button" onclick="crearCuenta()">
+                    <button type="button" class="styled-button" onclick="comprobarCampos()">
                         Crear cuenta
                     </button>
                 </div>
             </form>
             
-            <script>
+            <script type="module">
+                import { registrarUsuario } from "./dataBase/dataHandler.js";
 
                 function esCorreoValido(mail) {
                     let regexCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                     return regexCorreo.test(mail);
                 }
 
-                function comprobarCampos() {
+                async function comprobarCampos() {
                     let password = document.getElementById("password").value;
                     let repassword = document.getElementById("repassword").value;
                     let name = document.getElementById("name").value.trim();
@@ -88,7 +89,7 @@
                     }
 
                     // Verifica que la contraseña tenga más de 6 caracteres
-                    if (password.length < 6) {
+                    if (password.length < 8) {
                         alert("⚠️ La contraseña debe tener al menos 6 caracteres. ❌❌");
                         return false;
                     }
@@ -98,31 +99,17 @@
                         alert("⚠️ Las contraseñas no coinciden. ❌❌");
                         return false;
                     }
-
+                    let info = await registrarUsuario(name, surname, mail, password);
+                    if (!info) {
+                        alert("algo va mal en dataHandler o supabase intentalo en 2 minutos sino contacta conmigo");
+                        return false;
+                    }
 
                     alert("😀 Todo correcto, cuenta creada 😀");
+                        window.location.href = "logIn.html"; // Redirige si las contraseñas coinciden
                     return true;
                 }
-
-                function validarContrasena() {
-                    let password = document.getElementById("password").value;
-                    let repassword = document.getElementById("repassword").value;
-                    let mensajeError = document.getElementById("mensajeError");
-
-                    if (password !== repassword) {
-                        mensajeError.style.display = "block"; // Muestra el mensaje de error
-                        return false; // Indica que las contraseñas no coinciden
-                    } else {
-                        mensajeError.style.display = "none"; // Oculta el mensaje si las contraseñas coinciden
-                        return true; // Indica que las contraseñas son iguales
-                    }
-                }
-
-                function crearCuenta() {
-                    if (comprobarCampos()) {
-                        window.location.href = "logIn.html"; // Redirige si las contraseñas coinciden
-                    }
-                }
+                window.comprobarCampos = comprobarCampos;
             </script>
             
             <a href="logIn.html">¿Ya tienes cuenta?</a>
@@ -139,6 +126,7 @@
 
     <!-- ___ *** Librerias .js ___ *** -->
     <script src="baseLayout/layoutLoader.js"></script>
+    <script type="module" src="baseLayout/upheader.js"></script>
 
 </body>
 </html>

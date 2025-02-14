@@ -34,31 +34,58 @@
             <br>
             <form>
                 <div class="input-container">
-                    <label for="mail">Correo electrónico:</label>
-                    <input id="mail" type="text" class="styled-input">
+                    <label for="email">Correo electrónico:</label>
+                    <input id="email" type="text" class="styled-input">
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div> 
                         <label for="password">Contraseña:</label>
                         <input id="password" type="password" class="styled-input">
+   
+
                     </div>
                 </div>
+                <br><br>
+                <p id="falloInicio" style="font-style: italic; color: red; text-align: center;"></p>
+
                 
                 <div class="button-container">
-                    <button type="submit" class="styled-button" onclick="comprobarCampos()">Iniciar Sesión</button>
+                    <button type="button" class="styled-button" onclick="comprobarCampos()">Iniciar Sesión</button>
                 </div>
+
             </form>
             <br>
             <a href="signIn.html">¿No tienes cuenta, créala aquí?</a>
 
-            <script>
-                function comprobarCampos() {
-                    let password = document.getElementById("password").value;
-                    let mail = document.getElementById("mail").value.trim();
+            <script type="module">
+                import { iniciarSesion, getUser } from "./dataBase/dataHandler.js";
 
-                    // Verifica que nombre y apellido no estén vacíos
-                    alert("❌❌ No implementado aun el inicio y creación de cuenta :( ❌❌");
-                        return true
+                async function comprobarCampos() {
+                    let message = document.getElementById('falloInicio');
+                    let nombreSesion = document.getElementById('falloInicio');
+
+                    message.innerHTML = "";
+
+                    let password = document.getElementById("password").value;
+                    let email = document.getElementById("email").value.trim();
+
+                    let messageSupabase = await iniciarSesion(email, password);
+
+                    if (messageSupabase !== "nada") {
+                        document.getElementById("password").value = "";
+                        if (messageSupabase === "missing email or phone") {
+                            message.innerHTML = "~~ Completa todos los campos ~~";
+                        }
+                        if (messageSupabase === "Invalid login credentials") {
+                            message.innerHTML = "~~ Usuario o contraseña incorrectos ~~";
+                        }
+                    } else {
+                        let name = await getUser();
+                        sessionStorage.setItem("headerActualizado", name);
+                        window.location.href = "index.html"; // Si inicia sesión devuelve a la principal
+                    }
                 }
+
+                window.comprobarCampos = comprobarCampos;
             </script>
 
         </div>
@@ -74,6 +101,9 @@
 
     <!-- ___ *** Librerias .js ___ *** -->
     <script src="baseLayout/layoutLoader.js"></script>
+    <script type="module" src="dataBase/dataHandler.js"></script>
+    <script type="module" src="baseLayout/upheader.js"></script>
+
 
 </body>
 </html>
