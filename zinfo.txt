@@ -31,14 +31,3 @@ http://localhost:8000/index.html
 
 
 
-
-PeroWEB
-*index.html
-*baseLayout
-**footer.html
-**aside.html
-**header.html
-**layoutLoader.html
-*sesion
-**logIn
-**logIn.html

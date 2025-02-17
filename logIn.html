@@ -6,19 +6,11 @@
 
     <title>PeroWeb Log In</title>
 
-    <link rel="icon" type="image/jpg" href="baseLayout/icono.jpg">
+    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
 
     <link href="sesion/logIn.css" rel="stylesheet" />
 
-    <!-- Select2 & jQuery -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    
-    <!-- Latex y MathJax -->
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+
 </head>
 
 <body>
@@ -78,6 +70,10 @@
                         if (messageSupabase === "Invalid login credentials") {
                             message.innerHTML = "~~ Usuario o contraseña incorrectos ~~";
                         }
+                        if (messageSupabase === "Email not confirmed") {
+                            message.innerHTML = "~~ Confirme su email en el correo enviado ~~";
+                        }
+                        
                     } else {
                         let name = await getUser();
                         sessionStorage.setItem("headerActualizado", name);
@@ -100,9 +96,8 @@
 
 
     <!-- ___ *** Librerias .js ___ *** -->
-    <script src="baseLayout/layoutLoader.js"></script>
+    <script src="baseLayout/scripts/layoutLoader.js"></script>
     <script type="module" src="dataBase/dataHandler.js"></script>
-    <script type="module" src="baseLayout/upheader.js"></script>
 
 
 </body>

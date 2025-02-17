@@ -5,19 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PeroWeb Log In</title>
-    <link rel="icon" type="image/jpg" href="baseLayout/icono.jpg">
+    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
 
     <link href="sesion/signIn.css" rel="stylesheet" />
-
-    <!-- Select2 & jQuery -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    
-    <!-- Latex y MathJax -->
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
 </head>
 
 <body>
@@ -28,7 +18,7 @@
     <div class="main-container">
         <div class="containerDatosEntrada">
             <!-- ___ *** MAIN *** ___ -->
-            <h1>Crear cuenta nueva (no implementado)</h1>
+            <h1>Crear cuenta nueva</h1>
             <br>
             <form style="font-style: italic;" id="miFormulario">
                 <div class="input-containerS">
@@ -53,7 +43,6 @@
                     <input id="repassword" type="password" class="styled-inputS">
                 </div>
             
-                <p id="mensajeError" style="color: red; display: none;">⚠️ Las contraseñas no coinciden</p>
             
                 <div class="button-container">
                     <button type="button" class="styled-button" onclick="comprobarCampos()">
@@ -105,7 +94,7 @@
                         return false;
                     }
 
-                    alert("😀 Todo correcto, cuenta creada 😀");
+                    alert("😀Cuenta creada, confirma email en el correo de supabase 😀");
                         window.location.href = "logIn.html"; // Redirige si las contraseñas coinciden
                     return true;
                 }
@@ -125,8 +114,7 @@
 
 
     <!-- ___ *** Librerias .js ___ *** -->
-    <script src="baseLayout/layoutLoader.js"></script>
-    <script type="module" src="baseLayout/upheader.js"></script>
+    <script src="baseLayout/scripts/layoutLoader.js"></script>
 
 </body>
 </html>

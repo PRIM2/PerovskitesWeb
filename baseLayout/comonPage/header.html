@@ -36,18 +36,25 @@
         }
     </style>
     <p>
-        <img src="baseLayout/logo.png" alt="Descripción" style="margin-right: 8px; width: 7%; border-radius: 12px; float: right;">
-        <img src="baseLayout/logo.png" alt="Descripción" style="margin-left: 8px; width: 7%; border-radius: 12px; float: left;">
+        <img src="baseLayout/images/logo.png" alt="Descripción" style="margin-right: 8px; width: 7%; border-radius: 12px; float: right;">
+        <img src="baseLayout/images/logo.png" alt="Descripción" style="margin-left: 8px; width: 7%; border-radius: 12px; float: left;">
     </p>
 
     <h1>Hybrid Perovskite Computational Tool</h1>
     <h2 style="text-align: center;">Versión 2.0</h2>
 
-    <p id="dereha">
-        <a href="logIn.html" id="Sesion">Inicio de sesión</a> &nbsp;&nbsp;&nbsp; 
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"  style="border-radius: 8px;" alt="GitHub Logo" width="16">
-        <a href="https://github.com/PRIM2/PerovskitesWeb" target="_blank" style="margin-bottom: 15px;">Source code</a> &nbsp;&nbsp;&nbsp;
-        <a href="#" onclick="document.getElementById('modal').showModal()">Contacto</a>  
+    <p style="font-style: italic; font-size: 15px; margin-bottom: 3px;">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"  style="border-radius: 8px; margin-bottom: -4px;" alt="GitHub Logo" width="19">
+        <a href="https://github.com/PRIM2/PerovskitesWeb" target="_blank" >Source code</a>  &nbsp;
+        <a href="#" onclick="document.getElementById('modal').showModal()">Contacto</a> &nbsp;&nbsp;
+        <a href="logIn.html" id="Sesion">Inicio de sesión</a>  &nbsp;
+        
+        <img src="baseLayout/images/cerrarSesion.png" 
+        onclick="cerrarSesion()" 
+        style="border-radius: 2px; cursor: pointer;  margin-bottom: -5px" 
+        alt="Cerrar Sesión" 
+        width="23px">
+
     </p>
 
     <dialog id="modal">
@@ -57,3 +64,6 @@
     </dialog>
 
 </header>
+
+<script src="../dataBase/dataHandler.js"></script>
+

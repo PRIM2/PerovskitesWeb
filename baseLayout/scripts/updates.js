@@ -1,7 +1,7 @@
 async function cargarHeader() {
     const headerContainer = document.getElementById("header");
 
-    const response = await fetch("baseLayout/header.html");
+    const response = await fetch("baseLayout/comonPage/header.html");
     headerContainer.innerHTML = await response.text();
 
     if (!sessionStorage.getItem("headerActualizado")) {
@@ -21,51 +21,64 @@ function actualizarHeader() {
 cargarHeader();
 
 
-
-import { uploadTolData } from "../dataBase/dataHandler.js";  // Ruta correcta a tu archivo
-
+import { uploadTolData, deleteTolData  } from "../../dataBase/dataHandler.js";  
 async function plotTolData1() {
-    const tol_data = await uploadTolData();
+    const data = await uploadTolData();
+    const tol_data = data.tol_data;
 
     if (!tol_data || tol_data.length === 0) {
-        console.warn("⚠️ No hay datos en tol_data.");
+        console.log("No hay datos en la base de datos :)");
         return;
     }
-
-    console.log("✅ Datos obtenidos en plotTolData1:", tol_data);
 
     let output = document.getElementById('listaGuardado');
 
     // ✅ Crear una lista <ul> y agregar elementos <li>
     let lista = document.createElement("ul");
-    lista.classList.add("mi-lista"); // Agrega una clase CSS para personalización
-    
+    lista.classList.add("mi-lista");
 
-    //  ___ *** PONERLO BONITO *** ___
     tol_data.forEach(item => {
         let listItem = document.createElement("li");
-    
+
+        // ✅ Contenedor para NameCalc y botón
+        let titleContainer = document.createElement("span");
+        titleContainer.classList.add("title-container"); // Usamos la clase CSS
+
         // ✅ Agregar el NameCalc en negrita
         let title = document.createElement("strong");
         title.textContent = `🔹 ${item.NameCalc}`;
-        listItem.appendChild(title);
-    
+
+        // ✅ Crear botón de eliminar
+        let btnDelete = document.createElement("button");
+        btnDelete.textContent = "❌";
+        btnDelete.title = "Eliminar";
+        btnDelete.classList.add("mini-btn", "delete-btn");
+        btnDelete.addEventListener("click", () => deleteTolData(item.NameCalc) );
+
+        // ✅ Agregar elementos al contenedor
+        titleContainer.appendChild(title);
+        titleContainer.appendChild(btnDelete);
+        listItem.appendChild(titleContainer);
+
         // ✅ Crear el bloque con Tolerance y Globularity
         let details = document.createElement("p");
         details.innerHTML = `Tolerance: ${item.Tolerance} <br> Globularity: ${item.Globularity}`;
-        details.classList.add("detalles"); // Agregar clase CSS para estilo
-    
+        details.classList.add("detalles");
+
         listItem.appendChild(details);
         lista.appendChild(listItem);
     });
-    
-    // ✅ Reemplazar el contenido con la nueva lista
+
     output.innerHTML = "";
     output.appendChild(lista);
-
-    console.log("✅ Lista generada en formato <ul><li>:", lista);
 }
 
-// 🔹 Llamar la función después de asegurarte que todo está listo
+
 plotTolData1();
+
+
+
+
+
+
 

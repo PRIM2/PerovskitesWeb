@@ -9,8 +9,8 @@ function loadCSS(href) {
 
 
 // Cargar estilos personalizados
-directorio = "indexContent/styles/"
-archivosCSS = ["forms.css", "select2.css"];
+const directorio = "indexContent/styles/"
+const archivosCSS = ["forms.css", "select2.css"];
 for (let i = 0; i < archivosCSS.length; i++) {
     loadCSS(directorio + archivosCSS[i]);
 }
@@ -18,9 +18,25 @@ for (let i = 0; i < archivosCSS.length; i++) {
 
 // ________ *** SCRIPTS .js *** ________
 // Carga los scripts internos
-document.write('<script src="indexContent/scripts/selectBoton.js"><\/script>');
-document.write('<script src="indexContent/scripts/tolerancia.js"><\/script>');
 
-// Carga los archivos de datos
-document.write('<script src="indexContent/datos/aniones.js"><\/script>');
-document.write('<script src="indexContent/datos/cationes.js"><\/script>');
+function loadScript(src, isModule = false) {
+    let script = document.createElement("script");
+    script.src = src;
+    if (isModule) {
+      script.type = "module"; // Permite usar import/export
+    } else {
+      script.type = "text/javascript";
+    }
+    script.async = true;
+    document.head.appendChild(script);
+  }
+  
+// Calculos e interfaz
+loadScript("indexContent/scripts/selectBoton.js");
+loadScript("indexContent/scripts/tolerancia.js", true);
+
+// Datos predeterminados
+loadScript("indexContent/datos/aniones.js");
+loadScript("indexContent/datos/cationes.js");
+
+

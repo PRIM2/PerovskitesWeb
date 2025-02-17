@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
+
+    <title>PeroWeb</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="grafContent/style.css"> <!-- Enlace al CSS -->
+    
+
+</head>
+
+
+<body>
+    <!-- ___ *** HEADER *** ___ -->
+    <div id="header"></div>
+
+
+    <div class="main-container">
+        <div class="containerDatosEntrada">
+            <h1> Graficas, en desarrollo</h1>
+            <!-- Contenedor del gráfico -->
+            <div id="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        
+            <!-- Tabla de datos -->
+            <h3>Puntos Disponibles</h3>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Y</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos se llenarán dinámicamente -->
+                </tbody>
+            </table>  
+            <h2>Selecciona Puntos para Graficar</h2>
+
+            <!-- Lista de Checkboxes -->
+            <div id="checkbox-container" class="checkbox-container"></div>
+            <button onclick="addPointsToChart()">Agregar a la Gráfica</button>
+        
+        </div>
+
+
+        <!-- ___ *** ASIDE *** ___ -->
+        <div id="aside"></div>    
+    </div>    
+
+
+    <!-- ___ *** FOOTER *** ___ -->
+    <div id="footer"></div>
+
+
+    <!-- ___ *** Librerias .js ___ *** -->
+    <script src="baseLayout/scripts/layoutLoader.js"></script>
+    <script src="grafContent/script.js"></script> <!-- Enlace al JavaScript -->
+
+
+</body>
+</html>

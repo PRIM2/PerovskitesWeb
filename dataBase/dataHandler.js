@@ -10,24 +10,24 @@ const supabase = createClient(
 // --------- COMPROBAR ERRORES en CONSOLA ---------
 async function comprobarError(tipo, error) {
     if (error) {
-        console.error("❌ Error:" + tipo, error.message);
+        console.warn("❌ Error:" + tipo, error.message);
     } else {
         console.log("✅ Todo funciona correctamente: "+ tipo);
     }
 }
 
 // --------- COMPROBAR INICIO de SESION ---------
-async function comprobarSesion() {
+export async function comprobarSesion() {
     const { data, error } = await supabase.auth.getUser();
 
-    if (error || !data?.user) {
-        alert("Inicia sesión para continuar.");
-        console.error("❌ No se pudo obtener el usuario:", error?.message);
-        return null; // Devolvemos null en lugar de salir sin valor
+    if (error || !data?.user?.id) {
+        console.log("❌ No se pudo obtener el usuario:", error?.message || "Sesión no iniciada");
+        return null; // Devuelve null si no hay sesión o si el ID del usuario es inválido
     }
 
-    return data.user.id;
+    return data.user.id; // Devuelve el ID si la sesión está activa
 }
+    
 
 
 
@@ -74,22 +74,45 @@ export async function iniciarSesion(email, password) {
     } else {return "nada"}
 }
 
+// ---------- CERRAR SESION ----------
+export async function cerrarSesion() {
+    const { error } = await supabase.auth.signOut();
+    
+    if (error) {
+        console.error("❌ Error cerrando sesión:", error.message);
+        return;
+    }
+
+    // ✅ Borrar `localStorage` cuando se cierre sesión
+    localStorage.removeItem("headerActualizado");
+    sessionStorage.removeItem("headerActualizado");
+
+    console.log("✅ Sesión cerrada y localStorage limpiado.");
+    window.location.href = "./"; // Redirige al login
+}
+window.cerrarSesion = cerrarSesion;
+
+
 export async function getUser() {
     const userId = await comprobarSesion();
+    if (userId !== null) {
+        const { data, error } = await supabase
+            .from('tol_table')
+            .select('name , surname')
+            .eq('id', userId);
 
-    const { data, error } = await supabase
-        .from('tol_table')
-        .select('name , surname')
-        .eq('id', userId);
+        comprobarError("Obtencion del nombre y apellido", error)
 
-    comprobarError("Obtencion del nombre y apellido", error)
-
-    return data[0].name + " " + data[0].surname
+        return data[0].name + " " + data[0].surname
+    }
+    else {
+        return null
+    }
 }
 
 
 // ---------- AGREGAR un TOL_DATA ---------
-async function agregarTolData(valor1, valor2, valor3) {
+export async function agregarTolData(valor1, valor2, valor3) {
 
     // OBTENGO EL USUARIO ID 
     const userId = await comprobarSesion();
@@ -118,7 +141,7 @@ async function agregarTolData(valor1, valor2, valor3) {
 }
 
 // ---------- ELIMINAR un TOL_DATA ---------
-async function deleteTolData(NameCalc) {
+export async function deleteTolData(NameCalc) {
     const userId = await comprobarSesion();
 
     // FUNCION SQL DE SUPABASE para eliminar
@@ -127,6 +150,7 @@ async function deleteTolData(NameCalc) {
         name_calc: NameCalc
     });
     comprobarError("Eliminar << " + NameCalc + " >> en tol_data", error)
+    window.location.href = "./" 
 }
 
 // ---------- ELIMINAR TODAS LAS TOL_DATA ---------
@@ -147,12 +171,12 @@ export async function uploadTolData() {
 
     const { data, error } = await supabase
         .from('tol_table')
-        .select('tol_data')
+        .select()
         .eq('id', userId);
 
     comprobarError("Obtencion tol_table", error);
-    console.log(data[0]?.tol_data);
-    return data[0]?.tol_data || []
+
+    return data[0] ? data[0] : { tol_data: [] }; // 🔹 Siempre devuelve un objeto con `tol_data`
 }
 
 

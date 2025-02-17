@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PeroWeb</title>
-    <link rel="icon" type="image/jpg" href="baseLayout/icono.jpg">
+    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
 
 
     <!-- Select2 & jQuery -->
@@ -47,20 +47,16 @@
 
             <form id="datosForm">
                 <div class="form-group">
-                    <label for="units">Select Units: (demomento esta todo en amstrong no afecta la decision)  </label>
-                    <select id="units">
-                        <option value="A³"> Å³ </option>
-                        <option value="m³"> m³ </option> 
-                    </select>
-                    <br><br>
+                    <h2 style = "font-size: 18px; color: rgb(192, 61, 122);">¡¡ Introducir todos los datos en Å o Å³ !!</h2>
+                    <br>
 
-                    <label for="globularity">Globularity: aun no sirve para nada </label>
+                    <label for="globularity">Globularity*: </label>
                     <input type="number" id="globularity" step="any" placeholder="Enter a globularity" />
 
                     <br><br><hr>
                     
                     <!-- Fomulario de Cation A -->
-                    <h2>Cation A</h2>
+                    <h2>Cation A*</h2>
                     <select id="cationA"></select>   
 
                     <br><br>
@@ -78,7 +74,7 @@
 
                 <div class="form-group2">
                     <!-- Fomulario de Cation B -->
-                    <h2>Cation B</h2>
+                    <h2>Cation B*</h2>
                     <select id="cationB"></select>       
                     <br><br>
 
@@ -88,13 +84,13 @@
 
 
                     <!-- Fomulario de Anion -->
-                    <h2>Anion</h2>
+                    <h2>Anion*</h2>
 
                     <label for="anion"></label>  
                     <select id="anion"></select>
                     <br><br>
                     
-                    <label for="anionManualR ">\(r_{X,\text{eff}}:\)</label>
+                    <label for="anionManualR">\(r_{X,\text{eff}}:\)</label>
                     <input class= "inputs" type="number" id="anionManualR" step="any" placeholder="Introducir valor manualmente" />
                     <br class="saltoMovil"><br class="saltoMovil">
                     <label for="anionManualH">\(h_{X,\text{eff}}:\) </label>
@@ -105,15 +101,19 @@
                 <br>
                 <div>
                     <!-- ___ *** RESULTADOS *** ___ -->
-                    <button onclick="calculo()" type="submit">Calcular tolerancia</button> 
+                    <button onclick="calculo()" type="button">Calcular tolerancia</button> 
                     <p id="ecuacionVolumen"></p>
+
                     <p id="ecuacion"></p>
                     <p id="resultado"></p>
                     <p id="rango" style=" text-align: center;"></p>
+                    
+                    <div id="savings"> </p></div>
+
+                    <div class="errorMessage" id="errorInput" style="margin-top: 25px;"></div>
                 </div>
 
             </form>
-
 
         </div>
 
@@ -128,10 +128,8 @@
 
 
     <!-- ___ *** Librerias .js ___ *** -->
-    <script src="indexContent/dependencies.js"></script>
-    <script src="baseLayout/layoutLoader.js"></script>
-    <script type="module" src="baseLayout/upheader.js"></script>
-
+    <script type="module" src="indexContent/dependencies.js"></script>
+    <script type="module" src="baseLayout/scripts/layoutLoader.js"></script>
     
 </body>
 </html>
