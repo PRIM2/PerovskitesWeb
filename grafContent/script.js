@@ -1,24 +1,13 @@
-// Lista de puntos disponibles
-const points = [
-    { x: 1, y: 10 },
-    { x: 2, y: 15 },
-    { x: 3, y: 7 },
-    { x: 4, y: 12 },
-    { x: 5, y: 20 },
-    { x: 6, y: 8 },
-    { x: 7, y: 14 }
-];
 
-// Lista de puntos actualmente graficados
+// Lista de puntos   que se va rellenando
 let plottedPoints = [];
 
-// Configuración inicial de la gráfica
 const ctx = document.getElementById('myChart').getContext('2d');
 let myChart = new Chart(ctx, {
     type: 'scatter',
     data: {
         datasets: [{
-            label: 'Puntos Seleccionados',
+            label: 'Datos seleccionados',
             data: plottedPoints,
             borderColor: 'red',
             backgroundColor: 'rgba(255, 0, 0, 0.5)',
@@ -27,60 +16,84 @@ let myChart = new Chart(ctx, {
     },
     options: {
         scales: {
-            x: { type: 'linear', position: 'bottom' },
-            y: { beginAtZero: true }
+            x: { 
+                type: 'linear', 
+                position: 'bottom',
+                title: { 
+                    display: true,
+                    text: 'Globularity', // 🔹 Cambiado para reflejar el eje correcto
+                    font: { size: 16, weight: 'bold' }
+                },
+                min: 0.5, 
+                max: 1 
+            },
+            y: { 
+                beginAtZero: true,
+                title: { 
+                    display: true,
+                    text: 'Tolerance', // 🔹 Cambiado para reflejar el eje correcto
+                    font: { size: 16, weight: 'bold' }
+                },
+                min: 0.5, 
+                max: 1.2 
+            }
         }
     }
 });
 
-// Llenar la tabla de datos y los checkboxes
-function populateData() {
-    let tableBody = document.querySelector("#dataTable tbody");
-    let checkboxContainer = document.getElementById("checkbox-container");
 
-    tableBody.innerHTML = ""; // Limpiar tabla
-    checkboxContainer.innerHTML = ""; // Limpiar checkboxes
 
-    points.forEach((point, index) => {
-        // Agregar a la tabla
-        let tr = document.createElement("tr");
-        tr.innerHTML = `<td>${point.x}</td><td>${point.y}</td>`;
-        tableBody.appendChild(tr);
+// ✅ Descargar la gráfica como imagen (PNG)
+document.getElementById("downloadGrafpng").addEventListener("click", function() {
+    let link = document.createElement('a');
+    link.href = myChart.toBase64Image(); // Convertir a imagen PNG
+    link.download = "grafica.png"; // Nombre del archivo
+    link.click();
+});
 
-        // Agregar checkbox
-        let div = document.createElement("div");
-        div.classList.add("checkbox-item");
+// ✅ Descargar los datos en formato CSV (Excel)
+document.getElementById("downloadDatacsv").addEventListener("click", function() {
+    let csvContent = "data:text/csv;charset=utf-8,Name,Globularity,Tolerance\n"; // Encabezado CSV
 
-        let checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.value = index;
-        checkbox.id = `checkbox-${index}`;
-
-        let label = document.createElement("label");
-        label.htmlFor = `checkbox-${index}`;
-        label.textContent = `(${point.x}, ${point.y})`;
-
-        div.appendChild(checkbox);
-        div.appendChild(label);
-        checkboxContainer.appendChild(div);
-    });
-}
-
-// Función para agregar los puntos seleccionados a la gráfica
-function addPointsToChart() {
-    let checkboxes = document.querySelectorAll("#checkbox-container input[type='checkbox']:checked");
-
-    checkboxes.forEach(checkbox => {
-        let selectedPoint = points[checkbox.value];
-
-        // Agregar el punto a la lista de graficados si no está ya
-        if (!plottedPoints.some(p => p.x === selectedPoint.x && p.y === selectedPoint.y)) {
-            plottedPoints.push(selectedPoint);
-        }
+    plottedPoints.forEach(point => {
+        csvContent += `${point.name},${point.x},${point.y}\n`; // Agregar datos con NameCalc
     });
 
-    myChart.update(); // Actualizar la gráfica
-}
+    let encodedUri = encodeURI(csvContent);
+    let link = document.createElement("a");
+    link.href = encodedUri;
+    link.download = "datos.csv"; // Nombre del archivo
+    link.click();
+});
 
-// Llenar la tabla y los checkboxes al cargar la página
-populateData();
+// ✅ Descargar los datos en formato CSV (Excel)
+document.getElementById("downloadDataExcel").addEventListener("click", function() {
+    let csvContent = "data:text/csv;charset=utf-8,Name;Globularity;Tolerance\n"; // Encabezado CSV con punto y coma
+
+    plottedPoints.forEach(point => {
+        csvContent += `${point.name};${point.x};${point.y}\n`; // Separado por `;`
+    });
+
+    let encodedUri = encodeURI(csvContent);
+    let link = document.createElement("a");
+    link.href = encodedUri;
+    link.download = "datos.csv"; // Nombre del archivo
+    link.click();
+});
+
+
+// ✅ Descargar los datos en formato TXT (con separador de tabulaciones)
+document.getElementById("downloadDatatxt").addEventListener("click", function() {
+    let txtContent = "Name\tGlobularity\tTolerance\n"; // Encabezado TXT con tabulaciones
+
+    plottedPoints.forEach(point => {
+        txtContent += `${point.name}\t${point.x}\t${point.y}\n`; // Agregar datos con NameCalc
+    });
+
+    let blob = new Blob([txtContent], { type: "text/plain" });
+    let link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "datos.txt"; // Nombre del archivo
+    link.click();
+});
+

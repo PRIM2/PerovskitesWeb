@@ -27,25 +27,12 @@
                 <canvas id="myChart"></canvas>
             </div>
         
-            <!-- Tabla de datos -->
-            <h3>Puntos Disponibles</h3>
-            <table id="dataTable">
-                <thead>
-                    <tr>
-                        <th>X</th>
-                        <th>Y</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Los datos se llenarán dinámicamente -->
-                </tbody>
-            </table>  
-            <h2>Selecciona Puntos para Graficar</h2>
-
-            <!-- Lista de Checkboxes -->
-            <div id="checkbox-container" class="checkbox-container"></div>
-            <button onclick="addPointsToChart()">Agregar a la Gráfica</button>
-        
+            <div id = "btns-container">
+                <button id = "downloadGrafpng">Descargar gráfica .png</button>
+                <button id = "downloadDatacsv">Descargar datos .csv (separado por ,)</button>
+                <button id = "downloadDataExcel">Descargar datos excel (separado por ;) </button>
+                <button id = "downloadDatatxt">Descargar datos .txt (con separador de )</button>
+            </div>
         </div>
 
 

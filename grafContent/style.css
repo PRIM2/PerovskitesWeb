@@ -31,3 +31,72 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+
+/* Contenedor para alinear el checkbox y el texto */
+.plot-checkbox-container {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    gap: 5px; /* Espaciado entre el checkbox y el texto */
+    margin-top: 12px;
+}
+
+/* Ajustes para el checkbox */
+.plot-checkbox {
+    appearance: none; /* Ocultar el diseño por defecto */
+    width: 18px; /* Tamaño del checkbox */
+    height: 18px;
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+/* Efecto cuando está marcado */
+.plot-checkbox:checked {
+    background-color: #007bff; /* Fondo azul */
+    border-color: #007bff;
+}
+
+/* ✔️ Checkmark dentro del checkbox */
+.plot-checkbox:checked::after {
+    content: "✔";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/* Estilos para la etiqueta */
+.plot-checkbox-label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* ✅ Estilo del contenedor de botones */
+#btns-container {
+    display: flex; /* Alinear botones en fila */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 20px; /* Espaciado superior */
+    flex-wrap: wrap; /* Permitir que los botones se acomoden en móviles */
+}
+
+/* ✅ Estilo de los botones */
+#btns-container button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    width:85% !important;
+}
+

@@ -2,8 +2,7 @@ import { agregarTolData, comprobarSesion } from "../../dataBase/dataHandler.js";
 
 
 window.calculo = async function calculo(event) {
-    console.log("Función calculo ejecutada");
-
+    console.log("✅ Función calculo ejecutada");
     // ___ *** RESET DE TODO *** ___
     document.getElementById("rango").innerText = ``;
     document.getElementById("resultado").innerText = ``;

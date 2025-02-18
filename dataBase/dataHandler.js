@@ -10,7 +10,7 @@ const supabase = createClient(
 // --------- COMPROBAR ERRORES en CONSOLA ---------
 async function comprobarError(tipo, error) {
     if (error) {
-        console.warn("❌ Error:" + tipo, error.message);
+        console.log("❌ Comprobacion Error: " + tipo, error.message);
     } else {
         console.log("✅ Todo funciona correctamente: "+ tipo);
     }
@@ -28,8 +28,6 @@ export async function comprobarSesion() {
     return data.user.id; // Devuelve el ID si la sesión está activa
 }
     
-
-
 
 // ---------- REGISTRO ----------
 export async function registrarUsuario(Name, Surname, email, password) {
@@ -176,8 +174,11 @@ export async function uploadTolData() {
 
     comprobarError("Obtencion tol_table", error);
 
-    return data[0] ? data[0] : { tol_data: [] }; // 🔹 Siempre devuelve un objeto con `tol_data`
+    // return data[0] ? data[0] : { tol_data: [] }; // 🔹 Siempre devuelve un objeto con `tol_data`
+    return data?.[0] ?? { tol_data: [] };
+
 }
+
 
 
 

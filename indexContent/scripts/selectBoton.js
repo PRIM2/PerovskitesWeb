@@ -3,8 +3,8 @@ function elegirCationes() {
     let selects = ["cationA", "cationB"];
  
     for (let i = 0; i < selects.length; i++) {
-        const select = document.getElementById(selects[i]);
-        const input = document.getElementById(inputs[i]);
+        let select = document.getElementById(selects[i]);
+        let input = document.getElementById(inputs[i]);
         
         if (!select || !input) {
             console.error("Elementos no encontrados en el DOM");
@@ -35,9 +35,9 @@ function elegirCationes() {
 function elegirAniones() {
     // ¡¡¡ TIENE LOGICA OR PARA DISABLE Y AND PARA ENABLE !!!
     // Referencias a los elementos
-    const select = document.getElementById("anion");
-    const inputH = document.getElementById("anionManualH");
-    const inputR = document.getElementById("anionManualR");
+    let select = document.getElementById("anion");
+    let inputH = document.getElementById("anionManualH");
+    let inputR = document.getElementById("anionManualR");
 
 
     // Deshabilitar el select si **cualquiera** de los inputs tiene valor
@@ -65,6 +65,12 @@ function elegirAniones() {
     });
 }
 
-// Ejecutar funciones cuando el DOM esté listo
-document.addEventListener("DOMContentLoaded", elegirAniones);
-document.addEventListener("DOMContentLoaded", elegirCationes);
+
+window.addEventListener("load", () => {    
+        elegirAniones();
+
+        elegirCationes();
+});
+
+
+
