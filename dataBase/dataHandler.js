@@ -164,12 +164,12 @@ async function deleteEveryThingTolData() {
 }
 
 // ---------- OBTENER TOL_DATA ---------
-export async function uploadTolData() {
+export async function uploadTolData(table = 'tol_table', column = '*') {
     const userId = await comprobarSesion();
 
     const { data, error } = await supabase
-        .from('tol_table')
-        .select()
+        .from(table)
+        .select(column)
         .eq('id', userId);
 
     comprobarError("Obtencion tol_table", error);
@@ -177,6 +177,15 @@ export async function uploadTolData() {
     // return data[0] ? data[0] : { tol_data: [] }; // 🔹 Siempre devuelve un objeto con `tol_data`
     return data?.[0] ?? { tol_data: [] };
 
+}
+
+export async function uploadData(table, column) {
+    const { data, error } = await supabase
+        .from(table)
+        .select(column)
+
+    comprobarError("Obtencion tol_table", error);
+    return data
 }
 
 

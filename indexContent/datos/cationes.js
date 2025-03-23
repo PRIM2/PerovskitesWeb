@@ -59,8 +59,6 @@ const cationA = {
     TEFEP: { nombre: "Trietilfluoroetilfosfonio", abreviatura: "TEFEP", r: 3.67 },
     DMFe: { nombre: "DecametilFerrocinio", abreviatura: "DMFe", r: 4.47 },
     DMCo: { nombre: "DecametilCobaltocinio", abreviatura: "DMCo", r: 4.44 },
-    Cp2Co: { nombre: "Cobaltocinio", abreviatura: "Cp2Co", r: 3.24 },
-    Cp2Fe: { nombre: "Ferrocinio", abreviatura: "Cp2Fe", r: 3.47 },
     TPhS: { nombre: "Trifenilsulfuro", abreviatura: "TPhS", r: 4.12 },
     DABCO: { nombre: "1,4-Diazabicyclo[2.2.2]octane", abreviatura: "DABCO", r: 3.21 }
 };
@@ -90,7 +88,7 @@ for (let i = 0; i < select.length; i++) {
     // ___ *** SELECT2 *** ___
     $(document).ready(function () {
         $(dir[i]).select2({
-            placeholder: "Elige aquí un anión de la base de datos",
+            placeholder: "Select an anion from the database here",
             allowClear: true,
             templateResult: function (data) {
                 if (!data.id) {

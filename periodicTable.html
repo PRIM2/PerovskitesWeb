@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="baseLayout/images/icono.png">
+    <title>HyPer Tolkit</title>
+    <!-- Select2 & jQuery -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    
+    <!-- Latex y MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link href="periodicTable/table.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <div class="main-container">
+        <div class="containerDatosEntrada">
+            <h1>Periodic table (preliminar version)</h1>
+ 
+ 
+
+            <div id="containerGeneral">
+                <p style = "text-align: center;">
+                    (Cada elemento de la tabla tiene dentro una lista con todas las opciones que contienen el elemento y falta meter que se vean los r y h en el button)<br><br>
+                    🟢 Element in database<br><br>
+                    🔴 Selected cation<br><br> 
+                    🔵 Selected anion<br>
+                </p>
+                <div id="anionSelected"></div>
+                <div id="cationSelected"></div>
+                <div class="tabla" id="tabla"></div>
+                <div class="tabla" id="tabla2"></div>
+            </div>
+
+
+
+        </div>
+
+        <!-- ASIDE -->
+        <div id="aside"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    
+    <dialog id="modalSelect"></dialog>
+
+    <script src="baseLayout/scripts/layoutLoader.js"></script>
+    <script type="module" src="periodicTable/makeTable.js" ></script>
+
+</body>
+</html>

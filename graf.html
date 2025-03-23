@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
+    <link rel="icon" type="image/png" href="baseLayout/images/icono.png">
 
-    <title>PeroWeb</title>
+    <title>HyPer Tolkit</title>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="grafContent/style.css"> <!-- Enlace al CSS -->
@@ -21,17 +21,20 @@
 
     <div class="main-container">
         <div class="containerDatosEntrada">
-            <h1> Graficas, en desarrollo</h1>
+            <h1> Graph (developing)</h1>
             <!-- Contenedor del gráfico -->
-            <div id="chart-container">
+            <div style="width: 100%; max-width: 800px; margin: auto;">
                 <canvas id="myChart"></canvas>
-            </div>
+              </div>
         
+
             <div id = "btns-container">
-                <button id = "downloadGrafpng">Descargar gráfica .png</button>
-                <button id = "downloadDatacsv">Descargar datos .csv (separado por ,)</button>
-                <button id = "downloadDataExcel">Descargar datos excel (separado por ;) </button>
-                <button id = "downloadDatatxt">Descargar datos .txt (con separador de )</button>
+                <button id="addDataButton">Add / Quit from data base (by anion) </button>
+
+                <button id = "downloadGrafpng"> ⬇️ Download Graph .png (preliminar)</button>
+                <!-- <button id = "downloadDatacsv">Download data .csv (divided by ,)</button>
+                <button id = "downloadDataExcel">Download data excel (divided by ;) </button>
+                <button id = "downloadDatatxt">Download data .txt</button> -->
             </div>
         </div>
 
@@ -47,7 +50,7 @@
 
     <!-- ___ *** Librerias .js ___ *** -->
     <script src="baseLayout/scripts/layoutLoader.js"></script>
-    <script src="grafContent/script.js"></script> <!-- Enlace al JavaScript -->
+    <script type="module" src="grafContent/script.js"></script> <!-- Enlace al JavaScript -->
 
 
 </body>

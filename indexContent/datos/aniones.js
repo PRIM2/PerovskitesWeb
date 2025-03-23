@@ -43,7 +43,7 @@ Object.keys(anion).forEach((key) => {
 
 $(document).ready(function () {
     $("#anion").select2({
-        placeholder: "Elige aquí un anión de la base de datos",
+        placeholder: "Select an anion from the database here",
         allowClear: true,
         templateResult: function (data) {
             if (!data.id) {

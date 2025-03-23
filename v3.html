@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+    /* Estilo del botón desplegable */
+.dropdown {
+    display: inline-block;
+    background-color: #67276bb5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.dropdown:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Contenedor del menú desplegable */
+.dropwdownContainter {
+    margin: 14px 0 25px 0;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Comienza oculto */
+}
+
+/* Contenedor activo */
+.dropwdownContainter.active {
+    display: block; /* Muestra el contenedor */
+}
+
+/* Estilo específico para el formulario de cationA */
+#cationAForm {
+    display: flex;
+    flex-direction: row; /* Mantiene el diseño horizontal */
+    gap: 20px; /* Espacio entre cada columna */
+    padding: 10px;
+    border-radius: 8px;
+    align-items: flex-start;
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+}
+/* Estilo para cada columna label-input */
+#cationAForm div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Permite que cada columna se expanda para llenar el espacio */
+    gap: 5px;
+}
+
+/* Estilo de los labels */
+#cationAForm label {
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo de los inputs */
+input[type="text"] {
+    padding: 8px;
+    border: 2px solid #a6a9af;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 14px;
+    width: 100%; /* Asegura que el input ocupe todo el ancho del div */
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+/* Estilo del botón */
+button {
+    padding: 8px 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+}
+
+button:hover:not(:disabled) {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}    </style>
+
+    <style>
+        /* Contenedor de la tabla */
+        .tabla-simple {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+            grid-template-rows: repeat(6, 1fr); /* 6 filas */
+            gap: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+            grid-column-gap: 50px; /* Aumenta el espacio entre columnas */
+        }
+
+        /* Estilo de las celdas */
+        .celda {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 24px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        /* Estilo al pasar el ratón */
+        .celda:hover {
+            transform: scale(1.05);
+            background-color: #e0e7ff;
+            border-color: #3b82f6;
+        }
+
+        /* Estilo para la celda seleccionada */
+        .celda.seleccionada {
+            background-color: #93c5fd;
+            border-color: #2563eb;
+            color: white;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="baseLayout/images/icono.png">
+
+    <title>HyPer Tolkit</title>
+    
+    <link href="periodicTable/table.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+    <!-- ___ *** HEADER *** ___ -->
+    <div id="header"></div>
+
+
+    <div class="main-container">
+        <div class="containerDatosEntrada">
+            <!-- ___ *** MAIN *** ___ -->
+            <h1>Search v3</h1>
+
+            <button class="dropdown" onclick="dropdown('cationA')">Cation A</button>
+            <div class="dropwdownContainter" id="cationA">
+                <form id="cationAForm">
+                    <form id="cationAForm">
+                        <div>
+                            <label for="composition">Composition</label>
+                            <input type="text" id="composition" placeholder="Composition" oninput="updateData('composition', this.value)">
+                        </div>
+                        <div>
+                            <label for="inorganicFormula">Inorganic Formula</label>
+                            <input type="text" id="inorganicFormula" placeholder="Inorganic formula" oninput="updateData('inorganicFormula', this.value)">
+                        </div>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name" oninput="updateData('name', this.value)">
+                        </div>
+                    </form>
+                <div id="output"></div>
+            </div>
+            <div class="dropwdownContainter" id="cationASelected"></div>
+            
+            <button class="dropdown" onclick="dropdown('cationB')">Cation B</button>
+            <div class="dropwdownContainter" id="cationB" >
+                <div id="anionSelected"></div>
+                <div id="cationSelected"></div>
+                <div class="tabla" id="tabla"></div>
+                <div class="tabla" id="tabla2"></div>
+            </div>
+            <div class="dropwdownContainter" id="cationBSelected"></div>
+
+            
+            <button class="dropdown" onclick="dropdown('anion')">Anion</button>
+            <div class="dropwdownContainter" id="anion" >              
+                <div class="tabla-simple" id="tablaSimple">
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 1</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 2</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 3</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 4</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 5</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 6</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 7</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 8</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 9</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 10</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 11</div>
+                    <div class="celda" onclick="seleccionarCelda(this)">Ejemplo 12</div>
+                </div>    
+            </div>
+            <div class="dropwdownContainter" id="anionSelected"></div>
+
+
+
+
+
+
+        
+
+
+        </div>
+
+
+        <!-- ___ *** ASIDE *** ___ -->
+        <div id="aside"></div>    
+    </div>    
+
+
+    <!-- ___ *** FOOTER *** ___ -->
+    <div id="footer"></div>
+
+    <dialog id="modalSelect"></dialog>
+
+    <!-- ___ *** Librerias .js ___ *** -->
+    <script src="baseLayout/scripts/layoutLoader.js"></script>
+    <script type="module" src="periodicTable/makeTable.js" ></script>
+
+    <script>
+        async function dropdown(id) {
+            const message = document.getElementById(id);
+
+            if (!message) {
+                console.warn(`No se encontró el elemento con id: ${id}`);
+                return;
+            }
+
+            if (message.classList.contains('active')) {
+                // Ocultar el contenedor desplegable
+                message.classList.remove('active');
+                message.style.display = 'none';
+            } 
+            else {
+                // Mostrar el contenedor desplegable
+                message.classList.add('active');
+                message.style.display = 'block';
+            }
+        }
+
+        // Objeto para almacenar los datos del formulario
+        const formData = {
+            composition: '',
+            inorganicFormula: '',
+            name: ''
+        };
+
+        // Actualiza los datos automáticamente al escribir
+        function updateData(field, value) {
+            formData[field] = value;
+            renderData();
+        }
+
+        // Muestra los datos en tiempo real
+        function renderData() {
+            const output = document.getElementById('output');
+            output.innerHTML = `
+                <p><strong>Composition:</strong> ${formData.composition}</p>
+                <p><strong>Inorganic Formula:</strong> ${formData.inorganicFormula}</p>
+                <p><strong>Name:</strong> ${formData.name}</p>
+            `;
+        }
+
+        window.dropdown = dropdown;
+        window.updateData = updateData;
+    </script>
+
+
+    <script>
+        function seleccionarCelda(celda) {
+            document.querySelectorAll('.celda').forEach(el => el.classList.remove('seleccionada'));
+            celda.classList.add('seleccionada');
+            console.log('Ejemplo seleccionada:', celda.textContent);
+        }
+    </script>
+</body>
+</html>

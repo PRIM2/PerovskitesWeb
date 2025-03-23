@@ -5,7 +5,7 @@ async function cargarHeader() {
     headerContainer.innerHTML = await response.text();
 
     if (!sessionStorage.getItem("headerActualizado")) {
-        sessionStorage.setItem("headerActualizado", "Iniciar Sesión");
+        sessionStorage.setItem("headerActualizado", "Log In");
     }
 
     setTimeout(actualizarHeader, 30);

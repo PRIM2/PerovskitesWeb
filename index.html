@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PeroWeb</title>
-    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
+    <title>HyPer Tolkit</title>
+    <link rel="icon" type="image/png" href="baseLayout/images/icono.png">
 
 
     <!-- Select2 & jQuery -->
@@ -26,20 +26,23 @@
     <div class="main-container">
         <div class="containerDatosEntrada">
             <!-- ___ *** MAIN *** ___ -->
-            <h1>Cálculo de tolerancia</h1>
-            <h2>Factor de Tolerancia Extendido</h2>
-
+            <h1>Extended Tolerance Factor</h1>
+            <br>
             <p> 
-                La fórmula extendida para el factor de tolerancia de Goldschmidt es: 
+                The extended formula for Goldschmidt's tolerance factor is:
                 \[  \alpha = \frac{r_{A,\text{eff}} + r_{X,\text{eff}}}{\sqrt{2} \left( r_B + 0.5 h_{X,\text{eff}} \right)}  \]
-                donde:
+                where:
                 <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px;">
-                    <li>\(r_{A,\text{eff}}\) es el radio efectivo del cation A</li>
-                    <li>\(r_B\) es el radio del cation B </li>
-                    <li>\(r_{X,\text{eff}}\) es el radio efectivo del anión X</li>
-                    <li>\(h_{X,\text{eff}}\) es el radio del anión X</li>
+                    <li>\(r_{A,\text{eff}}\) effective radius of cation A</li>
+                    <li>\(r_B\) radius of cation B </li>
+                    <li>\(r_{X,\text{eff}}\) effective radius of anion</li>
+                    <li>\(h_{X,\text{eff}}\) cylinder length of anion</li>
                 </ul>
-                Se debe tener en cuenta la globularidad del Catión A para mayor precisión.
+                The globularity of cation A should be considered for greater accuracy.
+                <br><br>
+                <strong>Article:</strong> 
+                <a href="https://doi.org/10.1039/C4SC02211D" target="_blank" >https://doi.org/10.1039/C4SC02211D</a>
+
                 <br><br
             </p>
 
@@ -50,22 +53,26 @@
                     <h2 style = "font-size: 18px; color: rgb(192, 61, 122);">¡¡ Introducir todos los datos en Å o Å³ !!</h2>
                     <br>
 
-                    <label for="globularity">Globularity*: </label>
-                    <input type="number" id="globularity" step="any" placeholder="Enter a globularity" />
-
-                    <br><br><hr>
+                    <hr>
                     
                     <!-- Fomulario de Cation A -->
-                    <h2>Cation A*</h2>
+                    <h2>Cation A</h2>
+                    <label for="globularity">Globularity: </label>
+                    <input type="number" id="globularity" step="any" placeholder="Enter a globularity" />
+
+                    <br><br>
                     <select id="cationA"></select>   
 
                     <br><br>
 
                     <!-- Volumen Cation A (opcional) -->
-                    <label for="volumenCationManualA">Volumen Cation A: </label> 
-                    <input class= "inputs" type="number" id="volumenCationManualA" step="any" placeholder="Introducir valor manualmente" /> 
+                    <label for="volumenCationManualA">Cation A volume: </label> 
+                    <input class= "inputs" type="number" id="volumenCationManualA" step="any" placeholder="Manually enter value" /> 
                     \(\;\;\;\;\;\;\; V_{a} = \frac{4}{3} \pi r_{a}^3\; ;\;\; r_{a} = \sqrt[3]{\frac{3·V_{a}}{4\pi}}\)
-                    <br>
+                    <br><br>
+                    <strong>Article:</strong>
+                    <a href="https://doi.org/10.1016/j.jssc.2022.123635" target="_blank" >https://doi.org/10.1016/j.jssc.2022.123635</a>  &nbsp;
+                    
 
                 </div>
 
@@ -74,34 +81,34 @@
 
                 <div class="form-group2">
                     <!-- Fomulario de Cation B -->
-                    <h2>Cation B*</h2>
+                    <h2>Cation B</h2>
                     <select id="cationB"></select>       
                     <br><br>
 
                     <label for="cationManualB">\(r_B\): </label>
-                    <input class= "inputs" type="number" id="cationManualB" step="any" placeholder="Enter Cation a mano" />
+                    <input class= "inputs" type="number" id="cationManualB" step="any" placeholder="Manually enter value" />
                     <br><br><hr>
 
 
                     <!-- Fomulario de Anion -->
-                    <h2>Anion*</h2>
+                    <h2>Anion</h2>
 
                     <label for="anion"></label>  
                     <select id="anion"></select>
                     <br><br>
                     
                     <label for="anionManualR">\(r_{X,\text{eff}}:\)</label>
-                    <input class= "inputs" type="number" id="anionManualR" step="any" placeholder="Introducir valor manualmente" />
+                    <input class= "inputs" type="number" id="anionManualR" step="any" placeholder="Manually enter value" />
                     <br class="saltoMovil"><br class="saltoMovil">
                     <label for="anionManualH">\(h_{X,\text{eff}}:\) </label>
-                    <input class= "inputs" type="number" id="anionManualH" step="any" placeholder="Introducir valor manualmente" />
+                    <input class= "inputs" type="number" id="anionManualH" step="any" placeholder="Manually enter value" />
                     <br> <br>
 
                 </div>
                 <br>
                 <div>
                     <!-- ___ *** RESULTADOS *** ___ -->
-                    <button onclick="calculo()" type="button">Calcular tolerancia</button> 
+                    <button onclick="calculo()" type="button">Calculate tolerance</button> 
                     <p id="ecuacionVolumen"></p>
 
                     <p id="ecuacion"></p>

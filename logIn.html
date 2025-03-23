@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PeroWeb Log In</title>
+    <title>HyPer Tolkit</title>
 
-    <link rel="icon" type="image/jpg" href="baseLayout/images/icono.jpg">
+    <link rel="icon" type="image/png" href="baseLayout/images/icono.png">
 
     <link href="sesion/logIn.css" rel="stylesheet" />
 
@@ -65,13 +65,13 @@
                     if (messageSupabase !== "nada") {
                         document.getElementById("password").value = "";
                         if (messageSupabase === "missing email or phone") {
-                            message.innerHTML = "~~ Completa todos los campos ~~";
+                            message.innerHTML = "~~ Complete all fields ~~";
                         }
                         if (messageSupabase === "Invalid login credentials") {
-                            message.innerHTML = "~~ Usuario o contraseña incorrectos ~~";
+                            message.innerHTML = "~~ Incorrect username or password ~~";
                         }
                         if (messageSupabase === "Email not confirmed") {
-                            message.innerHTML = "~~ Confirme su email en el correo enviado ~~";
+                            message.innerHTML = "~~ Confirm your email in the sent message ~~";
                         }
                         
                     } else {
