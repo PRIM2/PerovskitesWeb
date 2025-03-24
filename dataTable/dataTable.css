@@ -26,12 +26,15 @@
     color: #222;
     font-weight: bold;
     text-align: center;
+    vertical-align: middle;
+    height: 60px; /* 👈 añade altura visible */
+    line-height: 1.4em; /* 👈 mejora alineación del texto dentro */
   }
   
   #tablaDatos td {
     background-color: #e3e9ec;
     color: #333;
-    vertical-align: top;
+    vertical-align: center;
   }
   
   #tablaDatos td a {
