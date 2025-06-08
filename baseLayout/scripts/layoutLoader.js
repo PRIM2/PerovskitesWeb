@@ -47,17 +47,3 @@ for (let i = 0; i < archivosCSS.length; i++) {
 
 
 
-function loadScript(src, isModule = false) {
-  let script = document.createElement("script");
-  script.src = src;
-  if (isModule) {
-    script.type = "module"; // Permite usar import/export
-  } else {
-    script.type = "text/javascript";
-  }
-  script.async = true;
-  document.head.appendChild(script);
-}
-
-// Cargar upheader.js como módulo
-loadScript("./baseLayout/scripts/updates.js", true);
