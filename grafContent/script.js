@@ -85,7 +85,6 @@ let myChart = new Chart(ctx, {
 });
 
 // ---------------- FUNCIONES GENERALES ----------------
-
 function cleanFormula(text) {
   if (!text) return '';
   const subMap = { '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉', '+': '₊', '-': '₋', '=': '₌', '(': '₍', ')': '₎' };
@@ -143,7 +142,6 @@ function agruparDatos(perovsData, cationAMap, cationBMap, anionMap, modoAgrupaci
 }
 
 // ------------- CARGA DE DATOS PRINCIPALES -------------
-
 async function cargarDatos() {
   const perovsData = await uploadData('perovsData', 'smilesA, smilesB, smilesAnion, tolFactor');
   const cationAData = await uploadData('cationA', 'smiles, abbreviature, radiusA_UDC, globularity, textName');
@@ -311,7 +309,7 @@ document.getElementById("groupBy").addEventListener("change", (e) => {
   actualizarGrafico(e.target.value);
 });
 
-// ----------------- DESCARGA CORRECTA -----------------
+// ----------------- DESCARGA PNG -----------------
 
 document.getElementById("downloadGrafpng").addEventListener("click", () => {
   const visibleDatasets = myChart.data.datasets.filter((_, i) => myChart.isDatasetVisible(i));
@@ -371,7 +369,6 @@ document.getElementById("resetAxis").addEventListener("click", () => {
 
   myChart.update();
 });
-
 
 renderUserPointsTable();
 

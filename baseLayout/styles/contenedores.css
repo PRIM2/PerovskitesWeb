@@ -43,7 +43,7 @@ header {
 
 /* ================= CONTENEDOR PRINCIPAL ================= */
 .containerDatosEntrada {
-    flex: 0 0 78%; /* Ocupa el 70% del ancho */
+    flex: 1 1 auto;
     padding: 30px;
     background-color: #BDC3C7;
     border-radius: 8px;
@@ -53,7 +53,7 @@ header {
 
 /* ================= ASIDE ================= */
 aside {
-    flex: 0 0 20%; /* Ocupa el 25% del ancho */
+    flex: 0 0 25%; /* Ocupa el 25% del ancho */
     background-color: #f1f1f1;
     padding: 15px;
     border-radius: 5px;

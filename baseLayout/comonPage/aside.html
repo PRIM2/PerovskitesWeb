@@ -1,31 +1,58 @@
 <style>
-    .mi-lista {
-        list-style-type: none; /* ❌ Quitar los puntos de la lista */
+    .version-details summary {
+        font-weight: bold;
+        font-size: 1em; /* Un poco más grande para el título de la versión */
+        color: rgb(57, 57, 57); /*O el color que desees para el título */
+        cursor: pointer;
+        padding: 8px 0; /* Espaciado alrededor del título */
+        outline: none; /* Quita el contorno al hacer clic en algunos navegadores */
+        list-style: none; /* Oculta el triángulo por defecto del summary */
+        position: relative;
+        /* Puedes añadir un icono personalizado si quieres */
+    }
+
+    /* Estilo para el icono desplegable */
+    .version-details summary::-webkit-details-marker {
+        display: none; /* Oculta el marcador de flecha en WebKit (Chrome, Safari) */
+    }
+
+    .version-details summary::before {
+        content: '▶'; /* Triángulo a la derecha por defecto */
+        display: inline-block;
+        margin-right: 8px;
+        transition: transform 0.2s ease-in-out;
+        size: 1px;
+    }
+
+    .version-details[open] summary::before {
+        content: '▼'; /* Triángulo hacia abajo cuando está abierto */
+        transform: rotate(90deg); /* Opcional: rotar para que apunte hacia abajo si se usa la flecha lateral */
+    }
+
+    .version-details ul {
+        margin-left: 20px; /* Indentación para los elementos de la lista */
+        padding-left: 0;
+        list-style-type: disc; /* Vuelve a poner los puntos de lista si los quieres */
+        color: gray; /* El color de tu párrafo original */
+        line-height: 1.5; /* Altura de línea para la legibilidad */
+    }
+
+    .version-details ul li {
+        margin-bottom: 5px;
+        background-color: transparent; /* No queremos el fondo y borde de .mi-lista li aquí */
         padding: 0;
-        margin: 10px 0 20px;
+        border-left: none;
+        font-size: 1em; /* Restaura el tamaño de fuente si fue afectado */
+        font-family: inherit; /* Hereda la fuente del aside */
     }
 
-    .mi-lista li {
-        background-color: #f9f9f9;
-        padding: 12px;
-        margin: 8px 0;
-        border-radius: 8px;
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-        border-left: 4px solid #ff5733; /* 🔹 Agregar un borde decorativo */
-    }
-
-    .mi-lista li strong {
-        display: block;
-        font-size: 18px;
-        color: #333;
-    }
-
-    .detalles {
-        margin-top: 5px;
-        font-size: 14px;
-        color: #666;
-        padding-left: 10px;
+    /* Estilo para el párrafo envolvente de la lista de versiones */
+    #listaGuardado {
+        margin-left: 10px;
+        margin-right: 15px; 
+        text-align: justify;
+        color: gray; /* Aplica el color gris al texto general */
+        font-style: italic;
     }
 
 </style>
@@ -38,35 +65,34 @@
     <a href="searchCommons.html">Search Commons</a>
     <a href="dataTable.html">Data base</a>
 
-    <!-- <a href="template.html">Template</a> -->
+    <br><hr>
+    <h2>Updates</h2>
+    <div id="listaGuardado" style="margin-left: 10px; margin-right: 15px;">
+        <details class="version-details">
+            <summary>Version 3.0</summary>
+            <ul>
+                <li>Ya lo escribiré</li>
+            </ul>
+        </details>
 
+        <details class="version-details">
+            <summary>Version 2.0</summary>
+            <ul>
+                <li>Implementation of registration, login, and data saving</li>
+                <li>Introduction of the database (Supabase)</li>
+                <li>Reorganization and generalization of project files</li>
+                <li>Improvements in everything and final design</li>
+                <li>Start of the graphs page :)</li>
+            </ul>
+        </details>
 
-    <br><hr><br> 
-
-    <p style="margin-left: 10px; margin-right: 15px; text-align: justify; color: gray; font-style: italic;" id="listaGuardado">
-        <p style="font-weight: bold;">Version 3.0    </p>  
-        <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px; line-height: 1.5;">
-            <li>Ya lo escribiré TENGO QUE HACERLO DESPLEGABLE</li>  
-        </ul>
-
-
-        <p style="font-weight: bold;">Version 2.0    </p>  
-        <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px; line-height: 1.5;">
-            <li>Implementation of registration, login, and data saving</li>  
-            <li>Introduction of the database (Supabase)</li>  
-            <li>Reorganization and generalization of project files</li>  
-            <li>Improvements in everything and final design</li>  
-            <li>Start of the graphs page :)</li>  
-        </ul>
-
-
-        <p style="font-weight: bold;">Version 1.2 </p>  
-        <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px; line-height: 1.5;">
-            <li>Fixed calculation error in tolerance</li>  
-            <li>Added calculation details and operations</li>  
-            <li>Design adjustments for mobile devices</li>  
-        </ul>
-
-    </p>
+        <details class="version-details">
+            <summary>Version 1.2</summary>
+            <ul>
+                <li>Fixed calculation error in tolerance</li>
+                <li>Added calculation details and operations</li>
+                <li>Design adjustments for mobile devices</li>
+            </ul>
+        </details>
+    </div>
 </aside>
-

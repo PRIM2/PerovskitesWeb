@@ -33,10 +33,10 @@
                 \[  \alpha = \frac{r_{A,\text{eff}} + r_{X,\text{eff}}}{\sqrt{2} \left( r_B + 0.5 h_{X,\text{eff}} \right)}  \]
                 where:
                 <ul style="margin-left: 30px; margin-top: 10px; margin-bottom: 10px;">
-                    <li>\(r_{A,\text{eff}}\) effective radius of cation A</li>
-                    <li>\(r_B\) radius of cation B </li>
-                    <li>\(r_{X,\text{eff}}\) effective radius of anion</li>
-                    <li>\(h_{X,\text{eff}}\) cylinder length of anion</li>
+                    <li>\(r_{A,\text{eff}}\):  effective radius of cation A</li>
+                    <li>\(r_B\): radius of cation B </li>
+                    <li>\(r_{X,\text{eff}}\):  effective radius of anion</li>
+                    <li>\(h_{X,\text{eff}}\):  cylinder length of anion</li>
                 </ul>
                 The globularity of cation A should be considered for greater accuracy.
                 <br><br>
@@ -46,27 +46,18 @@
                 <br><br
             </p>
 
-            <hr><br>
+            <hr>
 
             <form id="datosForm">
-                <div class="form-group">
-                    <h2 style = "font-size: 18px; color: rgb(192, 61, 122);">¡¡ Introducir todos los datos en Å o Å³ !!</h2>
-                    <br>
-
-                    <hr>
-                    
+                <div class="form-group">                    
                     <!-- Fomulario de Cation A -->
                     <h2>Cation A</h2>
-                    <label for="globularity">Globularity: </label>
-                    <input type="number" id="globularity" step="any" placeholder="Enter a globularity" />
-
-                    <br><br>
                     <select id="cationA"></select>   
 
                     <br><br>
 
                     <!-- Volumen Cation A (opcional) -->
-                    <label for="volumenCationManualA">Cation A volume: </label> 
+                    <label for="volumenCationManualA">Cation A volume (Å³): </label> 
                     <input class= "inputs" type="number" id="volumenCationManualA" step="any" placeholder="Manually enter value" /> 
                     \(\;\;\;\;\;\;\; V_{a} = \frac{4}{3} \pi r_{a}^3\; ;\;\; r_{a} = \sqrt[3]{\frac{3·V_{a}}{4\pi}}\)
                     <br><br>
@@ -85,7 +76,7 @@
                     <select id="cationB"></select>       
                     <br><br>
 
-                    <label for="cationManualB">\(r_B\): </label>
+                    <label for="cationManualB">\(r_B (Å)\) : </label>
                     <input class= "inputs" type="number" id="cationManualB" step="any" placeholder="Manually enter value" />
                     <br><br><hr>
 
@@ -97,10 +88,10 @@
                     <select id="anion"></select>
                     <br><br>
                     
-                    <label for="anionManualR">\(r_{X,\text{eff}}:\)</label>
+                    <label for="anionManualR">\(r_{X,\text{eff}} (Å):\)</label>
                     <input class= "inputs" type="number" id="anionManualR" step="any" placeholder="Manually enter value" />
                     <br class="saltoMovil"><br class="saltoMovil">
-                    <label for="anionManualH">\(h_{X,\text{eff}}:\) </label>
+                    <label for="anionManualH">\(h_{X,\text{eff}} (Å):\) </label>
                     <input class= "inputs" type="number" id="anionManualH" step="any" placeholder="Manually enter value" />
                     <br> <br>
 
@@ -115,7 +106,7 @@
                     <p id="resultado"></p>
                     <p id="rango" style=" text-align: center;"></p>
                     
-                    <div id="savings"> </p></div>
+                    <!-- <div id="savings"> </p></div> -->
 
                     <div class="errorMessage" id="errorInput" style="margin-top: 25px;"></div>
                 </div>

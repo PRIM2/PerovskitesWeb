@@ -3,6 +3,8 @@
     box-shadow: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
+    overflow-x: auto; /* ← hace que la tabla se desplace horizontalmente si se pasa */
+    min-width: 0;     /* ← muy importante para que flexbox no fuerce el ancho mínimo */
   }
 
 #tablaDatos table {
@@ -127,3 +129,74 @@
     background-color: orange;
     color: black;
 }
+
+
+/* --- ESTILOS PARA LOS FILTROS DE LA TABLA --- */
+
+/* Estilos para la celda th de la fila de filtros */
+#tablaDatos thead tr:last-child th {
+  padding: 4px; /* Un padding mínimo para la celda */
+  vertical-align: middle; /* Centra verticalmente si el contenido no ocupa toda la altura */
+  /* Asegúrate de que el text-align de th general no esté centrado si no quieres que el placeholder lo esté.
+     Si el text-align de th está en center, el div por defecto se centrará */
+}
+
+/* Estilos para el contenedor del input dentro de la celda de filtro */
+.filter-input-wrapper {
+  display: flex; /* Usamos flexbox para centrar el input */
+  justify-content: center; /* Centra el input horizontalmente */
+  align-items: center; /* Centra el input verticalmente */
+  height: 100%; /* Asegura que el contenedor ocupe la altura completa de la celda */
+  width: 100%; /* Asegura que el contenedor ocupe la anchura completa de la celda */
+}
+
+/* Estilos para el input de filtro */
+#tablaDatos thead tr:last-child th input {
+  /* Restablecer estilos base del navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Fondo y borde para que coincidan con las celdas de la tabla */
+  background-color: #e3e9ec; /* Igual que el td */
+  border: 1px solid #a4adb2; /* Igual que el border de th/td */
+  color: #333; /* Igual que el color del texto en td */
+  border-radius: 4px; /* Un ligero borde redondeado */
+
+  /* Espaciado interno */
+  padding: 6px 8px;
+
+  /* Fuente y tamaño */
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95em;
+
+  /* Ancho: Ahora que el padre es un flex container que lo centra,
+     podemos darle un ancho relativo sin preocuparnos por el centrado */
+  width: 98%; /* Ocupa casi todo el ancho del contenedor del input */
+  /* max-width: 250px; */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+  text-align: left; /* El texto dentro del input permanece a la izquierda */
+
+  /* Transiciones para interacción */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tablaDatos thead tr:last-child th input::placeholder {
+  color: #777;
+  opacity: 0.8;
+}
+
+#tablaDatos thead tr:last-child th input:focus {
+  border-color: #215dbd;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(33, 93, 189, 0.2);
+  background-color: #ffffff;
+}
+
+/* Eliminar el estilo height y line-height del th general si lo tenías,
+   ya que el input y su wrapper ahora gestionarán mejor la altura.
+   Si lo mantienes, asegúrate de que no cause problemas. */
+/* #tablaDatos th {
+   height: 60px;
+   line-height: 1.4em;
+} */

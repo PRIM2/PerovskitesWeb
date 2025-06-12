@@ -40,7 +40,7 @@ function loadCSS(href) {
 
 // Cargar estilos personalizados
 const directorio = "baseLayout/styles/"
-const archivosCSS = ["text.css", "contenedores.css", "asideSaved.css"];
+const archivosCSS = ["text.css", "contenedores.css"];
 for (let i = 0; i < archivosCSS.length; i++) {
   loadCSS(directorio + archivosCSS[i]);
 }

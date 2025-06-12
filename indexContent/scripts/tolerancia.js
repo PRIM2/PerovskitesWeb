@@ -1,8 +1,8 @@
-import { agregarTolData, comprobarSesion } from "../../dataBase/dataHandler.js";
+// import { agregarTolData, comprobarSesion } from "../../dataBase/dataHandler.js";
 
 
 window.calculo = async function calculo(event) {
-    console.log("✅ Función calculo ejecutada");
+    console.log(" Función calculo ejecutada");
     // ___ *** RESET DE TODO *** ___
     document.getElementById("rango").innerText = ``;
     document.getElementById("resultado").innerText = ``;
@@ -12,7 +12,6 @@ window.calculo = async function calculo(event) {
 
 
     // Cojo valores del form
-    let globularity = parseFloat(document.getElementById("globularity").value);
     let cationA = parseFloat(document.getElementById("cationA").value);
     let cationB = parseFloat(document.getElementById("cationB").value);
     let volumenCationA = parseFloat(document.getElementById("volumenCationManualA").value);
@@ -42,8 +41,8 @@ window.calculo = async function calculo(event) {
 
 
     // ___ *** MOSTRAR RESULTADO POR PANTALLA *** ___
-    if (isNaN(tolerancia) || isNaN(globularity)) {
-        document.getElementById("errorInput").innerHTML = `Error en los datos ingresados, completa todos los campos <br> (Globularity, aniones y cationes)`; 
+    if (isNaN(tolerancia)) {
+        document.getElementById("errorInput").innerHTML = `Inner data error, complete all: <br> Anion, Cation A, Cation B`; 
         return;
     }
 
@@ -64,24 +63,17 @@ window.calculo = async function calculo(event) {
 
 
         if (tolerancia >= 0.8 && tolerancia <= 1) {
-            document.getElementById("rango").innerText = `La tolerancia está DENTRO del rango [0.8, 1]`;
+            document.getElementById("rango").innerText = `Tolerance in range >> [0.8, 1]`;
         } else {
-            document.getElementById("rango").innerText = `La tolerancia está fuera del rango [0.8, 1] pero ten en cuenta otras aproximaciones y la globularidad`;
+            document.getElementById("rango").innerText = `Tolerance out of range [0.8, 1] but consider globularity and other approximations`;
         }
-
-
-
-        // ___ *** BOTON DE GUARDADO *** ___
-        const user = await comprobarSesion(); 
-        if (user !== null) { //solo con usuario registrado
-            createButtonAndInput(tolerancia, globularity);
-        }
+        
     }
 }
 
 
 
-function createButtonAndInput(tolerancia, globularity) {
+function createButtonAndInput(tolerancia) {
     let container = document.getElementById("savings"); 
 
     // Eliminar el contenido del div
@@ -113,7 +105,7 @@ function createButtonAndInput(tolerancia, globularity) {
     button.type = "button";
     button.style.setProperty("width", "115px", "important");
 
-    button.onclick = function() { takeData(input.value, tolerancia, globularity); }
+    button.onclick = function() { takeData(input.value, tolerancia); }
 
 
     container.appendChild(input);
@@ -137,19 +129,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-async function takeData(nameCalc, tolerancia, globularity) {
-    if (nameCalc !== "") {
-        agregarTolData(nameCalc, tolerancia, globularity);
-        setTimeout(() => {
-            location.reload();
-        }, 200);
-
-    }
-
-    else {
-        let error = document.getElementById("errorInput");
-        error.innerHTML = "~~ Introcuce un nombre para guardar ~~";        
-    }
-}
