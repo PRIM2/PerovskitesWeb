@@ -1,4 +1,4 @@
-import { uploadData } from '../../dataBase/dataHandler.js';
+import { uploadData } from '../dataBase/dataHandler.js';
 
 /* ------------------------------------------------------------------
   1. Carga Única de Datos (con control de error)
