@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="baseLayout/images/newLogo.png">
+
+    <title>HyPer Tolkit</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="grafContent/style.css"> <!-- Enlace al CSS -->
+    
+
+</head>
+
+
+<body>
+    <!-- ___ *** HEADER *** ___ -->
+    <div id="header"></div>
+
+
+    <div class="main-container">
+        <div class="containerDatosEntrada">
+            <h1> Interactive plotting </h1>
+
+            <div id="groupSelector">
+                <label for="groupBy">Group by:</label>
+                <select id="groupBy">
+                    <option value="anion">Anion</option>
+                    <option value="cationB">Cation B</option>
+                </select>
+            </div>
+
+            <!-- Contenedor del gráfico -->
+            <div style="width: 100%; max-width: 800px; margin: auto;">
+                <canvas id="myChart"></canvas>
+              </div>
+              <div id="axisControl">
+                <form class="axis-inline">
+
+                    <span class="axis-title">Scale:</span>
+
+                    <div class="axis-inputs">
+                        <label>X min:</label>
+                        <input type="number" id="xMin" step="0.1">
+
+                        <label>X max:</label>
+                        <input type="number" id="xMax" step="0.1">
+
+                        <label>Y min:</label>
+                        <input type="number" id="yMin" step="0.1">
+
+                        <label>Y max:</label>
+                        <input type="number" id="yMax" step="0.1">
+                    </div>
+
+                    <div class="axis-buttons">
+                        <button type="button" id="applyAxis">Apply</button>
+                        <button type="button" id="resetAxis">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <h3>Custom points</h3>
+            <table border="1">
+                <thead>
+                    <tr><th>Name</th><th>X</th><th>Y</th><th>Color</th><th>Size</th><th>Shape</th><th></th></tr>
+                </thead>
+                <tbody id="userPointsTableBody"></tbody>
+            </table>
+
+            <form id="addUserPointForm">
+                <h3>Add new data</h3>
+
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="newPointName" required>
+                </div>
+
+                <div>
+                    <label>Globularity (X):</label>
+                    <input type="number" step="0.0001" id="newPointX" required>
+                </div>
+
+                <div>
+                    <label>Tolerance (Y):</label>
+                    <input type="number" step="0.0001" id="newPointY" required>
+                </div>
+
+                <div>
+                    <label>Color:</label>
+                    <input type="color" id="newPointColor" value="#ff0000">
+                </div>
+
+                <div>
+                    <label>Size:</label>
+                    <input type="number" id="newPointSize" value="5" min="1" max="20">
+                </div>
+
+                <div>
+                    <label>Shape:</label>
+                    <select id="newPointShape">
+                        <option value="circle">●</option>
+                        <option value="rect">■</option>
+                        <option value="triangle">▲</option>
+                        <option value="star">★</option>
+                        <option value="cross">+</option>
+                        <option value="crossRot">✕</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add point</button>
+            </form>
+
+
+            <div id = "btns-container">
+                <button id="addDataButton">Upload / Quit from data base </button>
+
+                <button id = "downloadGrafpng"> ⬇️ Download Graph .png</button>
+                <!-- <button id = "downloadDatacsv">Download data .csv (divided by ,)</button>
+                <button id = "downloadDataExcel">Download data excel (divided by ;) </button>
+                <button id = "downloadDatatxt">Download data .txt</button> -->
+            </div>
+        </div>
+
+
+        <!-- ___ *** ASIDE *** ___ -->
+        <div id="aside"></div>    
+    </div>    
+
+
+    <!-- ___ *** FOOTER *** ___ -->
+    <div id="footer"></div>
+
+
+    <!-- ___ *** Librerias .js ___ *** -->
+    <script src="baseLayout/scripts/layoutLoader.js"></script>
+    <script type="module" src="grafContent/script.js"></script>
+
+</body>
+</html>

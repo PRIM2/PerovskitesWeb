@@ -1,0 +1,98 @@
+<style>
+    .version-details summary {
+        font-weight: bold;
+        font-size: 1em; /* Un poco más grande para el título de la versión */
+        color: rgb(57, 57, 57); /*O el color que desees para el título */
+        cursor: pointer;
+        padding: 8px 0; /* Espaciado alrededor del título */
+        outline: none; /* Quita el contorno al hacer clic en algunos navegadores */
+        list-style: none; /* Oculta el triángulo por defecto del summary */
+        position: relative;
+        /* Puedes añadir un icono personalizado si quieres */
+    }
+
+    /* Estilo para el icono desplegable */
+    .version-details summary::-webkit-details-marker {
+        display: none; /* Oculta el marcador de flecha en WebKit (Chrome, Safari) */
+    }
+
+    .version-details summary::before {
+        content: '▶'; /* Triángulo a la derecha por defecto */
+        display: inline-block;
+        margin-right: 8px;
+        transition: transform 0.2s ease-in-out;
+        size: 1px;
+    }
+
+    .version-details[open] summary::before {
+        content: '▼'; /* Triángulo hacia abajo cuando está abierto */
+        transform: rotate(90deg); /* Opcional: rotar para que apunte hacia abajo si se usa la flecha lateral */
+    }
+
+    .version-details ul {
+        margin-left: 20px; /* Indentación para los elementos de la lista */
+        padding-left: 0;
+        list-style-type: disc; /* Vuelve a poner los puntos de lista si los quieres */
+        color: gray; /* El color de tu párrafo original */
+        line-height: 1.5; /* Altura de línea para la legibilidad */
+    }
+
+    .version-details ul li {
+        margin-bottom: 5px;
+        background-color: transparent; /* No queremos el fondo y borde de .mi-lista li aquí */
+        padding: 0;
+        border-left: none;
+        font-size: 1em; /* Restaura el tamaño de fuente si fue afectado */
+        font-family: inherit; /* Hereda la fuente del aside */
+    }
+
+    /* Estilo para el párrafo envolvente de la lista de versiones */
+    #listaGuardado {
+        margin-left: 10px;
+        margin-right: 15px; 
+        text-align: justify;
+        color: gray; /* Aplica el color gris al texto general */
+        font-style: italic;
+    }
+
+</style>
+
+
+<aside>
+    <h2> Index</h2>
+    <a href="index.html">Tolerance Factor</a>
+    <a href="graf.html">Interactive Graph</a>
+    <a href="searchInRange.html">Search In Range</a>
+    <a href="dataTable.html">Data base</a>
+
+    <br><hr>
+    <h2>Updates</h2>
+    <div id="listaGuardado" style="margin-left: 10px; margin-right: 15px;">
+        <details class="version-details">
+            <summary>Version 3.0</summary>
+            <ul>
+                <li>Ya lo escribiré</li>
+            </ul>
+        </details>
+
+        <details class="version-details">
+            <summary>Version 2.0</summary>
+            <ul>
+                <li>Implementation of registration, login, and data saving</li>
+                <li>Introduction of the database (Supabase)</li>
+                <li>Reorganization and generalization of project files</li>
+                <li>Improvements in everything and final design</li>
+                <li>Start of the graphs page :)</li>
+            </ul>
+        </details>
+
+        <details class="version-details">
+            <summary>Version 1.2</summary>
+            <ul>
+                <li>Fixed calculation error in tolerance</li>
+                <li>Added calculation details and operations</li>
+                <li>Design adjustments for mobile devices</li>
+            </ul>
+        </details>
+    </div>
+</aside>
