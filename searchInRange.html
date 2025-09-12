@@ -1,52 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="baseLayout/images/newLogo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HyPer Toolkit — Search in Range</title>
+  <link rel="icon" type="image/png" href="baseLayout/images/newLogo.png" />
 
-    <title>HyPer Tolkit</title>
+  <!-- Select2 & jQuery -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
+  <!-- MathJax -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-
 <body>
-    <!-- ___ *** HEADER *** ___ -->
-    <div id="header"></div>
+  <!-- HEADER -->
+  <div id="header"></div>
+
+  <div class="main-container">
+    <div class="containerDatosEntrada">
+      <h1>Search in Range</h1>
+
+      <form id="datosForm">
+
+        <!-- Configuración -->
+        <section>
+            <h2>Remaining data</h2>
+            <label>
+                <select id="missingKind">
+                <option value="A">Cation A</option>
+                <option value="B">Cation B</option>
+                <option value="X">Anion</option>
+                </select>
+            </label><br /><br />
+            <label>TF min:
+                <input type="number" id="tfMin" step="0.001" value="0.8" />
+            </label>
+            <label style="margin-left:12px;">TF max:
+                <input type="number" id="tfMax" step="0.001" value="1" />
+            </label>
+        </section>
+        <br /><hr />
+
+ 
 
 
-    <div class="main-container">
-        <div class="containerDatosEntrada">
-            <!-- ___ *** MAIN *** ___ -->
-            <h1>Search Commons</h1>
+        <!-- Catión A -->
+        <section>
+          <h2>Catión A</h2>
+          <select id="cationA"></select><br /><br />
+          <label for="volumenCationManualA">Volumen (Å³):</label>
+          <input type="number" id="volumenCationManualA" step="any" placeholder="Manually enter value" />
+        </section>
 
-            <!-- =================================== -->
-
-                <!-- AQUI EL GRUESO DE LA PÁGINA -->
-            
-            <!-- =================================== -->    
-
-            <!--QUIERO LO MISMO QUE EN index.html, pero que falte 1 dato, y que se busque en el rango los cationes/aniones que se podrian utilizar  -->
-            <!-- FORMULAS =>  (sqrt(2) * TF * rb) - ra + (0.5 * sqrt(2) * TF * hx - rx) -->
-            <!-- CASO TF(alpha) = 0.8  -->
-             <!--  CASO TF (alpha) = 1.0 -->
+        <br /><hr />
 
 
-        </div>
+        <!-- Catión B -->
+        <section>
+          <h2>Catión B</h2>
+          <select id="cationB"></select><br /><br />
+          <label for="cationManualB">\(r_B (Å):\)</label>
+          <input type="number" id="cationManualB" step="any" placeholder="Manually enter value" />
+        </section>
+
+         <br /><hr />
 
 
-        <!-- ___ *** ASIDE *** ___ -->
-        <div id="aside"></div>    
-    </div>    
+        <!-- Anión -->
+        <section>
+          <h2>Anión</h2>
+          <select id="anion"></select><br /><br />
+          <label for="anionManualR">\(r_{X,eff} (Å):\)</label>
+          <input type="number" id="anionManualR" step="any" placeholder="Manually enter value" /><br /><br />
+          <label for="anionManualH">\(h_{X,eff} (Å):\)</label>
+          <input type="number" id="anionManualH" step="any" placeholder="Manually enter value" />
+        </section>
 
+        <br /><hr />
 
-    <!-- ___ *** FOOTER *** ___ -->
-    <div id="footer"></div>
+        <br />
+        <button type="submit">Buscar combinaciones</button>
+     </form>
+     
+      <!-- Mensajes y resultados -->
+      <p id="rango" style="text-align: center;"></p>
+      <div class="errorMessage" id="errorInput"></div>
+      <div id="resultados" style="margin-top: 16px;"></div>
+    </div>
 
+    <!-- ASIDE -->
+    <div id="aside"></div>
+  </div>
 
-    <!-- ___ *** Librerias .js ___ *** -->
-    <script src="baseLayout/scripts/layoutLoader.js"></script>
+  <!-- FOOTER -->
+  <div id="footer"></div>
 
-
+  <!-- Scripts comunes -->
+  <script type="module" src="indexContent/dependencies.js"></script>
+  <script type="module" src="baseLayout/scripts/layoutLoader.js"></script>
+  <!-- Script nuevo -->
+  <script type="module" src="indexContent/scripts/tolerancia2.js"></script>
 </body>
 </html>

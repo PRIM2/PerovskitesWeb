@@ -34,6 +34,7 @@ function loadScript(src, isModule = false) {
 // Calculos e interfaz
 loadScript("indexContent/scripts/selectBoton.js");
 loadScript("indexContent/scripts/tolerancia.js", true);
+loadScript("indexContent/scripts/tolerancia2.js", true);
 
 // Datos predeterminados
 loadScript("indexContent/datos/aniones.js", true);

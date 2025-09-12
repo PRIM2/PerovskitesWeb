@@ -81,7 +81,7 @@ function populateCationSelect(id, dataMap, forcePlus) {
 // Inicialización de Select2
 function initializeSelect2(selector) {
     $(selector).select2({
-        placeholder: "Seleccione un catión de la base de datos",
+        placeholder: "Please select a cation from database",
         allowClear: true,
         templateResult: function(data) {
             if (!data.id) return data.text;
@@ -110,8 +110,8 @@ function initializeSelect2(selector) {
 
             return $(`
                 <div style="width: 100%;">
-                    <span style="float: left;">${nombre}&nbsp;&nbsp;</span>
-                    <span style="float: right; color: gray;">(${abreviatura}) r = ${radio}</span>
+                    <span style="float: left;">${nombre} : &nbsp;&nbsp;</span>
+                    <span style="float: right; color: gray;">r = ${radio}</span>
                     <div style="clear: both;"></div>
                 </div>
             `);

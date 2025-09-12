@@ -83,15 +83,13 @@ function populateAnionSelect() {
         
         select.appendChild(option);
     });
-
-    console.log("Opciones cargadas en el select:", select.innerHTML);
 }
 
 // ------------------------------------------------------------
 // Función para inicializar Select2
 function initializeSelect2() {
     $("#anion").select2({
-        placeholder: "Select an anion from the database here",
+        placeholder: "Please select an anion from database",
         allowClear: true,
         templateResult: function (data) {
             if (!data.id) return data.text;
@@ -124,9 +122,9 @@ function initializeSelect2() {
 
             return $(
                 `<div style="width: 100%;">
-                    <span style="float: left;">${nombre}&nbsp;&nbsp;</span>
+                    <span style="float: left;">${nombre} : &nbsp;&nbsp;</span>
                     <span style="float: right; color: gray;">
-                        (${abreviatura}) r = ${xr}, h = ${xh}
+                        r = ${xr}, h = ${xh}
                     </span>
                     <div style="clear: both;"></div>
                 </div>`

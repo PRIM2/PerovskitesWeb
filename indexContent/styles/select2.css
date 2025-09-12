@@ -37,3 +37,25 @@
     justify-content: center !important;
     background: white !important; /* Asegura que no afecte el padding */
 }
+
+
+/* ================= ESTADO DESHABILITADO (unificado con inputs) ================= */
+input:disabled {
+  background-color: #8c8c8c76; /* mismo tono que selects */
+  color: #5f5f5f;
+  cursor: not-allowed;
+}
+
+.select2-container--default.select2-container--disabled
+.select2-selection--single {
+  background-color: #8c8c8c76 !important; /* gris claro */
+  color: #5f5f5f !important;
+  cursor: not-allowed !important;
+}
+
+.select2-container--default.select2-container--disabled
+.select2-selection--multiple {
+  background-color: #8c8c8c76 !important;
+  color: #5f5f5f !important;
+  cursor: not-allowed !important;
+}
