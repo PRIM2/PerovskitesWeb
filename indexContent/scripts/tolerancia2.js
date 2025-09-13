@@ -144,7 +144,7 @@ function renderTable(rows, missing) {
     .join('');
 
   el.innerHTML = `
-    <table border="1">
+    <table class="styledTable">
       <thead>
         <tr>${header}</tr>
       </thead>
@@ -246,7 +246,7 @@ function calculo(ev) {
         name,
         rB,
         tf: computeTF(fixedA, rB, fixedX.xr, fixedX.xh),
-        compound: `${catAName}${name}${anionName}`
+        compound: `[${catAName}]${name}${anionName}`
       }))
       .filter(r => r.tf >= tfMin && r.tf <= tfMax);
   } else {
@@ -256,7 +256,7 @@ function calculo(ev) {
         xr,
         xh,
         tf: computeTF(fixedA, fixedB, xr, xh),
-        compound: `${catAName}${catBName}${name}`
+        compound: `[${catAName}]${catBName}(${name})₃`
       }))
       .filter(r => r.tf >= tfMin && r.tf <= tfMax);
   }
