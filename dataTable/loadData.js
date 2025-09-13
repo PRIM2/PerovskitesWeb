@@ -136,7 +136,7 @@ export function createTable(data, page = 1, pageSize = 16, filters = {}) {
     const an = anionMap.get(p.smilesAnion) || {};
     const catA = cationAMap.get(p.smilesA) || {};
     const catB = cationBMap.get(p.smilesB) || {};
-    const composed = `${cleanFormula(catA.textName) || ''}(${catB.ion || ''})${cleanFormula(an.textName) || ''}`.toLowerCase();
+    const composed = `(${cleanFormula(catA.textName) || ''})${catB.ion || ''}(${cleanFormula(an.textName) || ''})`.toLowerCase();
 
     return Object.entries(filters).every(([key, val]) => {
       if (!val) return true;
@@ -206,7 +206,7 @@ export function createTable(data, page = 1, pageSize = 16, filters = {}) {
     const an = anionMap.get(p.smilesAnion) || {};
     const catA = cationAMap.get(p.smilesA) || {};
     const catB = cationBMap.get(p.smilesB) || {};
-    const composedName = `${cleanFormula(catA.textName) || '?'}(${catB.ion || '?'})${cleanFormula(an.textName) || '?'}`;
+    const composedName = `[${cleanFormula(catA.textName) || '?'}]${catB.ion || '?'}(${cleanFormula(an.textName) || '?'})₃`;
 
     const cells = [
       composedName,
@@ -253,6 +253,7 @@ function cleanFormula(text) {
   t = t.replace(/([A-Za-z)])([0-9]+)/g, (_, l, d) => l + toSub(d));
   return t;
 }
+
 
 /* ------------------------------------------------------------------
   5. Bootstrap al cargar la página

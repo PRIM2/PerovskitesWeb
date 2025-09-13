@@ -64,7 +64,7 @@ function populateAnionSelect() {
         return;
     }
 
-    select.innerHTML = `<option value="" disabled selected>Seleccione un anión</option>`;
+    // select.innerHTML = `<option value="" disabled selected>Seleccione un anión</option>`;
 
     Object.values(anionData).forEach(anion => {
         const option = document.createElement("option");
@@ -79,7 +79,7 @@ function populateAnionSelect() {
         option.setAttribute("data-smiles", anion.smiles);
 
         // Texto visible en el select
-        option.textContent = `${nombreLimpio} (${anion.abreviatura})`;
+        option.textContent = `name = ${nombreLimpio}: r = ${anion.xr}, h = ${anion.xh}`;
         
         select.appendChild(option);
     });

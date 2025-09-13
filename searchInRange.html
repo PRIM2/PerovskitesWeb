@@ -27,6 +27,7 @@
 
         <!-- Configuración -->
         <section>
+            Poner peque explicaicon de para que sirve esto
             <h2>Remaining data</h2>
             <label>
                 <select id="missingKind">
@@ -49,7 +50,7 @@
 
         <!-- Catión A -->
         <section>
-          <h2>Catión A</h2>
+          <h2>Cation A</h2>
           <select id="cationA"></select><br /><br />
           <label for="volumenCationManualA">Volumen (Å³):</label>
           <input type="number" id="volumenCationManualA" step="any" placeholder="Manually enter value" />
@@ -60,7 +61,7 @@
 
         <!-- Catión B -->
         <section>
-          <h2>Catión B</h2>
+          <h2>Cation B</h2>
           <select id="cationB"></select><br /><br />
           <label for="cationManualB">\(r_B (Å):\)</label>
           <input type="number" id="cationManualB" step="any" placeholder="Manually enter value" />
@@ -71,7 +72,7 @@
 
         <!-- Anión -->
         <section>
-          <h2>Anión</h2>
+          <h2>Anion</h2>
           <select id="anion"></select><br /><br />
           <label for="anionManualR">\(r_{X,eff} (Å):\)</label>
           <input type="number" id="anionManualR" step="any" placeholder="Manually enter value" /><br /><br />
@@ -84,12 +85,19 @@
         <br />
         <button type="submit">Buscar combinaciones</button>
      </form>
-     
+    
+      <br />
+      
+      <label for="toggleSortOrder">Order by TF:</label>
+      <button type="button" id="toggleSortOrder">↑ ↑ ↑</button>
+      
       <!-- Mensajes y resultados -->
       <p id="rango" style="text-align: center;"></p>
       <div class="errorMessage" id="errorInput"></div>
-      <div id="resultados" style="margin-top: 16px;"></div>
+      <div id="resultado" style="margin-top: 16px;"></div>
+      
     </div>
+
 
     <!-- ASIDE -->
     <div id="aside"></div>
@@ -99,7 +107,7 @@
   <div id="footer"></div>
 
   <!-- Scripts comunes -->
-  <script type="module" src="indexContent/dependencies.js"></script>
+  <script type="module" src="indexContent/dependencies2.js"></script>
   <script type="module" src="baseLayout/scripts/layoutLoader.js"></script>
   <!-- Script nuevo -->
   <script type="module" src="indexContent/scripts/tolerancia2.js"></script>
