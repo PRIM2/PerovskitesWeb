@@ -21,14 +21,11 @@ function cleanFormula(text) {
 
 function cleanNameForCompound(name) {
   if (!name) return '';
-  // Quitar signos de carga en superíndice o normal
   let cleaned = name.replace(/[⁺⁻+-]/g, '');
-  // Quitar superíndices numéricos (²³⁴⁵⁶⁷⁸⁹) pero mantener subíndices normales (₀-₉)
   cleaned = cleaned.replace(/[²³⁴⁵⁶⁷⁸⁹]/g, '');
   return cleaned;
 }
 
-// Forzar formato anión ABX₃
 function formatAnionName(name) {
   const base = cleanNameForCompound(name);
   return base ? '(' + base + ')₃' : '';
@@ -43,6 +40,7 @@ function computeTF(rA, rB, xR, xH) {
   if ([rA, rB, xR, xH].some((x) => !Number.isFinite(x))) return null;
   return (rA + xR) / ((rB + xH / 2) * Math.SQRT2);
 }
+
 
 // ------------------ Normalizadores de datos ------------------
 function getFixedCatA() {
@@ -73,11 +71,13 @@ function getFixedAnion() {
   };
 }
 
+
 // ------------------ Datos globales ------------------
 let cationAData = [];
 let cationBData = [];
 let anionData = [];
 let sortOrder = "asc"; // estado inicial de ordenación
+
 
 // ------------------ Enumeradores ------------------
 function enumCatAOptions() {
@@ -117,14 +117,26 @@ function enumAnionOptions() {
     .filter(x => x.xr !== null && x.xh !== null);
 }
 
+
 // ------------------ Render tabla ------------------
 function renderTable(rows, missing) {
   const el = $('#resultado');
+  const downloadBtn = $('#downloadTable');
+  const plotBtn = $('#plotTable');
+
   if (!el) return;
   if (!rows.length) {
     el.innerHTML = '<p>No combinations found.</p>';
+    if (downloadBtn) downloadBtn.disabled = true;
+    if (plotBtn) plotBtn.disabled = true;
     return;
   }
+
+  // ⚡ Normalizamos ya el compound
+  const normalizedRows = rows.map(r => ({
+    ...r,
+    compoundDisplay: cleanNameForCompound(r.compound)
+  }));
 
   const header =
     missing === 'A'
@@ -133,13 +145,13 @@ function renderTable(rows, missing) {
       ? '<th>Perovskite</th><th>Cation B</th><th>rB (Å)</th><th>TF</th>'
       : '<th>Perovskite</th><th>Anion</th><th>rX (Å)</th><th>hX (Å)</th><th>TF</th>';
 
-  const body = rows
+  const body = normalizedRows
     .map((r) =>
       missing === 'A'
-        ? `<tr><td>${cleanNameForCompound(r.compound)}</td><td>${r.name}</td><td>${r.rA.toFixed(3)}</td><td>${r.tf.toFixed(4)}</td></tr>`
+        ? `<tr><td>${r.compoundDisplay}</td><td>${r.name}</td><td>${r.rA.toFixed(3)}</td><td>${r.tf.toFixed(4)}</td></tr>`
         : missing === 'B'
-        ? `<tr><td>${cleanNameForCompound(r.compound)}</td><td>${r.name}</td><td>${r.rB.toFixed(3)}</td><td>${r.tf.toFixed(4)}</td></tr>`
-        : `<tr><td>${cleanNameForCompound(r.compound)}</td><td>${r.name}</td><td>${r.xr.toFixed(3)}</td><td>${r.xh.toFixed(3)}</td><td>${r.tf.toFixed(4)}</td></tr>`
+        ? `<tr><td>${r.compoundDisplay}</td><td>${r.name}</td><td>${r.rB.toFixed(3)}</td><td>${r.tf.toFixed(4)}</td></tr>`
+        : `<tr><td>${r.compoundDisplay}</td><td>${r.name}</td><td>${r.xr.toFixed(3)}</td><td>${r.xh.toFixed(3)}</td><td>${r.tf.toFixed(4)}</td></tr>`
     )
     .join('');
 
@@ -150,6 +162,12 @@ function renderTable(rows, missing) {
       </thead>
       <tbody>${body}</tbody>
     </table>`;
+
+  if (downloadBtn) downloadBtn.disabled = false;
+  if (plotBtn) plotBtn.disabled = false;
+
+  // ⚡ Guardamos los normalizados
+  window.currentResults = { rows: normalizedRows, missing };
 }
 
 
@@ -172,6 +190,7 @@ function setupMutualExclusion(selectId, manualIds) {
   });
 }
 
+
 // ------------------ Toggle según dato faltante ------------------
 function toggleDisabled(missing) {
   const disableA = ['#cationA', '#volumenCationManualA'];
@@ -188,6 +207,7 @@ function toggleDisabled(missing) {
     }
   );
 }
+
 
 // ------------------ Lógica principal ------------------
 function calculo(ev) {
@@ -219,7 +239,6 @@ function calculo(ev) {
     return;
   }
 
-  // nombres seleccionados de los selects
   const catASelect = document.getElementById("cationA");
   let catAName = catASelect?.options[catASelect.selectedIndex]?.getAttribute("data-nombre") || '';
 
@@ -227,7 +246,6 @@ function calculo(ev) {
   let catBName = catBSelect?.options[catBSelect.selectedIndex]?.getAttribute("data-nombre") || '';
 
   let anionName = formatAnionName(fixedX?.name || '');
-
 
   let rows = [];
 
@@ -261,7 +279,6 @@ function calculo(ev) {
       .filter(r => r.tf >= tfMin && r.tf <= tfMax);
   }
 
-  // Ordenar por TF según el estado del botón
   rows.sort((a, b) => sortOrder === "asc" ? a.tf - b.tf : b.tf - a.tf);
 
   $('#rango').textContent = `Found ${rows.length} combinations in range: [${tfMin}, ${tfMax}]`;
@@ -274,17 +291,14 @@ function populateAnionSelect() {
   const select = document.getElementById("anion");
   if (!select) return;
 
-  // Limpia el select
   select.innerHTML = "";
 
-  // 👉 Opción inicial como placeholder
   const placeholder = document.createElement("option");
   placeholder.value = "";
   placeholder.textContent = "-- Selecciona un anión --";
   placeholder.disabled = true;
   select.appendChild(placeholder);
 
-  // Añadir las opciones reales
   Object.values(anionData).forEach(anion => {
     const option = document.createElement("option");
     const nombreLimpio = cleanFormula(anion.textName || anion.name) + "⁻";
@@ -301,9 +315,9 @@ function populateAnionSelect() {
     select.appendChild(option);
   });
 
-  // ⚡️ Muy importante: volver a marcar explícitamente el placeholder como seleccionado
   select.selectedIndex = 0;
 }
+
 
 // ------------------ Inicialización ------------------
 document.addEventListener('DOMContentLoaded', async () => {
@@ -322,14 +336,49 @@ document.addEventListener('DOMContentLoaded', async () => {
   toggleDisabled($('#missingKind').value);
   $('#missingKind').addEventListener('change', (e) => toggleDisabled(e.target.value));
 
-  // Botón para alternar orden de TF
+  // Botón de orden
   $('#toggleSortOrder')?.addEventListener('click', (e) => {
     sortOrder = sortOrder === "asc" ? "desc" : "asc";
     $('#toggleSortOrder').textContent = sortOrder === "asc"
       ? "↑ Ascending ↑"
       : "↓ Descending ↓";
-
-    // ⚡ Vuelve a calcular con el nuevo orden
     calculo(e);
+  });
+
+  // Botón descargar tabla
+  $('#downloadTable')?.addEventListener('click', () => {
+    if (!window.currentResults) return;
+    const { rows, missing } = window.currentResults;
+
+    let headers = [];
+    if (missing === 'A') headers = ['Perovskite', 'Cation A', 'rA (Å)', 'TF'];
+    else if (missing === 'B') headers = ['Perovskite', 'Cation B', 'rB (Å)', 'TF'];
+    else headers = ['Perovskite', 'Anion', 'rX (Å)', 'hX (Å)', 'TF'];
+
+    const csvRows = [];
+    csvRows.push(headers.join(','));
+    rows.forEach(r => {
+      if (missing === 'A') csvRows.push([r.compoundDisplay, r.name, r.rA, r.tf].join(','));
+      else if (missing === 'B') csvRows.push([r.compoundDisplay, r.name, r.rB, r.tf].join(','));
+      else csvRows.push([r.compoundDisplay, r.name, r.xr, r.xh, r.tf].join(','));
+    });
+
+    const blob = new Blob([csvRows.join('\n')], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'results.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // Botón plot
+  $('#plotTable')?.addEventListener('click', () => {
+    if (!window.currentResults) return;
+    // ⚡ primero borra cualquier resto anterior
+    localStorage.removeItem('plotData');
+    // luego guarda los nuevos resultados
+    localStorage.setItem('plotData', JSON.stringify(window.currentResults));
+    window.location.href = 'graf.html';
   });
 });

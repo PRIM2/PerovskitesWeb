@@ -1,14 +1,14 @@
-/* ---------- PALETA DE COLORES PROFESIONAL ---------- */
+/* ---------- PALETA DE COLORES ---------- */
 :root {
-    --blue-main: #60adeb;
-    --blue-hover: #3d97e6;
-    --blue-light: #90CAF9;
-    --red-main: #E53935;
-    --red-hover: #B71C1C;
+    --purple-main: #4b2e83;     /* morado académico */
+    --purple-hover: #3a2266;    /* más oscuro */
+    --purple-light: #7a5ca9;    /* tono medio */
+    --red-main: #c0392b;        /* rojo sobrio */
+    --red-hover: #922d2d;
     --background: #ECEFF1;
     --panel-background: #f5f5f576;
     --border-color: #ddd;
-    --shadow: 0 4px 10px rgba(0, 0, 0, 0.095);
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ---------- GENERAL ---------- */
@@ -31,14 +31,13 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* Ajustamos altura real del canvas */
 #myChart {
     display: block;
     width: 100% !important;
     height: 500px !important;
 }
 
-/* ---------- FORMULARIO DE NUEVOS PUNTOS (2 COLUMNAS) ---------- */
+/* ---------- FORMULARIO DE NUEVOS PUNTOS ---------- */
 #addUserPointForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -68,16 +67,13 @@ body {
     margin-bottom: 5px;
 }
 
-#addUserPointForm input[type="text"],
-#addUserPointForm input[type="number"],
-#addUserPointForm input[type="color"],
+#addUserPointForm input,
 #addUserPointForm select {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid var(--border-color);
     font-size: 14px;
     width: 100%;
-    box-sizing: border-box;
     background: white;
 }
 
@@ -85,63 +81,77 @@ body {
     grid-column: 1 / -1;
     padding: 12px;
     font-size: 16px;
-    background-color: var(--blue-main);
-    color: rgb(0, 0, 0);
+    background: var(--purple-main);
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s;
 }
 
 #addUserPointForm button:hover {
-    background-color: var(--blue-hover);
+    background: var(--purple-hover);
+    transform: translateY(-1px);
 }
 
 /* ---------- TABLA DE PUNTOS ---------- */
-#userPointsTableBody table, table {
-    width: 95%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    box-shadow: var(--shadow);
-    background: white;
+.table-styled {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #ffffff;
 }
 
-table th, table td {
-    border: 1px solid var(--border-color);
-    padding: 10px;
-    text-align: center;
+.table-styled thead {
+  background: var(--purple-main);
+  color: #fff;
+  font-weight: 600;
 }
 
-table th {
-    background-color: var(--blue-light);
-    color: #222;
-    font-style: italic;
+.table-styled th,
+.table-styled td {
+  padding: 10px 14px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-table input[type="text"],
-table input[type="number"],
-table input[type="color"] {
-    width: 90%;
-    padding: 5px;   
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
-    background: #fdfdfd;
+.table-styled tr:nth-child(even) { background: #f8f6fc; }
+
+.table-styled input,
+.table-styled select {
+  width: 90%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
 
-table button {
-    padding: 6px 12px;
-    font-size: 14px;
-    background-color: var(--red-main);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* Botón eliminar MUY compacto */
+.table-styled button {
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  min-width: 40px;
+  height: 26px;
+  background: var(--red-main);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-table button:hover {
-    background-color: var(--red-hover);
+.table-styled button:hover {
+  background: var(--red-hover);
 }
 
-/* ---------- BOTONES GENERALES BAJO LA GRÁFICA ---------- */
+/* ---------- BOTONES GENERALES ---------- */
 #btns-container {
     display: flex;
     justify-content: center;
@@ -153,90 +163,115 @@ table button:hover {
 #btns-container button {
     padding: 12px 20px;
     font-size: 16px;
-    background-color: var(--blue-main);
-    color: rgb(0, 0, 0);
+    background: var(--purple-main);
+    color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s;
-    width: auto !important;
-    min-width: 400px;
+    transition: all 0.3s;
+    min-width: 220px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
 }
 
 #btns-container button:hover {
-    background-color: var(--blue-hover);
+    background: var(--purple-hover);
+    transform: translateY(-1px);
 }
 
-/* ---------- ESTILO DE SELECT ---------- */
-select {
-    appearance: none;
-    background: white;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid var(--border-color);
-    font-size: 14px;
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    min-width: 100px;
-}
-
-/* ---------- FORMULARIO DE AJUSTE DE ESCALAS INLINE ---------- */
+/* ---------- ESCALAS INLINE ---------- */
 .axis-inline {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    overflow-x: auto;
-    justify-content: space-between;
+    gap: 25px;
     background: var(--panel-background);
-    padding: 15px 20px;
-    border-radius: 10px;
+    padding: 18px 25px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
     margin: 30px auto;
-    max-width: 900px;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+
+.axis-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
 }
 
 .axis-inputs {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .axis-inputs label {
     font-weight: 500;
-    margin-right: 3px;
     font-size: 13px;
+    color: #444;
 }
 
 .axis-inputs input[type="number"] {
     width: 80px;
-    padding: 5px;
-    border-radius: 4px;
+    padding: 6px 8px;
+    border-radius: 6px;
     border: 1px solid var(--border-color);
     font-size: 13px;
+    text-align: center;
+    background: #fff;
 }
 
-.axis-buttons {
-    display: flex;
-    gap: 10px;
+.axis-inputs input[type="number"]:focus {
+    border-color: var(--purple-main);
+    box-shadow: 0 0 5px rgba(75, 46, 131, 0.5);
+    outline: none;
 }
 
+/* ---------- BOTONES DE ESCALA (Apply / Reset) ---------- */
 .axis-buttons button {
-    padding: 6px 12px;
-    font-size: 13px;
-    background-color: var(--blue-main);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 6px 14px;          /* más pequeños */
+  font-size: 13px;            /* texto reducido */
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--purple-main);
+  color: #fff;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+  min-width: 100px;           /* mucho más compacto */
 }
 
 .axis-buttons button:hover {
-    background-color: var(--blue-hover);
+  background: var(--purple-hover);
+  transform: translateY(-1px);
 }
 
-.axis-title {
-    font-weight: 600;
-    margin-right: 10px;
+.axis-buttons .secondary {
+  background: #666;          /* gris sobrio para "Reset" */
+}
+
+.axis-buttons .secondary:hover {
+  background: #444;
+}
+
+
+/* ---------- SELECT SIMPLE ---------- */
+select {
+  appearance: auto;
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  background: #ffffff;
+  color: #333;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: #888;
 }

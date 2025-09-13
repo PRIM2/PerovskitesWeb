@@ -65,7 +65,7 @@ let myChart = new Chart(ctx, {
                 `📍 Glob: ${p.x.toFixed(4)}, Tol: ${p.y.toFixed(4)}`
               ];
             } else { // punto personalizado
-              return [`${p.name}: Glob ${p.x}, Tol ${p.y}`];
+              return [`${p.name}: Glob ${p.x.toFixed(4)}, Tol ${p.y.toFixed(4)}`];
             }
           }
         }
@@ -78,7 +78,7 @@ let myChart = new Chart(ctx, {
       },
       y: {
         type: 'linear',
-        title: { display: true, text: 'Tolerance', font: { size: 16, weight: 'bold' } }
+        title: { display: true, text: 'Tolerance Factor', font: { size: 16, weight: 'bold' } }
       }
     }
   }
@@ -226,18 +226,18 @@ function renderUserPointsTable() {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td><input type="text" value="${point.name}" onchange="handleEdit(${index}, 'name', this.value)"></td>
-      <td><input type="number" step="0.0001" value="${point.x}" onchange="handleEdit(${index}, 'x', parseFloat(this.value))"></td>
-      <td><input type="number" step="0.0001" value="${point.y}" onchange="handleEdit(${index}, 'y', parseFloat(this.value))"></td>
+      <td><input type="number" step="0.0001" value="${point.x.toFixed(4)}" onchange="handleEdit(${index}, 'x', parseFloat(this.value))"></td>
+      <td><input type="number" step="0.0001" value="${point.y.toFixed(4)}" onchange="handleEdit(${index}, 'y', parseFloat(this.value))"></td>
       <td><input type="color" value="${point.color}" onchange="handleEdit(${index}, 'color', this.value)"></td>
       <td><input type="number" value="${point.size}" min="1" max="20" onchange="handleEdit(${index}, 'size', parseInt(this.value))"></td>
       <td>
         <select onchange="handleEdit(${index}, 'shape', this.value)">
-          <option value="circle" ${point.shape === 'circle' ? 'selected' : ''}>\u25CF</option>
-          <option value="rect" ${point.shape === 'rect' ? 'selected' : ''}>\u25A0</option>
-          <option value="triangle" ${point.shape === 'triangle' ? 'selected' : ''}>\u25B2</option>
-          <option value="star" ${point.shape === 'star' ? 'selected' : ''}>\u2605</option>
-          <option value="cross" ${point.shape === 'cross' ? 'selected' : ''}>	+</option>
-          <option value="crossRot" ${point.shape === 'crossRot' ? 'selected' : ''}>\u2715</option>
+          <option value="circle" ${point.shape === 'circle' ? 'selected' : ''}>●</option>
+          <option value="rect" ${point.shape === 'rect' ? 'selected' : ''}>■</option>
+          <option value="triangle" ${point.shape === 'triangle' ? 'selected' : ''}>▲</option>
+          <option value="star" ${point.shape === 'star' ? 'selected' : ''}>★</option>
+          <option value="cross" ${point.shape === 'cross' ? 'selected' : ''}>+</option>
+          <option value="crossRot" ${point.shape === 'crossRot' ? 'selected' : ''}>✕</option>
         </select>
       </td>
       <td><button onclick="handleDelete(${index})">✕</button></td>
@@ -250,10 +250,17 @@ function renderUserPointsTable() {
 
 window.handleEdit = function(index, field, value) {
   const points = loadUserPoints();
-  points[index][field] = value;
+
+  if (field === 'x' || field === 'y') {
+    points[index][field] = parseFloat(parseFloat(value).toFixed(4));
+  } else {
+    points[index][field] = value;
+  }
+
   saveUserPoints(points);
   actualizarPuntosEnGrafica();
 }
+
 
 window.handleDelete = function(index) {
   const points = loadUserPoints();
@@ -277,7 +284,14 @@ document.getElementById("addUserPointForm").addEventListener("submit", (e) => {
   }
 
   const points = loadUserPoints();
-  points.push({ name, x, y, color, size, shape });
+  points.push({
+    name,
+    x: parseFloat(x.toFixed(4)),
+    y: parseFloat(y.toFixed(4)),
+    color,
+    size,
+    shape
+  });
   saveUserPoints(points);
 
   e.target.reset();
@@ -286,6 +300,9 @@ document.getElementById("addUserPointForm").addEventListener("submit", (e) => {
 
   renderUserPointsTable();
 });
+
+
+
 function actualizarPuntosEnGrafica() {
   actualizarGrafico(currentMode);
 }
@@ -373,3 +390,70 @@ document.getElementById("resetAxis").addEventListener("click", () => {
 renderUserPointsTable();
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const stored = localStorage.getItem('plotData');
+  if (!stored) return;
+
+  try {
+    const { rows, missing } = JSON.parse(stored);
+
+    // Convertimos cada fila en un "user point"
+    const newPoints = rows.map(r => ({
+      name: r.compoundDisplay || r.compound,
+      x: parseFloat(((missing === 'A' ? r.rA : missing === 'B' ? r.rB : r.xr) || 0).toFixed(4)),
+      y: parseFloat((r.tf || 0).toFixed(4)),
+      color: 'purple',
+      size: 7,
+      shape: 'crossRot'
+    }));
+
+    // Guardamos como puntos de usuario
+    saveUserPoints(newPoints);
+
+    // Re-renderizamos tabla y gráfico
+    renderUserPointsTable();
+  } catch (err) {
+    console.error("❌ Error leyendo plotData:", err);
+  }
+
+  // ⚡️ Limpiar después de usar
+  localStorage.removeItem('plotData');
+});
+
+document.getElementById("downloadCSV").addEventListener("click", () => {
+  const points = loadUserPoints();
+  if (!points || points.length === 0) {
+    alert("No hay puntos manuales para descargar.");
+    return;
+  }
+
+  // Cabecera del CSV
+  const header = ["Name", "X", "Y"];
+  
+  // Filas
+  const rows = points.map(p => [
+    p.name,
+    p.x.toFixed(4), // máximo 4 decimales
+    p.y.toFixed(4),
+  ]);
+
+  // Construir CSV como texto
+  const csvContent = [header, ...rows].map(e => e.join(",")).join("\n");
+
+  // Crear archivo y descargar
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.setAttribute("download", "manual_points.csv");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
+
+
+document.getElementById("cleanPoints").addEventListener("click", () => {
+  if (confirm("Are you sure you want to delete all custom points?")) {
+    localStorage.removeItem("userPoints");
+    renderUserPointsTable();
+  }
+});
