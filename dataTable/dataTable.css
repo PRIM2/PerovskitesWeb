@@ -1,183 +1,165 @@
+/* ================= CONTENEDOR PRINCIPAL PARA TABLA ================= */
 .containerDatosEntrada {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    overflow-x: auto; /* ← hace que la tabla se desplace horizontalmente si se pasa */
-    min-width: 0;     /* ← muy importante para que flexbox no fuerce el ancho mínimo */
-  }
-
-#tablaDatos table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #d3d9dd; /* gris azulado claro */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  #tablaDatos th,
-  #tablaDatos td {
-    padding: 10px 12px;
-    border: 1px solid #a4adb2;
-  }
-  
-  #tablaDatos th {
-    background-color: #f0f0f0;
-    color: #222;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    height: 60px; /* 👈 añade altura visible */
-    line-height: 1.4em; /* 👈 mejora alineación del texto dentro */
-  }
-  
-  #tablaDatos td {
-    background-color: #e3e9ec;
-    color: #333;
-    vertical-align: center;
-  }
-  
-  #tablaDatos td a {
-    color: #215dbd;
-    text-decoration: none;
-    font-size: 0.9em;
-  }
-  
-  #tablaDatos td a:hover {
-    text-decoration: underline;
-  }
-  
-  #tablaDatos table {
-    table-layout: fixed;
-    width: 100%;
-  }
-  
-  #tablaDatos th:nth-child(1),
-  #tablaDatos td:nth-child(1) {
-    width: 20%; /* Perovskite */
-  }
-  
-  #tablaDatos th:nth-child(2),
-  #tablaDatos td:nth-child(2),
-  #tablaDatos th:nth-child(3),
-  #tablaDatos td:nth-child(3),
-  #tablaDatos th:nth-child(4),
-  #tablaDatos td:nth-child(4) {
-    width: 10%; /* TF, Globularity, Year */
-  }
-  
-  #tablaDatos th:nth-child(5),
-  #tablaDatos td:nth-child(5) {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-  
-  #tablaDatos td,
-  #tablaDatos th {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
-  }
-    
-
-.errorTabla {
-    background-color: #d3d9dd; /* mismo fondo que la tabla */
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;   /* 👈 evitamos scroll lateral innecesario */
+  min-width: 0;
 }
 
+/* ================= TABLA ================= */
+#tablaDatos table {
+  width: 100%;
+  max-width: 100%;       /* 👈 nunca más ancha que el contenedor */
+  border-collapse: collapse;
+  background-color: #d3d9dd; /* gris azulado claro */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  table-layout: auto;    /* 👈 columnas ajustables automáticamente */
+}
 
+#tablaDatos th,
+#tablaDatos td {
+  padding: 10px 12px;
+  border: 1px solid #a4adb2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+#tablaDatos th {
+  background-color: #f0f0f0;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  height: 60px;
+  line-height: 1.4em;
+}
+
+#tablaDatos td {
+  background-color: #e3e9ec;
+  color: #333;
+  vertical-align: middle;
+}
+
+/* Enlaces dentro de celdas */
+#tablaDatos td a {
+  color: #215dbd;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+#tablaDatos td a:hover {
+  text-decoration: underline;
+}
+
+/* Anchos de columnas */
+#tablaDatos th:nth-child(1),
+#tablaDatos td:nth-child(1) {
+  width: 20%; /* Perovskite */
+}
+
+#tablaDatos th:nth-child(2),
+#tablaDatos td:nth-child(2),
+#tablaDatos th:nth-child(3),
+#tablaDatos td:nth-child(3),
+#tablaDatos th:nth-child(4),
+#tablaDatos td:nth-child(4) {
+  width: 10%; /* TF, Globularity, Year */
+}
+
+#tablaDatos th:nth-child(5),
+#tablaDatos td:nth-child(5) {
+  padding-left: 10px;   /* 👈 menos padding lateral */
+  padding-right: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ================= MENSAJE DE ERROR ================= */
+.errorTabla {
+  background-color: #d3d9dd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* ================= PAGINACIÓN ================= */
 .pagination {
-    display: flex;
-    flex-direction: row; /* 👈 FORZAMOS fila */
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .pagination button {
-    background-color: #222;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  flex: 1;                 /* 👈 cada botón ocupa el mismo ancho */
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 0;         /* altura uniforme */
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 0;            /* 👈 evita que el texto empuje demasiado */
 }
 
 .pagination button:hover:not(:disabled) {
-    background-color: #333;
+  background-color: #333;
 }
 
 .pagination button:disabled {
-    background-color: #444;
-    cursor: default;
+  background-color: #444;
+  cursor: default;
 }
 
 .pagination .active {
-    background-color: orange;
-    color: black;
+  background-color: orange;
+  color: black;
 }
 
 
-/* --- ESTILOS PARA LOS FILTROS DE LA TABLA --- */
 
-/* Estilos para la celda th de la fila de filtros */
+/* ================= FILTROS DE LA TABLA ================= */
 #tablaDatos thead tr:last-child th {
-  padding: 4px; /* Un padding mínimo para la celda */
-  vertical-align: middle; /* Centra verticalmente si el contenido no ocupa toda la altura */
-  /* Asegúrate de que el text-align de th general no esté centrado si no quieres que el placeholder lo esté.
-     Si el text-align de th está en center, el div por defecto se centrará */
+  padding: 4px;
+  vertical-align: middle;
 }
 
-/* Estilos para el contenedor del input dentro de la celda de filtro */
 .filter-input-wrapper {
-  display: flex; /* Usamos flexbox para centrar el input */
-  justify-content: center; /* Centra el input horizontalmente */
-  align-items: center; /* Centra el input verticalmente */
-  height: 100%; /* Asegura que el contenedor ocupe la altura completa de la celda */
-  width: 100%; /* Asegura que el contenedor ocupe la anchura completa de la celda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-/* Estilos para el input de filtro */
 #tablaDatos thead tr:last-child th input {
-  /* Restablecer estilos base del navegador */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-  /* Fondo y borde para que coincidan con las celdas de la tabla */
-  background-color: #e3e9ec; /* Igual que el td */
-  border: 1px solid #a4adb2; /* Igual que el border de th/td */
-  color: #333; /* Igual que el color del texto en td */
-  border-radius: 4px; /* Un ligero borde redondeado */
-
-  /* Espaciado interno */
+  background-color: #e3e9ec;
+  border: 1px solid #a4adb2;
+  color: #333;
+  border-radius: 4px;
   padding: 6px 8px;
-
-  /* Fuente y tamaño */
   font-family: 'Segoe UI', sans-serif;
   font-size: 0.95em;
-
-  /* Ancho: Ahora que el padre es un flex container que lo centra,
-     podemos darle un ancho relativo sin preocuparnos por el centrado */
-  width: 98%; /* Ocupa casi todo el ancho del contenedor del input */
-  /* max-width: 250px; */
-  box-sizing: border-box; /* Incluye padding y border en el ancho total */
-  text-align: left; /* El texto dentro del input permanece a la izquierda */
-
-  /* Transiciones para interacción */
+  width: 98%;
+  box-sizing: border-box;
+  text-align: left;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -192,11 +174,3 @@
   box-shadow: 0 0 0 2px rgba(33, 93, 189, 0.2);
   background-color: #ffffff;
 }
-
-/* Eliminar el estilo height y line-height del th general si lo tenías,
-   ya que el input y su wrapper ahora gestionarán mejor la altura.
-   Si lo mantienes, asegúrate de que no cause problemas. */
-/* #tablaDatos th {
-   height: 60px;
-   line-height: 1.4em;
-} */

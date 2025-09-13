@@ -64,7 +64,7 @@ function populateAnionSelect() {
         return;
     }
 
-    // select.innerHTML = `<option value="" disabled selected>Seleccione un anión</option>`;
+    select.innerHTML = `<option value="" disabled selected>Seleccione un anión</option>`;
 
     Object.values(anionData).forEach(anion => {
         const option = document.createElement("option");
@@ -100,14 +100,11 @@ function initializeSelect2() {
             const xr = $(data.element).attr("xr");
 
             if (!nombre || !abreviatura || !xr || !xh) return data.text;
-
             return $(
-                `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
-                    <span style="flex: 1;">${nombre}</span>
-                    <span style="flex: 1; text-align: right; color: gray;">
-                        r = ${xr}, h = ${xh}
-                    </span>
-                </div>`
+            `<div style="display:flex; align-items:center; justify-content:space-between; width:99%;">
+                <span>${nombre}</span>
+                <span style="color:gray;">r = ${xr}, h = ${xh}</span>
+            </div>`
             );
         },
         templateSelection: function (data) {
@@ -121,14 +118,12 @@ function initializeSelect2() {
             if (!nombre || !abreviatura || !xr || !xh) return data.text;
 
             return $(
-                `<div style="width: 100%;">
-                    <span style="float: left;">${nombre} : &nbsp;&nbsp;</span>
-                    <span style="float: right; color: gray;">
-                        r = ${xr}, h = ${xh}
-                    </span>
-                    <div style="clear: both;"></div>
-                </div>`
+            `<div style="display:flex; align-items:center; justify-content:space-between; width:100%;">
+                <span>${nombre}</span>
+                <span style="color:gray">r = ${xr}, h = ${xh}</span>
+            </div>`
             );
+
         },
         escapeMarkup: function (markup) { return markup; }
     });

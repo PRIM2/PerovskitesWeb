@@ -326,8 +326,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   $('#toggleSortOrder')?.addEventListener('click', (e) => {
     sortOrder = sortOrder === "asc" ? "desc" : "asc";
     $('#toggleSortOrder').textContent = sortOrder === "asc"
-      ? "↑ ↑ ↑"
-      : "↓ ↓ ↓";
+      ? "↑ Ascending ↑"
+      : "↓ Descending ↓";
 
     // ⚡ Vuelve a calcular con el nuevo orden
     calculo(e);

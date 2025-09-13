@@ -58,6 +58,9 @@ function populateCationSelect(id, dataMap, forcePlus) {
     select.innerHTML = `<option value="" disabled selected>Seleccione un catión</option>`;
 
     dataMap.forEach(cation => {
+        // 🔒 Si es Cation B y su carga != 2 → lo saltamos
+        if (id === "cationB" && String(cation.charge) !== "2") return;
+
         const option = document.createElement("option");
         const abreviatura = cation.abbreviature || cation.ion || 'N/A';
 
@@ -77,6 +80,7 @@ function populateCationSelect(id, dataMap, forcePlus) {
     });
 }
 
+
 // ------------------------------------------------------------
 // Inicialización de Select2
 function initializeSelect2(selector) {
@@ -92,12 +96,12 @@ function initializeSelect2(selector) {
 
             if (!nombre || !abreviatura || !radio) return data.text;
 
-            return $(`
-                <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
-                    <span style="flex:1;">${nombre}</span>
-                    <span style="flex:1; text-align:right; color: gray;">r = ${radio}</span>
-                </div>
-            `);
+            return $(        
+                `<div style="display:flex; align-items:center; justify-content:space-between; width:99%;">
+                    <span>${nombre}</span>
+                    <span style="color:gray;">r = ${radio}</span>
+                </div>`
+            );
         },
         templateSelection: function(data) {
             if (!data.id) return data.text;
@@ -108,13 +112,12 @@ function initializeSelect2(selector) {
 
             if (!nombre || !abreviatura || !radio) return data.text;
 
-            return $(`
-                <div style="width: 100%;">
-                    <span style="float: left;">${nombre} : &nbsp;&nbsp;</span>
-                    <span style="float: right; color: gray;">r = ${radio}</span>
-                    <div style="clear: both;"></div>
-                </div>
-            `);
+            return $(
+                `<div style="display:flex; align-items:center; justify-content:space-between; width:100%;">
+                    <span>${nombre}</span>
+                    <span style="color:gray">r = ${radio}</span>
+                </div>`
+            );
         },
         escapeMarkup: markup => markup
     });

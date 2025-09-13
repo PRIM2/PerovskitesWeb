@@ -68,3 +68,12 @@
   color: #333;
   text-align: center;
 }
+
+#toggleSortOrder {
+  background: linear-gradient(135deg, #215dbd, #4a90e2);
+  color: #fff;
+}
+
+#toggleSortOrder:hover {
+  background: linear-gradient(135deg, #1a4d9b, #357ABD);
+}
