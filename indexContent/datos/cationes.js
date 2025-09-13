@@ -74,6 +74,9 @@ function populateCationSelect(id, dataMap, forcePlus) {
         option.setAttribute("data-abreviatura", abreviatura);
         option.setAttribute("data-radio", radio);
         option.setAttribute("data-smiles", cation.smiles || '');
+        if (id === "cationA") {
+            option.setAttribute("data-glob", cation.globularity || 'N/A');
+        }
         option.textContent = `${nombreLimpio} (${abreviatura})`;
 
         select.appendChild(option);

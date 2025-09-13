@@ -397,11 +397,11 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     const { rows, missing } = JSON.parse(stored);
 
-    // Convertimos cada fila en un "user point"
+    // ⚡ Convertimos cada fila en un "user point"
     const newPoints = rows.map(r => ({
       name: r.compoundDisplay || r.compound,
-      x: parseFloat(((missing === 'A' ? r.rA : missing === 'B' ? r.rB : r.xr) || 0).toFixed(4)),
-      y: parseFloat((r.tf || 0).toFixed(4)),
+      x: parseFloat((r.glob || 0).toFixed(4)),  // 👈 SIEMPRE globularity del catión A
+      y: parseFloat((r.tf || 0).toFixed(4)),    // 👈 Tolerance Factor
       color: 'purple',
       size: 7,
       shape: 'crossRot'
@@ -428,7 +428,7 @@ document.getElementById("downloadCSV").addEventListener("click", () => {
   }
 
   // Cabecera del CSV
-  const header = ["Name", "X", "Y"];
+  const header = ["Name", "X (Globularity)", "Y (TF)"];
   
   // Filas
   const rows = points.map(p => [

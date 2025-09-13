@@ -1,3 +1,4 @@
+/* ======== Tablas resultado ======== */
 #resultado table {
   width: 100%;
   border-collapse: collapse;
@@ -29,7 +30,6 @@
   color: #333;
   text-align: center;
 }
-
 
 /* ======== Tablas estilizadas (SearchInRange y similares) ======== */
 .styledTable {
@@ -69,11 +69,32 @@
   text-align: center;
 }
 
-#toggleSortOrder {
-  background: linear-gradient(135deg, #215dbd, #4a90e2);
-  color: #fff;
+/* ======== Botones finales ======== */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
 }
 
-#toggleSortOrder:hover {
-  background: linear-gradient(135deg, #1a4d9b, #357ABD);
+.button-group button {
+  background: linear-gradient(135deg, #6a0dad, #580a9e); /* mismo color para todos */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  min-width: 160px;
+}
+
+.button-group button:hover {
+  background: linear-gradient(135deg, #580a9e, #45007a);
+}
+
+.button-group button:active {
+  transform: scale(0.95);
 }
