@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: #34495E;
+  background-color: #34495E;   /* 👈 color de fondo */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -54,6 +54,14 @@ header h2 {
   background-color: #ebebed;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+  /* 👇 efecto de fade solo aquí */
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+
+body.loaded .containerDatosEntrada {
+  opacity: 1;
 }
 
 /* ================= ASIDE ================= */
@@ -76,11 +84,11 @@ header h2 {
 
 #aside a {
   display: block;
-  width: 100%;              /* que ocupe todo el ancho */
+  width: 100%;              
   text-align: center;
-  padding: 6px 0;           /* 👈 menos padding vertical */
-  margin: 2px 0;            /* 👈 menos margen entre enlaces */
-  line-height: 1.2;         /* 👈 altura de línea más compacta */
+  padding: 6px 0;           
+  margin: 2px 0;            
+  line-height: 1.2;         
   text-decoration: none;
   color: #007bff;
   font-weight: 600;
@@ -92,7 +100,6 @@ header h2 {
   background-color: #eae6f9;
   color: #3a2959;
 }
-
 
 /* ================= UPDATES (versiones) ================= */
 .version-details {
