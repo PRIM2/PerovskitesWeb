@@ -23,7 +23,7 @@
 
 #tablaDatos th,
 #tablaDatos td {
-  padding: 10px 12px;
+  padding: 12px 18px;
   border: 1px solid #a4adb2;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -157,7 +157,7 @@
   padding: 6px 8px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 0.95em;
-  width: 98%;
+  width: 92%;
   box-sizing: border-box;
   text-align: left;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;

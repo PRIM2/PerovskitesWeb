@@ -10,6 +10,11 @@
         position: relative;
         /* Puedes añadir un icono personalizado si quieres */
     }
+    
+    .version-details ul li {
+        text-align: justify;
+        margin-right: 6px;
+    }
 
     /* Estilo para el icono desplegable */
     .version-details summary::-webkit-details-marker {
@@ -55,12 +60,20 @@
         font-style: italic;
     }
 
+    .logo-small {
+        width: 100px;      /* o usa height si prefieres controlar la altura */
+        display: block;    /* asegura que no se desborde */
+        border-radius: 15%;
+        margin: 0 auto;    /* lo centra en su contenedor */
+        margin-bottom: 10px; /* espacio debajo del logo */
+    }
+
 </style>
 
 
 <aside>
     <h2> Index</h2>
-    <a href="index.html">Tolerance Factor</a>
+    <a href="tolerance.html">Tolerance Factor</a>
     <a href="searchInRange.html">Search ion in range</a>
     <a href="graf.html">Interactive graph</a>
     <a href="dataTable.html">Data base</a>
@@ -70,35 +83,49 @@
     <h2>Updates</h2>
     <div id="listaGuardado" style="margin-left: 10px; margin-right: 15px;">
         <details class="version-details">
-            <summary>Version 4.0β</summary>
+            <summary>HyperTolkit 4.0</summary>
             <ul>
-                <li>Version actual</li>
+                <li>Modernization of the entire visual design, including layout, color schemes, and buttons.</li>
+                <li>Development of the “Search Ion in Range” functionality.</li>
+                <li>Implementation of tools to enhance accessibility (plotting, downloading, and clearing graphs).</li>
+                <li>Updating of descriptions for improved clarity and accuracy.</li>
+                <li>Code cleanup and resolution of page loading issues related to Select2.</li>
             </ul>
         </details>
         <details class="version-details">
-            <summary>Version 3.2</summary>
+            <summary>HyperTolkit 3.2</summary>
             <ul>
-                <li>YA VOY Un POCO TARDE</li>
+                <li>Renaming of PeroWeb to HyperTolkit to establish a clearer project identity.</li>
+                <li>
+                Introduction of a new logo aligned with the updated branding (old logo: 
+                <img src="baseLayout/images/peroWeb-icon.jpg" alt="Old Icon" style="width:35px; vertical-align:middle; border-radius: 45%;">
+                ).
+                </li>
+                <img src="baseLayout/images/peroWeb-logo.png" alt="Old Logo" class="logo-small">
+                <li>Final implementation of the plotting functionality, ensuring stable and complete visualization features.</li>
+                <li>Development of exposed databases to improve access and management of experimental data.</li>
+                <li>Removal of all login and user-related functionalities, replaced with local storage for a simpler workflow.</li>
+                <li>Addition of expandable update sections to improve navigation and usability of the interface.</li>
             </ul>
         </details>
 
         <details class="version-details">
-            <summary>Version 2.0</summary>
+            <summary>PeroWeb 2.1</summary>
             <ul>
-                <li>Implementation of registration, login, and data saving</li>
-                <li>Introduction of the database (Supabase)</li>
-                <li>Reorganization and generalization of project files</li>
-                <li>Improvements in everything and final design</li>
-                <li>Start of the graphs page :)</li>
+                <li>Implementation of registration, login, and data saving.</li>
+                <li>Introduction of the database (Supabase).</li>
+                <li>Reorganization and generalization of project files.</li>
+                <li>Improvements in everything and final design.</li>
+                <li>Start of the graphs page. :)</li>
             </ul>
         </details>
 
         <details class="version-details">
-            <summary>Version 1.2</summary>
+            <summary>PeroWeb 1.1</summary>
             <ul>
-                <li>Fixed calculation error in tolerance</li>
-                <li>Added calculation details and operations</li>
-                <li>Design adjustments for mobile devices</li>
+                <li>Fixed calculation error in tolerance.</li>
+                <li>Added calculation details and operations.</li>
+                <li>Design adjustments for mobile devices (out of date). </li>
             </ul>
         </details>
     </div>
