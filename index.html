@@ -5,16 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HyPer Tolkit</title>
   <link rel="icon" type="image/png" href="baseLayout/images/newLogo.png">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HyPer Tolkit</title>
-  <link rel="icon" type="image/png" href="baseLayout/images/newLogo.png">
 
   <!-- Fuente académica desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    /* 👇 body empieza invisible */
     body {
       margin: 0;
       height: 100vh;
@@ -22,7 +18,14 @@
       justify-content: center;
       align-items: center;
       background: #ecf0f1;
-      font-family: 'Merriweather', serif; /* 👈 fuente aplicada */
+      font-family: 'Merriweather', serif;
+      opacity: 0;               /* oculto al inicio */
+      transition: opacity 1s; /* transición suave */
+    }
+
+    /* 👇 cuando carga, aparece */
+    body.loaded {
+      opacity: 1;
     }
 
     .grid {
@@ -37,10 +40,10 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      font-size: 1.6rem;      /* 👈 más grande */
+      font-size: 1.6rem;
       font-weight: 700;
       color: white;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.869); /* 👈 sombra para resaltar */
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.869);
       border-radius: 12px;
       transition: transform 0.2s ease;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -54,23 +57,23 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.206); /* 👈 más oscuro para mejor legibilidad */
+      background: rgba(0, 0, 0, 0.206);
     }
 
     .grid span {
-    position: absolute;
-    top: 50%;                        /* 👈 centrado vertical */
-    left: 0;
-    transform: translateY(-50%);     /* 👈 ajusta para quedar justo en medio */
-    width: 100%;                     /* 👈 ocupa todo el ancho */
-    background: rgba(0, 0, 0, 0.55); /* 👈 franja semitransparente */
-    color: #fff;
-    font-size: 1.2rem;                /* 👈 más grande */
-    font-weight: 700;
-    text-align: center;
-    padding: 15px 0;                 /* 👈 altura de la franja */
-    border-radius: 0;                 /* 👈 sin esquinas redondeadas */
-    z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 15px 0;
+      border-radius: 0;
+      z-index: 1;
     }
 
     .grid a:hover {
@@ -80,14 +83,9 @@
     /* Botones con imágenes */
     .btn1 { background-image: url("baseLayout/images/anillos-drx.png"); }
     .btn2 { background-image: url("baseLayout/images/goldsmitch.jpg"); background-size: 60% !important; }
-    .btn3 {
-    background-image: url("baseLayout/images/graf.png");
-    background-size: cover;
-    background-position: center;
-    }
+    .btn3 { background-image: url("baseLayout/images/graf.png"); background-size: cover; background-position: center; }
     .btn4 { background-image: url("baseLayout/images/abx32.png"); background-size: 120% !important; background-position: 40% 50% !important; background-repeat: no-repeat !important; }
   </style>
-
 </head>
 <body>
   <div class="grid">
@@ -96,5 +94,11 @@
     <a href="graf.html" class="btn3"><span>Plotting</span></a>
     <a href="dataTable.html" class="btn4"><span>Data base</span></a>
   </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
 </body>
 </html>
