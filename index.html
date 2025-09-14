@@ -10,28 +10,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    /* 👇 body empieza invisible */
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #ecf0f1;
+      flex-direction: column;  /* 👈 ahora los hijos se apilan en columna */
+      align-items: center;     /* centramos horizontalmente */
+      background: #a4b0be;
       font-family: 'Merriweather', serif;
-      opacity: 0;               /* oculto al inicio */
-      transition: opacity 1s; /* transición suave */
+      opacity: 0;
+      transition: opacity 1s;
     }
 
-    /* 👇 cuando carga, aparece */
     body.loaded {
       opacity: 1;
     }
 
+    h1 {
+      margin: 50px 0 45px;   /* separación del grid */
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 900px);
-      grid-template-rows: repeat(2, 380px);
+      grid-template-columns: repeat(2, 800px);
+      grid-template-rows: repeat(2, 325px);
       gap: 30px;
     }
 
@@ -88,12 +93,13 @@
   </style>
 </head>
 <body>
+  <h1>Welcome to HyPer Tolkit</h1>
   <div class="grid">
     <a href="tolerance.html" class="btn1"><span>Tolerance Factor</span></a>
-    <a href="searchInRange.html" class="btn2"><span>Search ion</span></a>
-    <a href="graf.html" class="btn3"><span>Plotting</span></a>
-    <a href="dataTable.html" class="btn4"><span>Data base</span></a>
-  </div>
+    <a href="searchInRange.html" class="btn2"><span>Ion range finder</span></a>
+    <a href="graf.html" class="btn3"><span>Data visualization</span></a>
+    <a href="dataTable.html" class="btn4"><span>Data base query</span></a>
+  </div> 
 
   <script>
     window.addEventListener("load", () => {
