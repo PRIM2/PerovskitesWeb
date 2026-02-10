@@ -1,36 +1,60 @@
-
-
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-
-const supabase = createClient(
-    "https://slcmugpuaomtuucyaiia.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsY211Z3B1YW9tdHV1Y3lhaWlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzkzNTgxNDAsImV4cCI6MjA1NDkzNDE0MH0.f4NAhJuzBK-inQZEYi90if7pFtpHWKCuHtsea5X7g_w"
-);  
-
 // --------- COMPROBAR ERRORES en CONSOLA ---------
 async function comprobarError(tipo, error) {
-    if (error) {
-        console.log("❌ Comprobacion Error: " + tipo, error.message);
-    } else {
-        console.log("✅ Todo funciona correctamente: "+ tipo);
-    }
+  if (error) {
+    console.log("❌ Comprobacion Error: " + tipo, error.message || error);
+  } else {
+    console.log("✅ Todo funciona correctamente: " + tipo);
+  }
 }
 
+// Carga y cachea el JSON (para no pedirlo cada vez)
+let __dbCache = null;
 
+async function loadLocalDB() {
+  if (__dbCache) return __dbCache;
 
+  try {
+    const res = await fetch("./dataBase/dataBase.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`No se pudo cargar dataBase.json (${res.status})`);
+    __dbCache = await res.json();
+    await comprobarError("Carga dataBase.json", null);
+    return __dbCache;
+  } catch (e) {
+    await comprobarError("Carga dataBase.json", e);
+    throw e;
+  }
+}
+
+// Simula tu antigua función: table + column
 export async function uploadData(table, column) {
-    const { data, error } = await supabase
-        .from(table)
-        .select(column)
+  const db = await loadLocalDB();
 
-    comprobarError("Obtencion tol_table", error);
-    return data
+  // Tu JSON tiene pinta de: { exported_at, source, tables: { perovsData: [...] } }
+  const rows = db?.tables?.[table];
+
+  if (!Array.isArray(rows)) {
+    const e = new Error(`Tabla "${table}" no existe en dataBase.json (db.tables.${table})`);
+    await comprobarError("Lectura tabla", e);
+    return [];
+  }
+
+  // column puede ser "*" o una columna o varias
+  if (column === "*" || column === undefined || column === null) {
+    await comprobarError(`Obtencion ${table}.*`, null);
+    return rows;
+  }
+
+  // Permite "a,b,c" o ["a","b","c"]
+  const cols = Array.isArray(column)
+    ? column
+    : String(column).split(",").map(s => s.trim()).filter(Boolean);
+
+  const projected = rows.map(r => {
+    const obj = {};
+    for (const c of cols) obj[c] = r?.[c];
+    return obj;
+  });
+
+  await comprobarError(`Obtencion ${table}.${cols.join(",")}`, null);
+  return projected;
 }
-
-
-
-
-
-
-
-

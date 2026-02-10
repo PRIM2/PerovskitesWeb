@@ -1,0 +1,4000 @@
+{
+  "exported_at": "2026-02-10T16:43:13.834Z",
+  "tables": {
+    "perovsData": [
+      {
+        "refPapeRaro": "Burger, S., Kronawitter, S., Boström, H. L. B., Zar?ba, J. K., & Kieslich, G. (2020). A new polar perovskite coordination network with azaspiroundecane as A-site cation. Dalton Transactions, 49(31), 10740-10744. https://doi.org/10.1039/d0dt01968b",
+        "doiLink": "https://doi.org/10.1039/d0dt01968b",
+        "year": 2020,
+        "smilesA": "C1CC[N+]2(CC1)CCCCC2",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.827419579812115,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zhao, M., Zhou, L., Shi, P., Zheng, X., Chen, X., Gao, J., He, L., Ye, Q., Liu, C., & Fu, D. (2019). 3D organic-inorganic Perovskite Ferroelastic Materials with Two Ferroelastic Phases: [Et3P(CH2)2F][Mn(dca)3] and [Et3P(CH2)2Cl][Mn(dca)3]. Chemistry - A European Journal, 25(25), 6447-6454. https://doi.org/10.1002/chem.201900771",
+        "doiLink": "https://doi.org/10.1002/chem.201900771",
+        "year": 2019,
+        "smilesA": "C(C)[P+](CCCl)(CC)CC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.866811679358225,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Gao, S., & Ng, S. W. (2010). Poly[dimethylammonium [tris(?2-formato-?2O:O?)cadmate(II)]]. Acta Crystallographica Section E Structure Reports Online, 66(12), m1599. https://doi.org/10.1107/s1600536810046830",
+        "doiLink": "https://doi.org/10.1107/s1600536810046830",
+        "year": 2010,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.96212334793391,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A ",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Co+2]",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.997226207740491,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Zhang, J., He, X., Wang, Z., Cai, H., & Li, M. (2021). Phase Transition and Ferroelectricity of Two Perovskite-Like Mn(II) Metal-Organic Frameworks Tuned by Phosphonium Cations and Dicyanamide Ligand. Crystal Growth & Design, 21(11), 6245-6253. https://doi.org/10.1021/acs.cgd.1c00717",
+        "doiLink": "https://doi.org/10.1021/acs.cgd.1c00717",
+        "year": 2021,
+        "smilesA": "C(C)[P+](CC)(CC)CC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.885647408800678,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A ",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Fe+2]",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.984661699529925,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Fe+2]",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.992277867371593,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Fe+2]",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 1.00448710287617,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zhao, X., Huang, X., Zhang, S., Shao, D., Wei, H., & Wang, X. (2013). Cation-Dependent Magnetic Ordering and Room-Temperature Bistability in Azido-Bridged Perovskite-Type Compounds. Journal Of The American Chemical Society, 135(43), 16006-16009. https://doi.org/10.1021/ja407654n",
+        "doiLink": "https://doi.org/10.1021/ja407654n",
+        "year": 2013,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.81574971812104,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Fe+2]",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.94927216698868,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Kronawitter, S. M., Park, S., Hallweger, S. A., Myatt, E., Pitcairn, J., Cliffe, M. J., Daisenberger, D., Drees, M., & Kieslich, G. (2024). Tuning the mechanical properties of molecular perovskites by controlling framework distortions via A-site substitution. Materials Advances, 5(16), 6440-6445. https://doi.org/10.1039/d4ma00587b",
+        "doiLink": "https://doi.org/10.1039/D4MA00587B",
+        "year": 2024,
+        "smilesA": "C(C)[N+]1(CCCCC1)CC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.869187677831679,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Kronawitter, S. M., Park, S., Hallweger, S. A., Myatt, E., Pitcairn, J., Cliffe, M. J., Daisenberger, D., Drees, M., & Kieslich, G. (2024). Tuning the mechanical properties of molecular perovskites by controlling framework distortions via A-site substitution. Materials Advances, 5(16), 6440-6445. https://doi.org/10.1039/d4ma00587b",
+        "doiLink": "https://doi.org/10.1039/D4MA00587B",
+        "year": 2024,
+        "smilesA": "C(C)[N+]1(CCCCC1)CCC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.876527667685606,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Kronawitter, S. M., Park, S., Hallweger, S. A., Myatt, E., Pitcairn, J., Cliffe, M. J., Daisenberger, D., Drees, M., & Kieslich, G. (2024). Tuning the mechanical properties of molecular perovskites by controlling framework distortions via A-site substitution. Materials Advances, 5(16), 6440-6445. https://doi.org/10.1039/d4ma00587b",
+        "doiLink": "https://doi.org/10.1039/D4MA00587B",
+        "year": 2024,
+        "smilesA": "C(C)(C)[N+]1(CCCCC1)C(C)C",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.899401860204527,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Kronawitter, S. M., Park, S., Hallweger, S. A., Myatt, E., Pitcairn, J., Cliffe, M. J., Daisenberger, D., Drees, M., & Kieslich, G. (2024). Tuning the mechanical properties of molecular perovskites by controlling framework distortions via A-site substitution. Materials Advances, 5(16), 6440-6445. https://doi.org/10.1039/d4ma00587b",
+        "doiLink": "https://doi.org/10.1039/D4MA00587B",
+        "year": 2024,
+        "smilesA": "C(CC)[N+]1(CCCCC1)CCC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.898199620487073,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Geng, F., Zhou, L., Shi, P., Wang, X., Zheng, X., Zhang, Y., Fu, D., & Ye, Q. (2017). Perovskite-type organic-inorganic hybrid NLO switches tuned by guest cations. Journal Of Materials Chemistry C, 5(6), 1529-1536. https://doi.org/10.1039/c6tc05105g",
+        "doiLink": "https://doi.org/10.1039/C6TC05105G ",
+        "year": 2017,
+        "smilesA": "C(C=C)[P+](CC)(CC)CC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.862992382427304,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Geng, F., Zhou, L., Shi, P., Wang, X., Zheng, X., Zhang, Y., Fu, D., & Ye, Q. (2017). Perovskite-type organic-inorganic hybrid NLO switches tuned by guest cations. Journal Of Materials Chemistry C, 5(6), 1529-1536. https://doi.org/10.1039/c6tc05105g",
+        "doiLink": "https://doi.org/10.1039/C6TC05105G ",
+        "year": 2017,
+        "smilesA": "C(CC)[P+](CC)(CC)CC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.867962070000069,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Geng, F., Zhou, L., Shi, P., Wang, X., Zheng, X., Zhang, Y., Fu, D., & Ye, Q. (2017). Perovskite-type organic-inorganic hybrid NLO switches tuned by guest cations. Journal Of Materials Chemistry C, 5(6), 1529-1536. https://doi.org/10.1039/c6tc05105g",
+        "doiLink": "https://doi.org/10.1039/C6TC05105G ",
+        "year": 2017,
+        "smilesA": "C(C)C([PH2+]OC)(CC)CC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.861627252198983,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Zhao, M., Zhou, L., Shi, P., Zheng, X., Chen, X., Gao, J., Geng, F., Ye, Q., & Fu, D. (2018). Halogen substitution effects on optical and electrical properties in 3D molecular perovskites. Chemical Communications, 54(94), 13275-13278. https://doi.org/10.1039/c8cc07052k",
+        "doiLink": "https://doi.org/10.1039/C8CC07052K",
+        "year": 2018,
+        "smilesA": "C(C)[P+](CCCl)(CC)CC",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.844820685378735,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zhao, M., Zhou, L., Shi, P., Zheng, X., Chen, X., Gao, J., Geng, F., Ye, Q., & Fu, D. (2018). Halogen substitution effects on optical and electrical properties in 3D molecular perovskites. Chemical Communications, 54(94), 13275-13278. https://doi.org/10.1039/c8cc07052k",
+        "doiLink": "https://doi.org/10.1039/C8CC07052K",
+        "year": 2018,
+        "smilesA": "C(C)[P+](CCF)(CC)CC",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.835940739754532,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zhao, M., Zhou, L., Shi, P., Zheng, X., Chen, X., Gao, J., He, L., Ye, Q., Liu, C., & Fu, D. (2019). 3D organic-inorganic Perovskite Ferroelastic Materials with Two Ferroelastic Phases: [Et3P(CH2)2F][Mn(dca)3] and [Et3P(CH2)2Cl][Mn(dca)3]. Chemistry - A European Journal, 25(25), 6447-6454. https://doi.org/10.1002/chem.201900771",
+        "doiLink": "https://doi.org/10.1002/chem.201900771",
+        "year": 2019,
+        "smilesA": "C(C)[P+](CCF)(CC)CC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.857700585474824,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Zhou, L., Zheng, X., Shi, P., Zafar, Z., Ye, H., Fu, D., & Ye, Q. (2017). Switchable Nonlinear Optical and Tunable Luminescent Properties Triggered by Multiple Phase Transitions in a Perovskite-Like Compound. Inorganic Chemistry, 56(6), 3238-3244. https://doi.org/10.1021/acs.inorgchem.6b02508",
+        "doiLink": "https://doi.org/10.1021/acs.inorgchem.6b02508",
+        "year": 2017,
+        "smilesA": "C(CC)[P+](CC)(CC)CC",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.845941890634316,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Liu, Z., He, L., Shi, P., Ye, Q., & Fu, D. (2020). A Three-Dimensional Molecular Perovskite Ferroelastic with Two-Step Switching of Quadratic Nonlinear Optical Properties Tuned by Molecular Chiral Design. The Journal Of Physical Chemistry Letters, 11(19), 7960-7965. https://doi.org/10.1021/acs.jpclett.0c02235",
+        "doiLink": "https://doi.org/10.1021/acs.jpclett.0c02235",
+        "year": 2020,
+        "smilesA": "OC(C[N+](CCC)(CCC)CCC)C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.912474518568472,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Liu, Z., He, L., Shi, P., Ye, Q., & Fu, D. (2020). A Three-Dimensional Molecular Perovskite Ferroelastic with Two-Step Switching of Quadratic Nonlinear Optical Properties Tuned by Molecular Chiral Design. The Journal Of Physical Chemistry Letters, 11(19), 7960-7965. https://doi.org/10.1021/acs.jpclett.0c02235",
+        "doiLink": "https://doi.org/10.1021/acs.jpclett.0c02235",
+        "year": 2020,
+        "smilesA": "OCC(C)[N+](CCC)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.911492851887432,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Schlueter, J. A., Manson, J. L., Hyzer, K. A., & Geiser, U. (2004). Spin Canting in the 3D Anionic Dicyanamide Structure (SPh3)Mn(dca)3 (Ph = Phenyl, dca = Dicyanamide). Inorganic Chemistry, 43(14), 4100-4102. https://doi.org/10.1021/ic035398p",
+        "doiLink": "https://doi.org/10.1021/ic035398p",
+        "year": 2004,
+        "smilesA": "C1(=CC=CC=C1)[S+](C1=CC=CC=C1)C1=CC=CC=C1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.923963086445016,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Stefa?ska, D., Macalik, L., Pikul, A., & Sieradzki, A. (2019). Structural, phonon, magnetic and optical properties of novel perovskite-like frameworks of TriBuMe[M(dca)3] (TriBuMe = tributylmethylammonium; dca = dicyanamide; M = Mn2+, Fe2+, Co2+, Ni2+). Dalton Transactions, 48(34), 13006-13016. https://doi.org/10.1039/c9dt02924a",
+        "doiLink": "https://doi.org/10.1039/C9DT02924A",
+        "year": 2019,
+        "smilesA": "C(CCC)[N+](C)(CCCC)CCCC",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.934537324686857,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Stefa?ska, D., Macalik, L., Pikul, A., & Sieradzki, A. (2019). Structural, phonon, magnetic and optical properties of novel perovskite-like frameworks of TriBuMe[M(dca)3] (TriBuMe = tributylmethylammonium; dca = dicyanamide; M = Mn2+, Fe2+, Co2+, Ni2+). Dalton Transactions, 48(34), 13006-13016. https://doi.org/10.1039/c9dt02924a",
+        "doiLink": "https://doi.org/10.1039/C9DT02924A",
+        "year": 2019,
+        "smilesA": "C(CCC)[N+](C)(CCCC)CCCC",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.927364340835094,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Stefa?ska, D., Macalik, L., Pikul, A., & Sieradzki, A. (2019). Structural, phonon, magnetic and optical properties of novel perovskite-like frameworks of TriBuMe[M(dca)3] (TriBuMe = tributylmethylammonium; dca = dicyanamide; M = Mn2+, Fe2+, Co2+, Ni2+). Dalton Transactions, 48(34), 13006-13016. https://doi.org/10.1039/c9dt02924a",
+        "doiLink": "https://doi.org/10.1039/C9DT02924A",
+        "year": 2019,
+        "smilesA": "C(CCC)[N+](C)(CCCC)CCCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.917306159264215,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Stefa?ska, D., Macalik, L., Pikul, A., & Sieradzki, A. (2019). Structural, phonon, magnetic and optical properties of novel perovskite-like frameworks of TriBuMe[M(dca)3] (TriBuMe = tributylmethylammonium; dca = dicyanamide; M = Mn2+, Fe2+, Co2+, Ni2+). Dalton Transactions, 48(34), 13006-13016. https://doi.org/10.1039/c9dt02924a",
+        "doiLink": "https://doi.org/10.1039/C9DT02924A",
+        "year": 2019,
+        "smilesA": "C(CCC)[N+](C)(CCCC)CCCC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.946036106086807,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Zhang, J., He, X., Wang, Z., Cai, H., & Li, M. (2021). Phase Transition and Ferroelectricity of Two Perovskite-Like Mn(II) Metal-Organic Frameworks Tuned by Phosphonium Cations and Dicyanamide Ligand. Crystal Growth & Design, 21(11), 6245-6253. https://doi.org/10.1021/acs.cgd.1c00717",
+        "doiLink": "https://doi.org/10.1021/acs.cgd.1c00717",
+        "year": 2021,
+        "smilesA": "C(CCC)[P+](C)(CCCC)CCCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.928856081308325,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Burger, S., Grover, S., Butler, K. T., Boström, H. L. B., Grau-Crespo, R., & Kieslich, G. (2021). Tilt and shift polymorphism in molecular perovskites. Materials Horizons, 8(9), 2444-2450. https://doi.org/10.1039/d1mh00578b",
+        "doiLink": "https://doi.org/10.1039/D1MH00578B",
+        "year": 2021,
+        "smilesA": "C(CC)[N+](C)(CCC)CCC",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.889782544105238,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Burger, S., Grover, S., Butler, K. T., Boström, H. L. B., Grau-Crespo, R., & Kieslich, G. (2021). Tilt and shift polymorphism in molecular perovskites. Materials Horizons, 8(9), 2444-2450. https://doi.org/10.1039/d1mh00578b",
+        "doiLink": "https://doi.org/10.1039/D1MH00578B",
+        "year": 2021,
+        "smilesA": "C(CC)[N+](C)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.87337657528768,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Burger, S., Grover, S., Butler, K. T., Boström, H. L. B., Grau-Crespo, R., & Kieslich, G. (2021). Tilt and shift polymorphism in molecular perovskites. Materials Horizons, 8(9), 2444-2450. https://doi.org/10.1039/d1mh00578b",
+        "doiLink": "https://doi.org/10.1039/D1MH00578B",
+        "year": 2021,
+        "smilesA": "C(CC)[N+](C)(CCC)CCC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.900730651471186,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Kronawitter, S. M., Hallweger, S. A., Meyer, J., Pedri, C., Burger, S., Alhadid, A., Henke, S., & Kieslich, G. (2023). Li(C2N3) as eutectic forming modifier in the melting process of the molecular perovskite [(C3H7)3N(C4H9)]Mn(C2N3)3+-. APL Materials, 11(3). https://doi.org/10.1063/5.0143404",
+        "doiLink": "https://doi.org/10.1063/5.0143404",
+        "year": 2023,
+        "smilesA": "C(CC)[N+](CCCC)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.9285493104705,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Bermúdez-García, J. M., Yáñez-Vilar, S., García-Fernández, A., Sánchez-Andújar, M., Castro-García, S., López-Beceiro, J., Artiaga, R., Dilshad, M., Moya, X., & Señarís-Rodríguez, M. A. (2018). Giant barocaloric tunability in [(CH3CH2CH2)4N]Cd[N(CN)2]3 hybrid perovskite. Journal Of Materials Chemistry C, 6(37), 9867-9874. https://doi.org/10.1039/c7tc03136j",
+        "doiLink": "https://doi.org/10.1039/c7tc03136j",
+        "year": 2018,
+        "smilesA": "C(CC)[N+](CCC)(CCC)CCC",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.880938444011858,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Bermúdez-García, J. M., Sánchez-Andújar, M., Yáñez-Vilar, S., Castro-García, S., Artiaga, R., López-Beceiro, J., Botana, L., Alegría, A., & Señarís-Rodríguez, M. A. (2016). Multiple phase and dielectric transitions on a novel multi-sensitive [TPrA][M(dca)3] (M: Fe2+, Co2+ and Ni2+) hybrid inorganic-organic perovskite family. Journal Of Materials Chemistry C, 4(22), 4889-4898. https://doi.org/10.1039/c6tc00723f",
+        "doiLink": "https://doi.org/10.1039/C6TC00723F",
+        "year": 2016,
+        "smilesA": "C(CC)[N+](CCC)(CCC)CCC",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.920848362469854,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Bermúdez-García, J. M., Sánchez-Andújar, M., Yáñez-Vilar, S., Castro-García, S., Artiaga, R., López-Beceiro, J., Botana, L., Alegría, A., & Señarís-Rodríguez, M. A. (2016). Multiple phase and dielectric transitions on a novel multi-sensitive [TPrA][M(dca)3] (M: Fe2+, Co2+ and Ni2+) hybrid inorganic-organic perovskite family. Journal Of Materials Chemistry C, 4(22), 4889-4898. https://doi.org/10.1039/c6tc00723f",
+        "doiLink": "https://doi.org/10.1039/C6TC00723F",
+        "year": 2016,
+        "smilesA": "C(CC)[N+](CCC)(CCC)CCC",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.913780447407037,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Schlueter, J. A., Manson, J. L., & Geiser, U. (2005). Structural and Magnetic Diversity in Tetraalkylammonium Salts of Anionic M[N(CN)2]3- (M = Mn and Ni) Three-Dimensional Coordination Polymers. Inorganic Chemistry, 44(9), 3194-3202. https://doi.org/10.1021/ic0484598",
+        "doiLink": "https://doi.org/10.1021/ic0484598",
+        "year": 2005,
+        "smilesA": "C(CC)[N+](CCC)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.903869596567481,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Bermúdez-García, J. M., Sánchez-Andújar, M., Yáñez-Vilar, S., Castro-García, S., Artiaga, R., López-Beceiro, J., Botana, L., Alegría, A., & Señarís-Rodríguez, M. A. (2016). Multiple phase and dielectric transitions on a novel multi-sensitive [TPrA][M(dca)3] (M: Fe2+, Co2+ and Ni2+) hybrid inorganic-organic perovskite family. Journal Of Materials Chemistry C, 4(22), 4889-4898. https://doi.org/10.1039/c6tc00723f",
+        "doiLink": "https://doi.org/10.1039/C6TC00723F",
+        "year": 2016,
+        "smilesA": "C(CC)[N+](CCC)(CCC)CCC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.932178711448789,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "García-Ben, J., García-Fernández, A., Dafonte-Rodríguez, P., Delgado-Ferreiro, I., Cappel, U. B., Castro-García, S., Sánchez-Andújar, M., Bermúdez-García, J. M., & Señarís-Rodríguez, M. A. (2022). Narrowing the tolerance factor limits for hybrid organic-inorganic dicyanamide-perovskites. Journal Of Solid State Chemistry, 316, 123635. https://doi.org/10.1016/j.jssc.2022.123635",
+        "doiLink": "https://doi.org/10.1016/j.jssc.2022.123635",
+        "year": 2022,
+        "smilesA": "C(CC)[N+](CCl)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.887012539028999,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "García-Ben, J., García-Fernández, A., Dafonte-Rodríguez, P., Delgado-Ferreiro, I., Cappel, U. B., Castro-García, S., Sánchez-Andújar, M., Bermúdez-García, J. M., & Señarís-Rodríguez, M. A. (2022). Narrowing the tolerance factor limits for hybrid organic-inorganic dicyanamide-perovskites. Journal Of Solid State Chemistry, 316, 123635. https://doi.org/10.1016/j.jssc.2022.123635",
+        "doiLink": "https://doi.org/10.1016/j.jssc.2022.123635",
+        "year": 2022,
+        "smilesA": "C[N+](CCC)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 1.09190478161229,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Qian, K., Xu, Y., Wang, Z., & Yang, J. (2017). Synthesis, crystal structure, and magnetic properties of an azido-bridged Mn(II) complex [C3H5NH3][Mn(N3)3]. Zeitschrift Für Naturforschung B, 72(6), 409-413. https://doi.org/10.1515/znb-2016-0267",
+        "doiLink": "https://doi.org/10.1515/znb-2016-0267",
+        "year": 2017,
+        "smilesA": "C1(CC1)[NH3+]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.895489923066509,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Mautner, F. A., & Krischner, H. (1986). Preparation and structure determination of tetraethylammonium calcium azide, [N(C2H5)4]Ca(N3)3. Zeitschrift Für Kristallographie - Crystalline Materials, 175(1-4), 105-110. https://doi.org/10.1524/zkri.1986.175.14.105",
+        "doiLink": "https://doi.org/10.1524/zkri.1986.175.14.105",
+        "year": 1985,
+        "smilesA": "C(C)[N+](CC)(CC)CC",
+        "smilesB": "[Ca+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 1.02057114565755,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Yang, J., Huang, Y., Fang, T., Qian, K., Chen, W., Yu, X., Ai, Y., Ye, J., & Li, X. (2019). Synthesis, crystal structure, and magnetic properties of a multicage compound: [(Me)2EtNH][Mn(N3)3] with a perovskite-related structure. Zeitschrift Für Naturforschung B, 74(4), 335-339. https://doi.org/10.1515/znb-2018-0183",
+        "doiLink": "https://doi.org/10.1515/znb-2018-0183",
+        "year": 2019,
+        "smilesA": "C[NH+](CC)C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.952553234154683,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Du, Z., Xu, T., Huang, B., Su, Y., Xue, W., He, C., Zhang, W., & Chen, X. (2014). Switchable Guest Molecular Dynamics in a Perovskite?Like Coordination Polymer toward Sensitive Thermoresponsive Dielectric Materials. Angewandte Chemie, 127(3), 928-932. https://doi.org/10.1002/ange.201408491",
+        "doiLink": "https://doi.org/10.1002/ange.201408491",
+        "year": 2015,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.842612342662944,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zhao, X., Huang, X., Zhang, S., Shao, D., Wei, H., & Wang, X. (2013). Cation-Dependent Magnetic Ordering and Room-Temperature Bistability in Azido-Bridged Perovskite-Type Compounds. Journal Of The American Chemical Society, 135(43), 16006-16009. https://doi.org/10.1021/ja407654n",
+        "doiLink": "https://doi.org/10.1021/ja407654n",
+        "year": 2013,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.872091491677391,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Du, Z., Sun, Y., Chen, S., Huang, B., Su, Y., Xu, T., Zhang, W., & Chen, X. (2015). Insight into the molecular dynamics of guest cations confined in deformable azido coordination frameworks. Chemical Communications, 51(86), 15641-15644. https://doi.org/10.1039/c5cc06863k",
+        "doiLink": "https://doi.org/10.1039/C5CC06863K",
+        "year": 2015,
+        "smilesA": "C[NH+](C)C",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.886114348581576,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Du, Z., Sun, Y., Chen, S., Huang, B., Su, Y., Xu, T., Zhang, W., & Chen, X. (2015). Insight into the molecular dynamics of guest cations confined in deformable azido coordination frameworks. Chemical Communications, 51(86), 15641-15644. https://doi.org/10.1039/c5cc06863k",
+        "doiLink": "https://doi.org/10.1039/C5CC06863K",
+        "year": 2015,
+        "smilesA": "C[NH+](C)C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.917115433663147,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Zhao, X., Huang, X., Zhang, S., Shao, D., Wei, H., & Wang, X. (2013). Cation-Dependent Magnetic Ordering and Room-Temperature Bistability in Azido-Bridged Perovskite-Type Compounds. Journal Of The American Chemical Society, 135(43), 16006-16009. https://doi.org/10.1021/ja407654n",
+        "doiLink": "https://doi.org/10.1021/ja407654n",
+        "year": 2013,
+        "smilesA": "C[NH+](C)C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.917115433663147,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Mautner, F. A., Krischner, H., & Kratky, C. (1988). Tetramethylammonium-calcium-triazid. Darstellung und Kristallstruktur. Monatshefte Für Chemie - Chemical Monthly, 119(11), 1245-1249. https://doi.org/10.1007/bf00808305",
+        "doiLink": " https://doi.org/10.1007/bf00808305",
+        "year": 1988,
+        "smilesA": "C[N+](C)(C)C",
+        "smilesB": "[Ca+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.90880899052001,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Du, Z., Zhao, Y., Zhang, W., Zhou, H., He, C., Xue, W., Wang, B., & Chen, X. (2013). Above-room-temperature ferroelastic phase transition in a perovskite-like compound [N(CH3)4][Cd(N3)3]. Chemical Communications, 50(16), 1989. https://doi.org/10.1039/c3cc48581a",
+        "doiLink": "https://doi.org/10.1039/C3CC48581A ",
+        "year": 2014,
+        "smilesA": "C[N+](C)(C)C",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.921609117147053,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zhao, X., Huang, X., Zhang, S., Shao, D., Wei, H., & Wang, X. (2013). Cation-Dependent Magnetic Ordering and Room-Temperature Bistability in Azido-Bridged Perovskite-Type Compounds. Journal Of The American Chemical Society, 135(43), 16006-16009. https://doi.org/10.1021/ja407654n",
+        "doiLink": "https://doi.org/10.1021/ja407654n",
+        "year": 2013,
+        "smilesA": "C[N+](C)(C)C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-]=[N+]=[N-]",
+        "tolFactor": 0.953852001711964,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Ye, L., Gong, Z., Shi, C., Ma, J., Liang, H., Qi, F., E, D., Wang, C., Zhang, Y., & Ye, H. (2019). (H2dabco)[Na(BF4)3]: an ABX3-type inorganic-organic hybrid perovskite compound exhibiting dielectric switching above room-temperature. CrystEngComm, 21(46), 7043-7047. https://doi.org/10.1039/c9ce01454c",
+        "doiLink": "https://doi.org/10.1039/C9CE01454C",
+        "year": 2019,
+        "smilesA": "[NH+]12CCN(CC1)CC2",
+        "smilesB": "[Na+]",
+        "smilesAnion": "F[B-](F)(F)F",
+        "tolFactor": 1.16388126954662,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Sun, Y., Han, X., & Zhang, W. (2017). Structural Phase Transitions and Dielectric Switching in a Series of Organic?Inorganic Hybrid Perovskites ABX3 (X=ClO4? or BF4?). Chemistry - A European Journal, 23(46), 11126-11132. https://doi.org/10.1002/chem.201702228",
+        "doiLink": "https://doi.org/10.1002/chem.201702228",
+        "year": 2017,
+        "smilesA": "[NH+]12CCN(CC1)CC2",
+        "smilesB": "[K+]",
+        "smilesAnion": "F[B-](F)(F)F",
+        "tolFactor": 1.05332790357385,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Sun, Y., Han, X., & Zhang, W. (2017). Structural Phase Transitions and Dielectric Switching in a Series of Organic?Inorganic Hybrid Perovskites ABX3 (X=ClO4? or BF4?). Chemistry - A European Journal, 23(46), 11126-11132. https://doi.org/10.1002/chem.201702228",
+        "doiLink": "https://doi.org/10.1002/chem.201702228",
+        "year": 2017,
+        "smilesA": "[NH2+]1CCNCC1",
+        "smilesB": "[Na+]",
+        "smilesAnion": "F[B-](F)(F)F",
+        "tolFactor": 1.10747764991611,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Cheng, S., Ding, K., Zhang, T., Zhang, Z., Su, C., Ge, J., Zhang, Y., & Fu, D. (2021). In Situ Observation of Ferroelastic Domain and Phase Transition in a Three?Dimensional Molecular Crystal. Chemistry - A European Journal, 27(70), 17655-17659. https://doi.org/10.1002/chem.202103229",
+        "doiLink": "https://doi.org/10.1002/chem.202103229",
+        "year": 2020,
+        "smilesA": "FC[N+]12CCN(CC1)CC2",
+        "smilesB": "[Rb+]",
+        "smilesAnion": "F[B-](F)(F)F",
+        "tolFactor": 1.04698584216909,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Schouwink, P., Morelle, F., Sadikin, Y., Filinchuk, Y., & ?ern?, R. (2015). Increasing Hydrogen Density with the Cation-Anion Pair BH4?-NH4+ in Perovskite-Type NH4Ca(BH4)3. Energies, 8(8), 8286-8299. https://doi.org/10.3390/en8088286",
+        "doiLink": "https://doi.org/10.3390/en8088286",
+        "year": 2015,
+        "smilesA": "[NH4+]",
+        "smilesB": "[Ca+2]",
+        "smilesAnion": "[BH4-]",
+        "tolFactor": 0.907196997090622,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Hill, J. A., Thompson, A. L., & Goodwin, A. L. (2016). Dicyanometallates as Model Extended Frameworks. Journal Of The American Chemical Society, 138(18), 5886-5896. https://doi.org/10.1021/jacs.5b13446",
+        "doiLink": "https://doi.org/10.1021/jacs.5b13446",
+        "year": 2016,
+        "smilesA": "C[N+](CCC)(CCC)CCC",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[C#N-][Au+][C#N-]",
+        "tolFactor": 0.90126005137819,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Lefebvre, J., Chartrand, D., & Leznoff, D. B. (2006). Synthesis, structure and magnetic properties of 2-D and 3-D [cation]{M[Au(CN)2]3} (M=Ni,Co) coordination polymers. Polyhedron, 26(9-11), 2189-2199. https://doi.org/10.1016/j.poly.2006.10.045",
+        "doiLink": "https://doi.org/10.1016/j.poly.2006.10.045",
+        "year": 2007,
+        "smilesA": "C[N+](CCC)(CCC)CCC",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[C#N-][Au+][C#N-]",
+        "tolFactor": 0.934913659854061,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Hill, J. A., Thompson, A. L., & Goodwin, A. L. (2016). Dicyanometallates as Model Extended Frameworks. Journal Of The American Chemical Society, 138(18), 5886-5896. https://doi.org/10.1021/jacs.5b13446",
+        "doiLink": "https://doi.org/10.1021/jacs.5b13446",
+        "year": 2016,
+        "smilesA": "C[N+](CCC)(CCC)CCC",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[C#N-][Au+][C#N-]",
+        "tolFactor": 0.920659370869739,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Lefebvre, J., Chartrand, D., & Leznoff, D. B. (2006). Synthesis, structure and magnetic properties of 2-D and 3-D [cation]{M[Au(CN)2]3} (M=Ni,Co) coordination polymers. Polyhedron, 26(9-11), 2189-2199. https://doi.org/10.1016/j.poly.2006.10.045",
+        "doiLink": "https://doi.org/10.1016/j.poly.2006.10.045",
+        "year": 2007,
+        "smilesA": "C[N+](CCC)(CCC)CCC",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "[C#N-][Au+][C#N-]",
+        "tolFactor": 0.944374607653872,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., Janczak, J., Trzebiatowska, M., Sieradzki, A., Pawlus, S., & Pikul, A. (2017). Synthesis and temperature-dependent studies of a perovskite-like manganese formate framework templated with protonated acetamidine. Dalton Transactions, 46(26), 8476-8485. https://doi.org/10.1039/c7dt01251a",
+        "doiLink": "https://doi.org/10.1039/C7DT01251A",
+        "year": 2017,
+        "smilesA": "C(C)(=[NH2+])N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.01561561443601,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Zhou, B., Imai, Y., Kobayashi, A., Wang, Z., & Kobayashi, H. (2011). Giant Dielectric Anomaly of a Metal-Organic Perovskite with Four?Membered Ring Ammonium Cations. Angewandte Chemie International Edition, 50(48), 11441-11445. https://doi.org/10.1002/anie.201105111",
+        "doiLink": "https://doi.org/10.1002/anie.201105111",
+        "year": 2011,
+        "smilesA": "[NH2+]1CCC1",
+        "smilesB": "[Cu+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.04745235142252,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wang, Z., Zhang, B., Otsuka, T., Inoue, K., Kobayashi, H., & Kurmoo, M. (2004). Anionic NaCl-type frameworks of [MnII(HCOO)3?], templated by alkylammonium, exhibit weak ferromagnetism. Dalton Transactions, 15, 2209-2216. https://doi.org/10.1039/b404466e",
+        "doiLink": "https://doi.org/10.1039/B404466E ",
+        "year": 2004,
+        "smilesA": "[NH2+]1CCC1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.0169143819933,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Asaji, T., Ito, Y., Seliger, J., ?agar, V., Gradi?ek, A., & Apih, T. (2012). Phase Transition and Ring-Puckering Motion in a Metal-Organic Perovskite [(CH2)3NH2][Zn(HCOO)3]. The Journal Of Physical Chemistry A, 116(51), 12422-12428. https://doi.org/10.1021/jp310132a",
+        "doiLink": "https://doi.org/10.1021/jp310132a",
+        "year": 2012,
+        "smilesA": "[NH2+]1CCC1",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.04431626653802,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Fu, D., Zhang, W., Cai, H., Zhang, Y., Ge, J., Xiong, R., Huang, S. D., & Nakamura, T. (2011). A multiferroic perdeutero Metal-Organic framework. Angewandte Chemie International Edition, 50(50), 11947-11951. https://doi.org/10.1002/anie.201103265",
+        "doiLink": "https://doi.org/10.1002/anie.201103265",
+        "year": 2011,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02108755909279,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Shang, R., Chen, S., Wang, B., Wang, Z., & Gao, S. (2015). Temperature?Induced Irreversible Phase Transition From Perovskite to Diamond But Pressure?Driven Back?Transition in an Ammonium Copper Formate. Angewandte Chemie International Edition, 55(6), 2097-2100. https://doi.org/10.1002/anie.201510024",
+        "doiLink": "https://doi.org/10.1002/anie.201510024",
+        "year": 2015,
+        "smilesA": "C(C)[NH3+]",
+        "smilesB": "[Cu+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02316015449527,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Shang, R., Xu, G., Wang, Z., & Gao, S. (2013). Phase Transitions, Prominent Dielectric Anomalies, and Negative Thermal Expansion in Three High Thermally Stable Ammonium Magnesium-Formate Frameworks. Chemistry - A European Journal, 20(4), 1146-1158. https://doi.org/10.1002/chem.201303425",
+        "doiLink": "https://doi.org/10.1002/chem.201303425",
+        "year": 2014,
+        "smilesA": "C(C)[NH3+]",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02624196218954,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wang, Z., Zhang, B., Otsuka, T., Inoue, K., Kobayashi, H., & Kurmoo, M. (2004). Anionic NaCl-type frameworks of [MnII(HCOO)3?], templated by alkylammonium, exhibit weak ferromagnetism. Dalton Transactions, 15, 2209-2216. https://doi.org/10.1039/b404466e",
+        "doiLink": "https://doi.org/10.1039/B404466E ",
+        "year": 2004,
+        "smilesA": "C(C)[NH3+]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.993330412381709,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Ciupa, A., M?czka, M., G?gor, A., Pikul, A., Kucharska, E., Hanuza, J., & Sieradzki, A. (2014). Synthesis, crystal structure, magnetic and vibrational properties of formamidine-templated Co and Fe formates. Polyhedron, 85, 137-143. https://doi.org/10.1016/j.poly.2014.08.008",
+        "doiLink": "https://doi.org/10.1016/j.poly.2014.08.008",
+        "year": 2015,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.982888995457391,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Luo, C., Fang, M., Luo, Q., Lin, H., Zhang, Y., Yue, F., Xiang, P., & Peng, H. (2017). Synthesis, Structure and Properties of Formamidine?templated Metal Formate Crystals. Crystal Research And Technology, 52(12). https://doi.org/10.1002/crat.201700195",
+        "doiLink": "https://doi.org/10.1002/crat.201700195",
+        "year": 2017,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Cu+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.987316423364856,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Ciupa, A., M?czka, M., G?gor, A., Pikul, A., Kucharska, E., Hanuza, J., & Sieradzki, A. (2014). Synthesis, crystal structure, magnetic and vibrational properties of formamidine-templated Co and Fe formates. Polyhedron, 85, 137-143. https://doi.org/10.1016/j.poly.2014.08.008",
+        "doiLink": "https://doi.org/10.1016/j.poly.2014.08.008",
+        "year": 2015,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.972711150829873,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Rossin, A., Chierotti, M. R., Giambastiani, G., Gobetto, R., & Peruzzini, M. (2012). Amine-templated polymeric Mg formates: crystalline scaffolds exhibiting extensive hydrogen bonding. CrystEngComm, 14(13), 4454. https://doi.org/10.1039/c2ce25048a",
+        "doiLink": "https://doi.org/10.1039/c2ce25048a",
+        "year": 2012,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.990290268013546,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., Ciupa, A., G?gor, A., Sieradzki, A., Pikul, A., Macalik, B., & Drozd, M. (2014). Perovskite Metal Formate Framework of [NH2-CH+-NH2]Mn(HCOO)3]: Phase Transition, Magnetic, Dielectric, and Phonon Properties. Inorganic Chemistry, 53(10), 5260-5268. https://doi.org/10.1021/ic500479e",
+        "doiLink": "https://doi.org/10.1021/ic500479e",
+        "year": 2014,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.958531687989787,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Marsh, R. E. (1986). On the structure of Zn(C4H8N2O6). Acta Crystallographica Section C Crystal Structure Communications, 42(10), 1327-1328. https://doi.org/10.1107/s0108270186092399",
+        "doiLink": "https://doi.org/10.1107/S0108270186092399",
+        "year": 1986,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.984360386169153,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Hu, K., Kurmoo, M., Wang, Z., & Gao, S. (2009). Metal-Organic Perovskites: Synthesis, Structures, and Magnetic Properties of [C(NH2)3][MII(HCOO)3] (M=Mn, Fe, Co, Ni, Cu, and Zn; C(NH2)3= Guanidinium). Chemistry - A European Journal, 15(44), 12050-12064. https://doi.org/10.1002/chem.200901605",
+        "doiLink": "https://doi.org/10.1002/chem.200901605",
+        "year": 2009,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.01922730806904,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Hu, K., Kurmoo, M., Wang, Z., & Gao, S. (2009). Metal-Organic Perovskites: Synthesis, Structures, and Magnetic Properties of [C(NH2)3][MII(HCOO)3] (M=Mn, Fe, Co, Ni, Cu, and Zn; C(NH2)3= Guanidinium). Chemistry - A European Journal, 15(44), 12050-12064. https://doi.org/10.1002/chem.200901605",
+        "doiLink": "https://doi.org/10.1002/chem.200901605",
+        "year": 2009,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Cu+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02381842206935,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Collings, I. E., Hill, J. A., Cairns, A. B., Cooper, R. I., Thompson, A. L., Parker, J. E., Tang, C. C., & Goodwin, A. L. (2015). Compositional dependence of anomalous thermal expansion in perovskite-like ABX3formates. Dalton Transactions, 45(10), 4169-4178. https://doi.org/10.1039/c5dt03263f",
+        "doiLink": "https://doi.org/10.1039/c5dt03263f",
+        "year": 2016,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.960370519856603,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Hu, K., Kurmoo, M., Wang, Z., & Gao, S. (2009). Metal-Organic Perovskites: Synthesis, Structures, and Magnetic Properties of [C(NH2)3][MII(HCOO)3] (M=Mn, Fe, Co, Ni, Cu, and Zn; C(NH2)3= Guanidinium). Chemistry - A European Journal, 15(44), 12050-12064. https://doi.org/10.1002/chem.200901605",
+        "doiLink": "https://doi.org/10.1002/chem.200901605",
+        "year": 2009,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.00867317913933,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Rossin, A., Chierotti, M. R., Giambastiani, G., Gobetto, R., & Peruzzini, M. (2012). Amine-templated polymeric Mg formates: crystalline scaffolds exhibiting extensive hydrogen bonding. CrystEngComm, 14(13), 4454. https://doi.org/10.1039/c2ce25048a",
+        "doiLink": "https://doi.org/10.1039/c2ce25048a",
+        "year": 2012,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02690221249727,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Hu, K., Kurmoo, M., Wang, Z., & Gao, S. (2009). Metal-Organic Perovskites: Synthesis, Structures, and Magnetic Properties of [C(NH2)3][MII(HCOO)3] (M=Mn, Fe, Co, Ni, Cu, and Zn; C(NH2)3= Guanidinium). Chemistry - A European Journal, 15(44), 12050-12064. https://doi.org/10.1002/chem.200901605",
+        "doiLink": "https://doi.org/10.1002/chem.200901605",
+        "year": 2009,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.993969488481323,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Hu, K., Kurmoo, M., Wang, Z., & Gao, S. (2009). Metal-Organic Perovskites: Synthesis, Structures, and Magnetic Properties of [C(NH2)3][MII(HCOO)3] (M=Mn, Fe, Co, Ni, Cu, and Zn; C(NH2)3= Guanidinium). Chemistry - A European Journal, 15(44), 12050-12064. https://doi.org/10.1002/chem.200901605",
+        "doiLink": "https://doi.org/10.1002/chem.200901605",
+        "year": 2009,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.03626606245925,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Hu, K., Kurmoo, M., Wang, Z., & Gao, S. (2009). Metal-Organic Perovskites: Synthesis, Structures, and Magnetic Properties of [C(NH2)3][MII(HCOO)3] (M=Mn, Fe, Co, Ni, Cu, and Zn; C(NH2)3= Guanidinium). Chemistry - A European Journal, 15(44), 12050-12064. https://doi.org/10.1002/chem.200901605",
+        "doiLink": "https://doi.org/10.1002/chem.200901605",
+        "year": 2009,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02075309745238,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., Costa, N. L. M., G?gor, A., Paraguassu, W., Sieradzki, A., & Hanuza, J. (2016). Structural, thermal, dielectric and phonon properties of perovskite-like imidazolium magnesium formate. Physical Chemistry Chemical Physics, 18(20), 13993-14000. https://doi.org/10.1039/c6cp01353h",
+        "doiLink": "https://doi.org/10.1039/c6cp01353h",
+        "year": 2016,
+        "smilesA": "N1C=[NH+]C=C1",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.04690140730252,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Pato-Doldán, B., Gómez-Aguirre, L. C., Bermúdez-García, J. M., Sánchez-Andújar, M., Fondado, A., Mira, J., Castro-García, S., & Señarís-Rodríguez, M. A. (2013). Coexistence of magnetic and electrical order in the new perovskite-like (C3N2H5)[Mn(HCOO)3] formate. RSC Advances, 3(44), 22404. https://doi.org/10.1039/c3ra43165g",
+        "doiLink": "https://doi.org/10.1039/C3RA43165G",
+        "year": 2013,
+        "smilesA": "N1C=[NH+]C=C1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.01332730969223,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Gunatilleke, W. D. C. B., Wei, K., Niu, Z., Wojtas, L., Nolas, G., & Ma, S. (2017). Thermal conductivity of a perovskite-type Metal-Organic framework crystal. Dalton Transactions, 46(39), 13342-13344. https://doi.org/10.1039/c7dt02927f",
+        "doiLink": "https://doi.org/10.1039/C7DT02927F",
+        "year": 2017,
+        "smilesA": "[NH3+]N",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.943316382770359,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., Pasi?ska, K., Ptak, M., Paraguassu, W., Da Silva, T. A., Sieradzki, A., & Pikul, A. (2016). Effect of solvent, temperature and pressure on the stability of chiral and perovskite metal formate frameworks of [NH2NH3][M(HCOO)3] (M = Mn, Fe, Zn). Physical Chemistry Chemical Physics, 18(46), 31653-31663. https://doi.org/10.1039/c6cp06648h",
+        "doiLink": " https://doi.org/10.1039/C6CP06648H ",
+        "year": 2016,
+        "smilesA": "[NH3+]N",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.933548313718003,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Chen, S., Shang, R., Hu, K., Wang, Z., & Gao, S. (2013). [NH2NH3][M(HCOO)3] (M = Mn2+, Zn2+, Co2+and Mg2+): structural phase transitions, prominent dielectric anomalies and negative thermal expansion, and magnetic ordering. Inorganic Chemistry Frontiers, 1(1), 83-98. https://doi.org/10.1039/c3qi00034f",
+        "doiLink": "https://doi.org/10.1039/C3QI00034F",
+        "year": 2014,
+        "smilesA": "[NH3+]N",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.950419668785196,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Chen, S., Shang, R., Hu, K., Wang, Z., & Gao, S. (2013). [NH2NH3][M(HCOO)3] (M = Mn2+, Zn2+, Co2+and Mg2+): structural phase transitions, prominent dielectric anomalies and negative thermal expansion, and magnetic ordering. Inorganic Chemistry Frontiers, 1(1), 83-98. https://doi.org/10.1039/c3qi00034f",
+        "doiLink": "https://doi.org/10.1039/C3QI00034F",
+        "year": 2014,
+        "smilesA": "[NH3+]N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.919939737716283,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Chen, S., Shang, R., Hu, K., Wang, Z., & Gao, S. (2013). [NH2NH3][M(HCOO)3] (M = Mn2+, Zn2+, Co2+and Mg2+): structural phase transitions, prominent dielectric anomalies and negative thermal expansion, and magnetic ordering. Inorganic Chemistry Frontiers, 1(1), 83-98. https://doi.org/10.1039/c3qi00034f",
+        "doiLink": "https://doi.org/10.1039/C3QI00034F",
+        "year": 2014,
+        "smilesA": "[NH3+]N",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.944728533043967,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Zienkiewicz, J. A., Kowalska, D. A., Fedoruk, K., Stefanski, M., Pikul, A., & Ptak, M. (2021). Unusual isosymmetric order-disorder phase transition in a new perovskite-type dimethylhydrazinium manganese formate exhibiting weak ferromagnetism and photoluminescence properties. Journal Of Materials Chemistry C, 9(21), 6841-6851. https://doi.org/10.1039/d1tc01014j",
+        "doiLink": "https://doi.org/10.1039/D1TC01014J",
+        "year": 2021,
+        "smilesA": "CN([NH3+])C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02829405963805,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Paraguassu, W., Da Silva, T. A., Sieradzki, A., & Pikul, A. (2017). Phase Transitions and Coexistence of Magnetic and Electric Orders in the Methylhydrazinium Metal Formate Frameworks. Chemistry Of Materials, 29(5), 2264-2275. https://doi.org/10.1021/acs.chemmater.6b05249",
+        "doiLink": "https://doi.org/10.1021/acs.chemmater.6b05249",
+        "year": 2017,
+        "smilesA": "CN([NH3+])C",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.04350551022441,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Paraguassu, W., Da Silva, T. A., Sieradzki, A., & Pikul, A. (2017). Phase Transitions and Coexistence of Magnetic and Electric Orders in the Methylhydrazinium Metal Formate Frameworks. Chemistry Of Materials, 29(5), 2264-2275. https://doi.org/10.1021/acs.chemmater.6b05249",
+        "doiLink": "https://doi.org/10.1021/acs.chemmater.6b05249",
+        "year": 2017,
+        "smilesA": "CN([NH3+])C",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.06236404354172,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Paraguassu, W., Da Silva, T. A., Sieradzki, A., & Pikul, A. (2017). Phase Transitions and Coexistence of Magnetic and Electric Orders in the Methylhydrazinium Metal Formate Frameworks. Chemistry Of Materials, 29(5), 2264-2275. https://doi.org/10.1021/acs.chemmater.6b05249",
+        "doiLink": "https://doi.org/10.1021/acs.chemmater.6b05249",
+        "year": 2017,
+        "smilesA": "CN([NH3+])C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02829405963805,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Ptak, M., Paraguassu, W., Da Silva, T. A., Sieradzki, A., & Pikul, A. (2017). Phase Transitions and Coexistence of Magnetic and Electric Orders in the Methylhydrazinium Metal Formate Frameworks. Chemistry Of Materials, 29(5), 2264-2275. https://doi.org/10.1021/acs.chemmater.6b05249",
+        "doiLink": "https://doi.org/10.1021/acs.chemmater.6b05249",
+        "year": 2017,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02261613328305,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wang, X., Gan, L., Zhang, S., & Gao, S. (2004). Perovskite-like Metal Formates with Weak Ferromagnetism and as Precursors to Amorphous Materials. Inorganic Chemistry, 43(15), 4615-4625. https://doi.org/10.1021/ic0498081",
+        "doiLink": "https://doi.org/10.1021/ic0498081",
+        "year": 2004,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02108755909279,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Sletten, E., & Jensen, L. H. (1973). The crystal structure of dimethylammonium copper(II) formate, NH2(CH2)2[Cu(OOCH)3]. Acta Crystallographica Section B, 29(9), 1752-1756. https://doi.org/10.1107/s0567740873005480",
+        "doiLink": "https://doi.org/10.1107/S0567740873005480",
+        "year": 1973,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Cu+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02568705260222,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Jain, P., Ramachandran, V., Clark, R. J., Zhou, H. D., Toby, B. H., Dalal, N. S., Kroto, H. W., & Cheetham, A. K. (2009). Multiferroic Behavior Associated with an Order?Disorder Hydrogen Bonding Transition in Metal?Organic Frameworks (MOFs) with the Perovskite ABX3 Architecture. Journal Of The American Chemical Society, 131(38), 13625-13627. https://doi.org/10.1021/ja904156s",
+        "doiLink": "https://doi.org/10.1021/ja904156s",
+        "year": 2009,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.01051416720869,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Rossin, A., Ienco, A., Costantino, F., Montini, T., Di Credico, B., Caporali, M., Gonsalvi, L., Fornasiero, P., & Peruzzini, M. (2008). Phase Transitions and CO2 Adsorption Properties of Polymeric Magnesium Formate. Crystal Growth & Design, 8(9), 3302-3308. https://doi.org/10.1021/cg800181q",
+        "doiLink": "https://doi.org/10.1021/cg800181q",
+        "year": 2008,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02877647143536,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wang, Z., Zhang, B., Otsuka, T., Inoue, K., Kobayashi, H., & Kurmoo, M. (2004). Anionic NaCl-type frameworks of [MnII(HCOO)3?], templated by alkylammonium, exhibit weak ferromagnetism. Dalton Transactions, 15, 2209-2216. https://doi.org/10.1039/b404466e",
+        "doiLink": "https://doi.org/10.1039/B404466E ",
+        "year": 2004,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.995783639989907,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Wang, X., Gan, L., Zhang, S., & Gao, S. (2004). Perovskite-like Metal Formates with Weak Ferromagnetism and as Precursors to Amorphous Materials. Inorganic Chemistry, 43(15), 4615-4625. https://doi.org/10.1021/ic0498081",
+        "doiLink": "https://doi.org/10.1021/ic0498081",
+        "year": 2004,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Ni+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.03815741190437,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Jain, P., Dalal, N. S., Toby, B. H., Kroto, H. W., & Cheetham, A. K. (2008). Order?Disorder Antiferroelectric Phase Transition in a Hybrid Inorganic?Organic Framework with the Perovskite Architecture. Journal Of The American Chemical Society, 130(32), 10450-10451. https://doi.org/10.1021/ja801952e",
+        "doiLink": "https://doi.org/10.1021/ja801952e",
+        "year": 2008,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.02261613328305,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Gómez-Aguirre, L. C., Pato-Doldán, B., Mira, J., Castro-García, S., Señarís-Rodríguez, M. A., Sánchez-Andújar, M., Singleton, J., & Zapf, V. S. (2015). Magnetic Ordering-Induced Multiferroic Behavior in [CH3NH3][Co(HCOO)3] Metal-Organic Framework. Journal Of The American Chemical Society, 138(4), 1122-1125. https://doi.org/10.1021/jacs.5b11688",
+        "doiLink": "https://doi.org/10.1021/jacs.5b11688",
+        "year": 2016,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.963314081275664,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Collings, I. E., Hill, J. A., Cairns, A. B., Cooper, R. I., Thompson, A. L., Parker, J. E., Tang, C. C., & Goodwin, A. L. (2015). Compositional dependence of anomalous thermal expansion in perovskite-like ABX3formates. Dalton Transactions, 45(10), 4169-4178. https://doi.org/10.1039/c5dt03263f",
+        "doiLink": "https://doi.org/10.1039/c5dt03263f",
+        "year": 2016,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.907686085032985,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Collings, I. E., Hill, J. A., Cairns, A. B., Cooper, R. I., Thompson, A. L., Parker, J. E., Tang, C. C., & Goodwin, A. L. (2015). Compositional dependence of anomalous thermal expansion in perovskite-like ABX3formates. Dalton Transactions, 45(10), 4169-4178. https://doi.org/10.1039/c5dt03263f",
+        "doiLink": "https://doi.org/10.1039/c5dt03263f",
+        "year": 2016,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Fe+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.953338935463638,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Collings, I. E., Hill, J. A., Cairns, A. B., Cooper, R. I., Thompson, A. L., Parker, J. E., Tang, C. C., & Goodwin, A. L. (2015). Compositional dependence of anomalous thermal expansion in perovskite-like ABX3formates. Dalton Transactions, 45(10), 4169-4178. https://doi.org/10.1039/c5dt03263f",
+        "doiLink": "https://doi.org/10.1039/c5dt03263f",
+        "year": 2016,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Mg+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.970567952369608,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wang, Z., Zhang, B., Otsuka, T., Inoue, K., Kobayashi, H., & Kurmoo, M. (2004). Anionic NaCl-type frameworks of [MnII(HCOO)3?], templated by alkylammonium, exhibit weak ferromagnetism. Dalton Transactions, 15, 2209-2216. https://doi.org/10.1039/b404466e",
+        "doiLink": "https://doi.org/10.1039/B404466E ",
+        "year": 2004,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.939441866433556,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Collings, I. E., Hill, J. A., Cairns, A. B., Cooper, R. I., Thompson, A. L., Parker, J. E., Tang, C. C., & Goodwin, A. L. (2015). Compositional dependence of anomalous thermal expansion in perovskite-like ABX3formates. Dalton Transactions, 45(10), 4169-4178. https://doi.org/10.1039/c5dt03263f",
+        "doiLink": "https://doi.org/10.1039/c5dt03263f",
+        "year": 2016,
+        "smilesA": "C[NH3+]",
+        "smilesB": "[Zn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.964756168223682,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Liu, J., Wu, J., Wang, J., Lu, L., Daiguebonne, C., Calvez, G., Guillou, O., Sakiyama, H., Weng, N. S., & Zeller, M. (2014). Temperature identification on two 3D Mn(ii) Metal-Organic frameworks: syntheses, adsorption and magnetism. RSC Advances, 4(39), 20605. https://doi.org/10.1039/c4ra02609h",
+        "doiLink": "https://doi.org/10.1039/C4RA02609H ",
+        "year": 2014,
+        "smilesA": "C[N+](C)(C)C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 1.07754415002448,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Liu, J., Wu, J., Wang, J., Lu, L., Daiguebonne, C., Calvez, G., Guillou, O., Sakiyama, H., Weng, N. S., & Zeller, M. (2014). Temperature identification on two 3D Mn(ii) Metal-Organic frameworks: syntheses, adsorption and magnetism. RSC Advances, 4(39), 20605. https://doi.org/10.1039/c4ra02609h",
+        "doiLink": "https://doi.org/10.1039/C4RA02609H ",
+        "year": 2014,
+        "smilesA": "[NH4+]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.846755216631378,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Gómez-Aguirre, L. C., Pato-Doldán, B., Stroppa, A., Yáñez-Vilar, S., Bayarjargal, L., Winkler, B., Castro-García, S., Mira, J., Sánchez-Andújar, M., & Señarís-Rodríguez, M. A. (2015). Room-Temperature Polar Order in [NH4][Cd(HCOO)3] - A Hybrid inorganic-organic Compound with a Unique Perovskite Architecture. Inorganic Chemistry, 54(5), 2109-2116. https://doi.org/10.1021/ic502218n",
+        "doiLink": "https://doi.org/10.1021/ic502218n",
+        "year": 2015,
+        "smilesA": "[NH4+]",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "C(=O)[O-]",
+        "tolFactor": 0.818132505083275,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Shaker, S., Brivio, F., Murugavel, R., Bristowe, P. D., & Cheetham, A. K. (2017). [Am]Mn(H2POO)3: A New Family of Hybrid Perovskites Based on the Hypophosphite Ligand. Journal Of The American Chemical Society, 139(47), 16999-17002. https://doi.org/10.1021/jacs.7b09417",
+        "doiLink": "https://doi.org/10.1021/jacs.7b09417",
+        "year": 2017,
+        "smilesA": "C(=[NH2+])N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.917355149444941,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Stefa?ska, D., Zar?ba, J. K., & Pikul, A. (2022). Structural, magnetic and photoluminescence properties of new hybrid hypophosphites: discovery of the first noncentrosymmetric and two cobalt-based members. Dalton Transactions, 51(23), 9094-9102. https://doi.org/10.1039/d2dt01212j",
+        "doiLink": "https://doi.org/10.1039/D2DT01212J ",
+        "year": 2022,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.920419688590586,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Stefa?ska, D., Zar?ba, J. K., & Pikul, A. (2022). Structural, magnetic and photoluminescence properties of new hybrid hypophosphites: discovery of the first noncentrosymmetric and two cobalt-based members. Dalton Transactions, 51(23), 9094-9102. https://doi.org/10.1039/d2dt01212j",
+        "doiLink": "https://doi.org/10.1039/D2DT01212J ",
+        "year": 2022,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.973758497399368,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Shaker, S., Brivio, F., Murugavel, R., Bristowe, P. D., & Cheetham, A. K. (2017). [Am]Mn(H2POO)3: A New Family of Hybrid Perovskites Based on the Hypophosphite Ligand. Journal Of The American Chemical Society, 139(47), 16999-17002. https://doi.org/10.1021/jacs.7b09417",
+        "doiLink": "https://doi.org/10.1021/jacs.7b09417",
+        "year": 2017,
+        "smilesA": "NC(=[NH2+])N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.950909781794414,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Pikul, A., & Stefa?ska, D. (2020). Novel hypophosphite hybrid perovskites of [CH3NH2NH2][Mn(H2POO)3] and [CH3NH2NH2][Mn(H2POO)2.83(HCOO)0.17] exhibiting antiferromagnetic order and red photoluminescence. RSC Advances, 10(32), 19020-19026. https://doi.org/10.1039/d0ra03397a",
+        "doiLink": "https://doi.org/10.1039/D0RA03397A",
+        "year": 2020,
+        "smilesA": "C[NH2+]N",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.944194951353333,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Binford, T., Hill, J. A., Shaker, S., Wang, J., & Cheetham, A. K. (2018). Hypophosphite hybrid perovskites: a platform for unconventional tilts and shifts. Chemical Communications, 54(30), 3751-3754. https://doi.org/10.1039/c8cc00907d",
+        "doiLink": " https://doi.org/10.1039/C8CC00907D",
+        "year": 2018,
+        "smilesA": "C[NH2+]C",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.952627529116552,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Stefa?ska, D., Zar?ba, J. K., & Pikul, A. (2022). Structural, magnetic and photoluminescence properties of new hybrid hypophosphites: discovery of the first noncentrosymmetric and two cobalt-based members. Dalton Transactions, 51(23), 9094-9102. https://doi.org/10.1039/d2dt01212j",
+        "doiLink": "https://doi.org/10.1039/D2DT01212J ",
+        "year": 2022,
+        "smilesA": "[NH2+]1CCCC1",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.974324181489055,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., Stefa?ska, D., G?gor, A., & Pikul, A. (2021). The cation-dependent structural, magnetic and optical properties of a family of hypophosphite hybrid perovskites. Dalton Transactions, 51(1), 352-360. https://doi.org/10.1039/d1dt03382d",
+        "doiLink": "https://doi.org/10.1039/D1DT03382D ",
+        "year": 2021,
+        "smilesA": "[NH2+]1CCCC1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 1.00659993077234,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Shaker, S., Brivio, F., Murugavel, R., Bristowe, P. D., & Cheetham, A. K. (2017). [Am]Mn(H2POO)3: A New Family of Hybrid Perovskites Based on the Hypophosphite Ligand. Journal Of The American Chemical Society, 139(47), 16999-17002. https://doi.org/10.1021/jacs.7b09417",
+        "doiLink": "https://doi.org/10.1021/jacs.7b09417",
+        "year": 2017,
+        "smilesA": "[NH+]=1NN=CC1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.956160623040493,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Liu, D., Xie, K., Zhang, W., Zeng, M., & Chen, X. (2021). Structural insights into a new family of three-dimensional thiocyanate-bridged molecular double perovskites. CrystEngComm, 23(11), 2208-2214. https://doi.org/10.1039/d1ce00147g",
+        "doiLink": "https://doi.org/10.1039/D1CE00147G ",
+        "year": 2021,
+        "smilesA": "C[S+](C)C",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[S-]C#N",
+        "tolFactor": 0.822537651588537,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Sun, Y., Han, X., & Zhang, W. (2017). Structural Phase Transitions and Dielectric Switching in a Series of Organic?Inorganic Hybrid Perovskites ABX3 (X=ClO4? or BF4?). Chemistry - A European Journal, 23(46), 11126-11132. https://doi.org/10.1002/chem.201702228",
+        "doiLink": "https://doi.org/10.1002/chem.201702228",
+        "year": 2017,
+        "smilesA": "[NH+]12CCN(CC1)CC2",
+        "smilesB": "[K+]",
+        "smilesAnion": "Cl(=O)(=O)(=O)[O-]",
+        "tolFactor": 1.03515129464852,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Sun, Y., Han, X., & Zhang, W. (2017). Structural Phase Transitions and Dielectric Switching in a Series of Organic?Inorganic Hybrid Perovskites ABX3 (X=ClO4? or BF4?). Chemistry - A European Journal, 23(46), 11126-11132. https://doi.org/10.1002/chem.201702228",
+        "doiLink": "https://doi.org/10.1002/chem.201702228",
+        "year": 2017,
+        "smilesA": "[NH+]12CCN(CC1)CC2",
+        "smilesB": "[Na+]",
+        "smilesAnion": "Cl(=O)(=O)(=O)[O-]",
+        "tolFactor": 1.13752889521815,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Chen, S., Yang, Z., Wang, B., Shang, Y., Sun, L., He, C., Zhou, H., Zhang, W., & Chen, X. (2018). Molecular perovskite high-energetic materials. Science China Materials, 61(8), 1123-1128. https://doi.org/10.1007/s40843-017-9219-9",
+        "doiLink": "ttps://doi.org/10.1007/s40843-017-9219-9",
+        "year": 2018,
+        "smilesA": "[NH+]12CCN(CC1)CC2",
+        "smilesB": "[Rb+]",
+        "smilesAnion": "Cl(=O)(=O)(=O)[O-]",
+        "tolFactor": 1.00014617840436,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Chen, S., Shang, Y., He, C., Sun, L., Ye, Z., Zhang, W., & Chen, X. (2018b). Optimizing the oxygen balance by changing the A-site cations in molecular perovskite high-energetic materials. CrystEngComm, 20(46), 7458-7463. https://doi.org/10.1039/c8ce01350k",
+        "doiLink": "https://doi.org/10.1039/C8CE01350K",
+        "year": 2018,
+        "smilesA": "[NH+]12CCN(CC1)CC2",
+        "smilesB": "[K+]",
+        "smilesAnion": "Cl(=O)(=O)(=O)[O-]",
+        "tolFactor": 1.03515129464852,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Sun, Y., Shi, C., & Zhang, W. (2017). Distinct room-temperature dielectric transition in a perchlorate-based organic-inorganic hybrid perovskite. Dalton Transactions, 46(48), 16774-16778. https://doi.org/10.1039/c7dt03798h",
+        "doiLink": "https://doi.org/10.1039/c7dt03798h",
+        "year": 2017,
+        "smilesA": "[NH2+]1CCNCCC1",
+        "smilesB": "[K+]",
+        "smilesAnion": "Cl(=O)(=O)(=O)[O-]",
+        "tolFactor": 1.02461540360884,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Sun, Y., Han, X., & Zhang, W. (2017). Structural Phase Transitions and Dielectric Switching in a Series of Organic?Inorganic Hybrid Perovskites ABX3 (X=ClO4? or BF4?). Chemistry - A European Journal, 23(46), 11126-11132. https://doi.org/10.1002/chem.201702228",
+        "doiLink": "https://doi.org/10.1002/chem.201702228",
+        "year": 2017,
+        "smilesA": "[NH2+]1CCNCC1",
+        "smilesB": "[Na+]",
+        "smilesAnion": "Cl(=O)(=O)(=O)[O-]",
+        "tolFactor": 1.08437933056633,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "Tong, M., Ru, J., Wu, Y., Chen, X., Chang, H., Mochizuki, K., & Kitagawa, S. (2003). Cation-templated construction of three-dimensional ?-Po cubic-type [M(dca)3]- networks. Syntheses, structures and magnetic properties of A[M(dca)3] (dca = dicyanamide; for A = benzyltributylammonium, M = Mn2+, Co2+; for A = benzyltriethylammonium, M = Mn2+, Fe2+). New Journal Of Chemistry, 27(5), 779-782. https://doi.org/10.1039/b300760j",
+        "doiLink": "https://doi.org/10.1039/B300760J",
+        "year": 2003,
+        "smilesA": "CCCC[N+](CCCC)(CCCC)CC1=CC=CC=C1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.977141811181974,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Tong, M., Ru, J., Wu, Y., Chen, X., Chang, H., Mochizuki, K., & Kitagawa, S. (2003). Cation-templated construction of three-dimensional ?-Po cubic-type [M(dca)3]- networks. Syntheses, structures and magnetic properties of A[M(dca)3] (dca = dicyanamide; for A = benzyltributylammonium, M = Mn2+, Co2+; for A = benzyltriethylammonium, M = Mn2+, Fe2+). New Journal Of Chemistry, 27(5), 779-782. https://doi.org/10.1039/b300760j",
+        "doiLink": "https://doi.org/10.1039/B300760J",
+        "year": 2003,
+        "smilesA": "CCCC[N+](CCCC)(CCCC)CC1=CC=CC=C1",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.995496961226277,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Tong, M., Ru, J., Wu, Y., Chen, X., Chang, H., Mochizuki, K., & Kitagawa, S. (2003). Cation-templated construction of three-dimensional ?-Po cubic-type [M(dca)3]- networks. Syntheses, structures and magnetic properties of A[M(dca)3] (dca = dicyanamide; for A = benzyltributylammonium, M = Mn2+, Co2+; for A = benzyltriethylammonium, M = Mn2+, Fe2+). New Journal Of Chemistry, 27(5), 779-782. https://doi.org/10.1039/b300760j",
+        "doiLink": "https://doi.org/10.1039/B300760J",
+        "year": 2003,
+        "smilesA": "CC[N+](CC)(CC)CC1=CC=CC=C1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.892028242227437,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Tong, M., Ru, J., Wu, Y., Chen, X., Chang, H., Mochizuki, K., & Kitagawa, S. (2003). Cation-templated construction of three-dimensional ?-Po cubic-type [M(dca)3]- networks. Syntheses, structures and magnetic properties of A[M(dca)3] (dca = dicyanamide; for A = benzyltributylammonium, M = Mn2+, Co2+; for A = benzyltriethylammonium, M = Mn2+, Fe2+). New Journal Of Chemistry, 27(5), 779-782. https://doi.org/10.1039/b300760j",
+        "doiLink": "https://doi.org/10.1039/B300760J",
+        "year": 2003,
+        "smilesA": "CC[N+](CC)(CC)CC1=CC=CC=C1",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.908784573849389,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A ",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Co+2]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.966941680824294,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "Van Der Werff, P. M., Martínez-Ferrero, E., Batten, S. R., Jensen, P., Ruiz-Pérez, C., Almeida, M., Waerenborgh, J. C., Cashion, J. D., Moubaraki, B., Galán-Mascarós, J. R., Martínez-Agudo, J. M., Coronado, E., & Murray, K. S. (2004). Hybrid materials containing organometallic cations and 3-D anionic metal dicyanamide networks of type [Cp*2M][M?(dca)3]. Dalton Transactions, 2, 285-290. https://doi.org/10.1039/b415275a",
+        "doiLink": "https://doi.org/10.1039/B415275A ",
+        "year": 2004,
+        "smilesA": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Co+2]",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[N-](C#N)C#N",
+        "tolFactor": 0.985105226209944,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., Stefa?ska, D., G?gor, A., & Pikul, A. (2021). The cation-dependent structural, magnetic and optical properties of a family of hypophosphite hybrid perovskites. Dalton Transactions, 51(1), 352-360. https://doi.org/10.1039/d1dt03382d",
+        "doiLink": "https://doi.org/10.1039/D1DT03382D ",
+        "year": 2021,
+        "smilesA": "OCC[NH3+]",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.972186424761794,
+        "spinStateB": "HS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Stefa?ska, D., Zar?ba, J. K., & Pikul, A. (2022). Structural, magnetic and photoluminescence properties of new hybrid hypophosphites: discovery of the first noncentrosymmetric and two cobalt-based members. Dalton Transactions, 51(23), 9094-9102. https://doi.org/10.1039/d2dt01212j",
+        "doiLink": "https://doi.org/10.1039/D2DT01212J ",
+        "year": 2022,
+        "smilesA": "N1C=[NH+]C=C1",
+        "smilesB": "[Cd+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.938161125264845,
+        "spinStateB": "NoS"
+      },
+      {
+        "refPapeRaro": "M?czka, M., G?gor, A., Stefa?ska, D., Zar?ba, J. K., & Pikul, A. (2022). Structural, magnetic and photoluminescence properties of new hybrid hypophosphites: discovery of the first noncentrosymmetric and two cobalt-based members. Dalton Transactions, 51(23), 9094-9102. https://doi.org/10.1039/d2dt01212j",
+        "doiLink": "https://doi.org/10.1039/D2DT01212J ",
+        "year": 2022,
+        "smilesA": "N1C=[NH+]C=C1",
+        "smilesB": "[Co+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.99252805973249,
+        "spinStateB": "LS"
+      },
+      {
+        "refPapeRaro": "Wu, Y., Shaker, S., Brivio, F., Murugavel, R., Bristowe, P. D., & Cheetham, A. K. (2017). [Am]Mn(H2POO)3: A New Family of Hybrid Perovskites Based on the Hypophosphite Ligand. Journal Of The American Chemical Society, 139(47), 16999-17002. https://doi.org/10.1021/jacs.7b09417",
+        "doiLink": "https://doi.org/10.1021/jacs.7b09417",
+        "year": 2017,
+        "smilesA": "N1C=[NH+]C=C1",
+        "smilesB": "[Mn+2]",
+        "smilesAnion": "[PH2](=O)[O-]",
+        "tolFactor": 0.969238926515855,
+        "spinStateB": "HS"
+      }
+    ],
+    "cationA": [
+      {
+        "smiles": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Co+2]",
+        "abbreviature": "Cp2Co",
+        "name": "decamethylcobaltocenium",
+        "mathrmName": "\\mathrm{Cp2Co}",
+        "textName": "\\text{Cp2Co}",
+        "inorganicaFormula": "C20H30Co",
+        "mathrmFormula": "\\mathrm{C_{20}H_{30}Co}",
+        "textFormula": "\\text{C}_{20}\\text{H}_{30}\\text{Co}",
+        "radiusA_UDC": 4.404,
+        "Volume": 357.8,
+        "globularity": 0.853,
+        "composition": [
+          "C",
+          "H",
+          "Co"
+        ]
+      },
+      {
+        "smiles": "C(C)[N+]1(CCCCC1)CCC",
+        "abbreviature": "PEP",
+        "name": "ethylpropylpiperidinium",
+        "mathrmName": "\\mathrm{PEP}",
+        "textName": "\\text{PEP}",
+        "inorganicaFormula": "C10H22N",
+        "mathrmFormula": "\\mathrm{C_{10}H_{22}N}",
+        "textFormula": "\\text{C}_{10}\\text{H}_{22}\\text{N}",
+        "radiusA_UDC": 3.641,
+        "Volume": 202.18,
+        "globularity": 0.83,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CC)[N+]1(CCCCC1)CCC",
+        "abbreviature": "DPP",
+        "name": "dipropylpiperidinium",
+        "mathrmName": "\\mathrm{DPP}",
+        "textName": "\\text{DPP}",
+        "inorganicaFormula": "C11H24N",
+        "mathrmFormula": "\\mathrm{C_{11}H_{24}N}",
+        "textFormula": "\\text{C}_{11}\\text{H}_{24}\\text{N}",
+        "radiusA_UDC": 3.778,
+        "Volume": 225.87,
+        "globularity": 0.81,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(C)[P+](CC)(CC)CC",
+        "abbreviature": "Et4P",
+        "name": "tetraethylphosphonium",
+        "mathrmName": "\\mathrm{Et_4P}",
+        "textName": "\\text{Et}_4\\text{P}",
+        "inorganicaFormula": "C8H20P",
+        "mathrmFormula": "\\mathrm{C_{8}H_{20}P}",
+        "textFormula": "\\text{C}_{8}\\text{H}_{20}\\text{P}",
+        "radiusA_UDC": 3.874,
+        "Volume": 243.54,
+        "globularity": 0.849,
+        "composition": [
+          "C",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C[NH3+]",
+        "abbreviature": "MeN",
+        "name": "methylammonium",
+        "mathrmName": "\\mathrm{MeN}",
+        "textName": "\\text{MeN}",
+        "inorganicaFormula": "CH6N",
+        "mathrmFormula": "\\mathrm{CH_{6}N}",
+        "textFormula": "\\text{CH}_{6}\\text{N}",
+        "radiusA_UDC": 2.307,
+        "Volume": 51.43,
+        "globularity": 0.94,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C1CC[N+]2(CC1)CCCCC2",
+        "abbreviature": "ASU",
+        "name": "azaspiroundecanium",
+        "mathrmName": "\\mathrm{ASU}",
+        "textName": "\\text{ASU}",
+        "inorganicaFormula": "C11H24N",
+        "mathrmFormula": "\\mathrm{C_{11}H_{24}N}",
+        "textFormula": "\\text{C}_{11}\\text{H}_{24}\\text{N}",
+        "radiusA_UDC": 3.6348,
+        "Volume": 201.16,
+        "globularity": 0.875,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "CC=1C(=C([C-](C1)C)C)C.C1(C(=C(C(=C1C)C)C)C)(C)C.[Fe+2]",
+        "abbreviature": "Cp2Fe",
+        "name": "decamethylferrocenium",
+        "mathrmName": "\\mathrm{Cp2Fe}",
+        "textName": "\\text{Cp2Fe}",
+        "inorganicaFormula": "C20H30Fe",
+        "mathrmFormula": "\\mathrm{C_{20}H_{30}Fe}",
+        "textFormula": "\\text{C}_{20}\\text{H}_{30}\\text{Fe}",
+        "radiusA_UDC": 4.4499,
+        "Volume": 369.09,
+        "globularity": 0.835,
+        "composition": [
+          "C",
+          "H",
+          "Fe"
+        ]
+      },
+      {
+        "smiles": "C(CCC)[N+](C)(CCCC)CCCC",
+        "abbreviature": "TriBuMeN",
+        "name": "tributylmethylammonium",
+        "mathrmName": "\\mathrm{TriBuMeN}",
+        "textName": "\\text{TriBuMeN}",
+        "inorganicaFormula": "C13H30N",
+        "mathrmFormula": "\\mathrm{C_{13}H_{30}N}",
+        "textFormula": "\\text{C}_{13}\\text{H}_{30}\\text{N}",
+        "radiusA_UDC": 4.0804,
+        "Volume": 284.58,
+        "globularity": 0.751,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "CCCC[N+](CCCC)(CCCC)CC1=CC=CC=C1",
+        "abbreviature": "BeTriBu",
+        "name": "benzyltributylammonium",
+        "mathrmName": "\\mathrm{BeTriBu}",
+        "textName": "\\text{BeTriBu}",
+        "inorganicaFormula": "C19H34N",
+        "mathrmFormula": "\\mathrm{C_{19}H_{34}N}",
+        "textFormula": "\\text{C}_{19}\\text{H}_{34}\\text{N}",
+        "radiusA_UDC": 4.4705,
+        "Volume": 374.25,
+        "globularity": 0.72,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CCC)[P+](C)(CCCC)CCCC",
+        "abbreviature": "TriBuMeP",
+        "name": "tributylmethylphosphonium",
+        "mathrmName": "\\mathrm{TriBuMeP}",
+        "textName": "\\text{TriBuMeP}",
+        "inorganicaFormula": "C13H30P",
+        "mathrmFormula": "\\mathrm{C_{13}H_{30}P}",
+        "textFormula": "\\text{C}_{13}\\text{H}_{30}\\text{P}",
+        "radiusA_UDC": 4.1557,
+        "Volume": 300.63,
+        "globularity": 0.731,
+        "composition": [
+          "C",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C(C)(C)[N+]1(CCCCC1)C(C)C",
+        "abbreviature": "DIP",
+        "name": "diisopropylpiperidinium",
+        "mathrmName": "\\mathrm{DIP}",
+        "textName": "\\text{DIP}",
+        "inorganicaFormula": "C11H24N",
+        "mathrmFormula": "\\mathrm{C_{11}H_{24}N}",
+        "textFormula": "\\text{C}_{11}\\text{H}_{24}\\text{N}",
+        "radiusA_UDC": 3.7856,
+        "Volume": 227.25,
+        "globularity": 0.87,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CC)[N+](CCC)(CCC)CCC",
+        "abbreviature": "Pr4N",
+        "name": "tetrapropylammonium",
+        "mathrmName": "\\mathrm{Pr_4N}",
+        "textName": "\\text{Pr}_4\\text{N}",
+        "inorganicaFormula": "C12H28N",
+        "mathrmFormula": "\\mathrm{C_{12}H_{28}N}",
+        "textFormula": "\\text{C}_{12}\\text{H}_{28}\\text{N}",
+        "radiusA_UDC": 3.9928,
+        "Volume": 266.63,
+        "globularity": 0.777,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CC)[N+](CCCC)(CCC)CCC",
+        "abbreviature": "Pr3NBu",
+        "name": "tripropylbutylammonium",
+        "mathrmName": "\\mathrm{Pr_3NBu}",
+        "textName": "\\text{Pr}_3\\text{NBu}",
+        "inorganicaFormula": "C13H30N",
+        "mathrmFormula": "\\mathrm{C_{13}H_{30}N}",
+        "textFormula": "\\text{C}_{13}\\text{H}_{30}\\text{N}",
+        "radiusA_UDC": 4.1537,
+        "Volume": 300.19,
+        "globularity": 0.764,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(C=C)[P+](CC)(CC)CC",
+        "abbreviature": "Et3(CH2CHCH2)P",
+        "name": "allyltriethylphosphonium",
+        "mathrmName": "\\mathrm{Et_3(CH_2CHCH_2)P}",
+        "textName": "\\text{Et}_3\\text{(CH}_2\\text{CHCH}_2\\text{)P}",
+        "inorganicaFormula": "C9H20P",
+        "mathrmFormula": "\\mathrm{C_{9}H_{20}P}",
+        "textFormula": "\\text{C}_{9}\\text{H}_{20}\\text{P}",
+        "radiusA_UDC": 3.7263,
+        "Volume": 216.73,
+        "globularity": 0.819,
+        "composition": [
+          "C",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C(CC)[P+](CC)(CC)CC",
+        "abbreviature": "Et3(n-Pr)P",
+        "name": "propyltriethylphosphonium",
+        "mathrmName": "\\mathrm{Et_3(n-Pr)P}",
+        "textName": "\\text{Et}_3\\text{(n-Pr)P}",
+        "inorganicaFormula": "C9H22P",
+        "mathrmFormula": "\\mathrm{C_{9}H_{22}P}",
+        "textFormula": "\\text{C}_{9}\\text{H}_{22}\\text{P}",
+        "radiusA_UDC": 3.7587,
+        "Volume": 222.43,
+        "globularity": 0.81,
+        "composition": [
+          "C",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C(C)C([PH2+]OC)(CC)CC",
+        "abbreviature": "Et3(CH2OCH3)P",
+        "name": "triethylmethoxy-methylphosphonium",
+        "mathrmName": "\\mathrm{Et_3(CH_2OCH_3)P}",
+        "textName": "\\text{Et}_3\\text{(CH}_2\\text{OCH}_3\\text{)P}",
+        "inorganicaFormula": "C9H22OP",
+        "mathrmFormula": "\\mathrm{C_{9}H_{22}OP}",
+        "textFormula": "\\text{C}_{9}\\text{H}_{22}\\text{OP}",
+        "radiusA_UDC": 3.7174,
+        "Volume": 215.18,
+        "globularity": 0.839,
+        "composition": [
+          "C",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C(C)[N+]1(CCCCC1)CC",
+        "abbreviature": "DEP",
+        "name": "diethylpiperidinium",
+        "mathrmName": "\\mathrm{DEP}",
+        "textName": "\\text{DEP}",
+        "inorganicaFormula": "C9H20N",
+        "mathrmFormula": "\\mathrm{C_{9}H_{20}N}",
+        "textFormula": "\\text{C}_{9}\\text{H}_{20}\\text{N}",
+        "radiusA_UDC": 3.5946,
+        "Volume": 194.56,
+        "globularity": 0.871,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(C)[N+](CC)(CC)CC",
+        "abbreviature": "Et4N",
+        "name": "tetraethylammonium",
+        "mathrmName": "\\mathrm{Et_4N}",
+        "textName": "\\text{Et}_4\\text{N}",
+        "inorganicaFormula": "C8H20N",
+        "mathrmFormula": "\\mathrm{C_{8}H_{20}N}",
+        "textFormula": "\\text{C}_{8}\\text{H}_{20}\\text{N}",
+        "radiusA_UDC": 3.5459,
+        "Volume": 186.75,
+        "globularity": 0.871,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "CC[N+](CC)(CC)CC1=CC=CC=C1",
+        "abbreviature": "BeTriEt",
+        "name": "benzyltriethylammonium",
+        "mathrmName": "\\mathrm{BeTriEt}",
+        "textName": "\\text{BeTriEt}",
+        "inorganicaFormula": "C13H22N",
+        "mathrmFormula": "\\mathrm{C_{13}H_{22}N}",
+        "textFormula": "\\text{C}_{13}\\text{H}_{22}\\text{N}",
+        "radiusA_UDC": 3.9156,
+        "Volume": 251.47,
+        "globularity": 0.828,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(C)[P+](CCCl)(CC)CC",
+        "abbreviature": "Et3P(CH2)2Cl",
+        "name": "triethyl-(2-chloro-ethyl)-phosphonium",
+        "mathrmName": "\\mathrm{Et_3P(CH_2)_2Cl}",
+        "textName": "\\text{Et}_3\\text{P(CH}_2\\text{)}_2\\text{Cl}",
+        "inorganicaFormula": "C8H18ClP",
+        "mathrmFormula": "\\mathrm{C_{8}H_{18}ClP}",
+        "textFormula": "\\text{C}_{8}\\text{H}_{18}\\text{ClP}",
+        "radiusA_UDC": 3.7512,
+        "Volume": 221.11,
+        "globularity": 0.826,
+        "composition": [
+          "C",
+          "H",
+          "Cl",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C(C)[P+](CCF)(CC)CC",
+        "abbreviature": "Et3P(CH2)2F",
+        "name": "triethyl-(2-fluoro-ethyl)-phosphonium",
+        "mathrmName": "\\mathrm{Et_3P(CH_2)_2F}",
+        "textName": "\\text{Et}_3\\text{P(CH}_2\\text{)}_2\\text{F}",
+        "inorganicaFormula": "C8H18FP",
+        "mathrmFormula": "\\mathrm{C_{8}H_{18}FP}",
+        "textFormula": "\\text{C}_{8}\\text{H}_{18}\\text{FP}",
+        "radiusA_UDC": 3.6918,
+        "Volume": 210.77,
+        "globularity": 0.839,
+        "composition": [
+          "C",
+          "H",
+          "F",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C[N+](C)(C)C",
+        "abbreviature": "Me4N",
+        "name": "tetramethylammonium",
+        "mathrmName": "\\mathrm{Me_4N}",
+        "textName": "\\text{Me}_4\\text{N}",
+        "inorganicaFormula": "C4H12N",
+        "mathrmFormula": "\\mathrm{C_{4}H_{12}N}",
+        "textFormula": "\\text{C}_{4}\\text{H}_{12}\\text{N}",
+        "radiusA_UDC": 2.9769,
+        "Volume": 110.5,
+        "globularity": 0.91,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[NH2+]C",
+        "abbreviature": "Me2N",
+        "name": "dimethylammonium",
+        "mathrmName": "\\mathrm{Me_2N}",
+        "textName": "\\text{Me}_2\\text{N}",
+        "inorganicaFormula": "C2H8N",
+        "mathrmFormula": "\\mathrm{C_{2}H_{8}N}",
+        "textFormula": "\\text{C}_{2}\\text{H}_{8}\\text{N}",
+        "radiusA_UDC": 2.5803,
+        "Volume": 71.96,
+        "globularity": 0.915,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[NH+](C)C",
+        "abbreviature": "Me3N",
+        "name": "trimethylammonium",
+        "mathrmName": "\\mathrm{Me_3N}",
+        "textName": "\\text{Me}_3\\text{N}",
+        "inorganicaFormula": "C3H10N",
+        "mathrmFormula": "\\mathrm{C_{3}H_{10}N}",
+        "textFormula": "\\text{C}_{3}\\text{H}_{10}\\text{N}",
+        "radiusA_UDC": 2.7987,
+        "Volume": 91.82,
+        "globularity": 0.904,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[NH+](CC)C",
+        "abbreviature": "Me2EtN",
+        "name": "dimethylethylammonium",
+        "mathrmName": "\\mathrm{Me_2EtN}",
+        "textName": "\\text{Me}_2\\text{EtN}",
+        "inorganicaFormula": "C4H12N",
+        "mathrmFormula": "\\mathrm{C_{4}H_{12}N}",
+        "textFormula": "\\text{C}_{4}\\text{H}_{12}\\text{N}",
+        "radiusA_UDC": 2.9706,
+        "Volume": 109.8,
+        "globularity": 0.891,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH2+]1CCNCC1",
+        "abbreviature": "H2pz",
+        "name": "piperazinium",
+        "mathrmName": "\\text{H}_2\\text{PZ}",
+        "textName": "\\text{H}_2\\text{PZ}",
+        "inorganicaFormula": "C4H12N2",
+        "mathrmFormula": "\\mathrm{C_{4}H_{12}N_{2}}",
+        "textFormula": "\\text{C}_{4}\\text{H}_{12}\\text{N}_{2}",
+        "radiusA_UDC": 2.9621,
+        "Volume": 108.87,
+        "globularity": 0.91,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH+]12CCN(CC1)CC2",
+        "abbreviature": "H2dabco",
+        "name": "dabconium",
+        "mathrmName": "\\text{H}_2\\text{DABCO}",
+        "textName": "\\text{H}_2\\text{DABCO}",
+        "inorganicaFormula": "C6H14N2",
+        "mathrmFormula": "\\mathrm{C_{6}H_{14}N_{2}}",
+        "textFormula": "\\text{C}_{6}\\text{H}_{14}\\text{N}_{2}",
+        "radiusA_UDC": 3.2357,
+        "Volume": 141.91,
+        "globularity": 0.91,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "OCC(C)[N+](CCC)(CCC)CCC",
+        "abbreviature": "Pr3(CH3CHCH2OH)N",
+        "name": "(2-hydroxy-1-methyl-ethyl)-tripropyl-ammonium",
+        "mathrmName": "\\mathrm{Pr_3(CH_3CHCH_2OH)N}",
+        "textName": "\\text{Pr}_3\\text{(CH}_3\\text{CHCH}_2\\text{OH})\\text{N}",
+        "inorganicaFormula": "C13H30NO",
+        "mathrmFormula": "\\mathrm{C_{13}H_{30}NO}",
+        "textFormula": "\\text{C}_{13}\\text{H}_{30}\\text{NO}",
+        "radiusA_UDC": 4.0425,
+        "Volume": 276.71,
+        "globularity": 0.791,
+        "composition": [
+          "C",
+          "H",
+          "N",
+          "O"
+        ]
+      },
+      {
+        "smiles": "OC(C[N+](CCC)(CCC)CCC)C",
+        "abbreviature": "Pr3(CH2CHOHCH3)N",
+        "name": "(2-hydroxy-propyl)-tripropyl-ammonium",
+        "mathrmName": "\\mathrm{Pr_3(CH_2CHOHCH_3)N}",
+        "textName": "\\text{Pr}_3\\text{(CH}_2\\text{CHOHCH}_3\\text{)N}",
+        "inorganicaFormula": "C13H30NO",
+        "mathrmFormula": "\\mathrm{C_{13}H_{30}NO}",
+        "textFormula": "\\text{C}_{13}\\text{H}_{30}\\text{NO}",
+        "radiusA_UDC": 4.0489,
+        "Volume": 278.03,
+        "globularity": 0.772,
+        "composition": [
+          "C",
+          "H",
+          "N",
+          "O"
+        ]
+      },
+      {
+        "smiles": "FC[N+]12CCN(CC1)CC2",
+        "abbreviature": "MedabcoF",
+        "name": "fluoromethyldabconium",
+        "mathrmName": "\\mathrm{MedabcoF}",
+        "textName": "\\text{MedabcoF}",
+        "inorganicaFormula": "C7H16FN2",
+        "mathrmFormula": "\\mathrm{C_{7}H_{16}FN_{2}}",
+        "textFormula": "\\text{C}_{7}\\text{H}_{16}\\text{FN}_{2}",
+        "radiusA_UDC": 3.409,
+        "Volume": 165.95,
+        "globularity": 0.892,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[N+](CF)(C)C",
+        "abbreviature": "Me3FMeN",
+        "name": "Trimethylfluoromethylammonium",
+        "mathrmName": "\\mathrm{Me_3FMeN}",
+        "textName": "\\text{Me}_3\\text{FMeN}",
+        "inorganicaFormula": "C4H12FN",
+        "mathrmFormula": "\\mathrm{C_{4}H_{12}FN}",
+        "textFormula": "\\text{C}_{4}\\text{H}_{12}\\text{FN}",
+        "radiusA_UDC": 3.023,
+        "Volume": 115.72,
+        "globularity": 0.9,
+        "composition": [
+          "C",
+          "H",
+          "F",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CC)[N+](C)(CCC)CCC",
+        "abbreviature": "TriPrMeN",
+        "name": "tripropylmethylammonium",
+        "mathrmName": "\\mathrm{TriPrMeN}",
+        "textName": "\\text{TriPrMeN}",
+        "inorganicaFormula": "C10H24N",
+        "mathrmFormula": "\\mathrm{C_{10}H_{24}N}",
+        "textFormula": "\\text{C}_{10}\\text{H}_{24}\\text{N}",
+        "radiusA_UDC": 3.794,
+        "Volume": 228.76,
+        "globularity": 0.795,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "CN([NH3+])C",
+        "abbreviature": "Me2Hym",
+        "name": "dimethylhydrazinium",
+        "mathrmName": "\\mathrm{Me_2Hym}",
+        "textName": "\\text{Me}_2\\text{Hym}",
+        "inorganicaFormula": "C2H8N2",
+        "mathrmFormula": "\\mathrm{C_{2}H_{8}N_{2}}",
+        "textFormula": "\\text{C}_{2}\\text{H}_{8}\\text{N}_{2}",
+        "radiusA_UDC": 2.738,
+        "Volume": 85.98,
+        "globularity": 0.906,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C1(=CC=CC=C1)[S+](C1=CC=CC=C1)C1=CC=CC=C1",
+        "abbreviature": "SPh3",
+        "name": "triphenylsulfonium",
+        "mathrmName": "\\mathrm{SPh_3}",
+        "textName": "\\text{SPh}_3",
+        "inorganicaFormula": "C18H15S",
+        "mathrmFormula": "\\mathrm{C_{18}H_{15}S}",
+        "textFormula": "\\text{C}_{18}\\text{H}_{15}\\text{S}",
+        "radiusA_UDC": 4.1238,
+        "Volume": 293.76,
+        "globularity": 0.76,
+        "composition": [
+          "C",
+          "H",
+          "S"
+        ]
+      },
+      {
+        "smiles": "[2H][N+](C([2H])([2H])[2H])(C([2H])([2H])[2H])[2H]",
+        "abbreviature": "DMe2N",
+        "name": "perdeuterodimethylammonium",
+        "mathrmName": "\\mathrm{DMe_2N}",
+        "textName": "\\text{DMe}_2\\text{N}",
+        "inorganicaFormula": "C2D6N",
+        "mathrmFormula": "\\mathrm{C_{2}D_{6}N}",
+        "textFormula": "\\text{C}_{2}\\text{D}_{6}\\text{N}",
+        "radiusA_UDC": 2.5803,
+        "Volume": 71.96,
+        "globularity": 0.915,
+        "composition": [
+          "C",
+          "D",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C1(CC1)[NH3+]",
+        "abbreviature": "CPrN",
+        "name": "cyclopropylammonium",
+        "mathrmName": "\\mathrm{CPrN}",
+        "textName": "\\text{CPrN}",
+        "inorganicaFormula": "C3H8N",
+        "mathrmFormula": "\\mathrm{C_{3}H_{8}N}",
+        "textFormula": "\\text{C}_{3}\\text{H}_{8}\\text{N}",
+        "radiusA_UDC": 2.6938,
+        "Volume": 81.88,
+        "globularity": 0.912,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CCC)[N+](CCCC)(CCCC)CCCC",
+        "abbreviature": "TBA",
+        "name": "Tetrabutylammonium",
+        "mathrmName": "\\mathrm{TBA}",
+        "textName": "\\text{TBA}",
+        "inorganicaFormula": "C16H36N",
+        "mathrmFormula": "\\mathrm{C_{16}H_{36}N}",
+        "textFormula": "\\text{C}_{16}\\text{H}_{36}\\text{N}",
+        "radiusA_UDC": 4.3579,
+        "Volume": 346.68,
+        "globularity": 0.711,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CCC)[P+](CCCC)(CCCC)CCCC",
+        "abbreviature": "TBP",
+        "name": "Tetrabutylphosphonium",
+        "mathrmName": "\\mathrm{TBP}",
+        "textName": "\\text{TBP}",
+        "inorganicaFormula": "C16H36P",
+        "mathrmFormula": "\\mathrm{C_{16}H_{36}P}",
+        "textFormula": "\\text{C}_{16}\\text{H}_{36}\\text{P}",
+        "radiusA_UDC": 4.4289,
+        "Volume": 363.89,
+        "globularity": 0.7,
+        "composition": [
+          "C",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "smiles": "C(CC)[N+](CBr)(CCC)CCC",
+        "abbreviature": "Pr3(CH2Br)N",
+        "name": "tripropylbromomethylammonium",
+        "mathrmName": "\\mathrm{Pr_3(CH_2Br)N}",
+        "textName": "\\text{Pr}_3(\\text{CH}_2\\text{Br})\\text{N}",
+        "inorganicaFormula": "C10H24NBr",
+        "mathrmFormula": "\\mathrm{C_{10}H_{24}NBr}",
+        "textFormula": "\\text{C}_{10}\\text{H}_{24}\\text{NBr}",
+        "radiusA_UDC": 3.8829,
+        "Volume": 245.23,
+        "globularity": 0.794,
+        "composition": [
+          "C",
+          "H",
+          "N",
+          "Br"
+        ]
+      },
+      {
+        "smiles": "C(C)[N+](CCl)(CC)CC",
+        "abbreviature": "TECMA",
+        "name": "Triethylchloromethylammonium",
+        "mathrmName": "\\mathrm{TECMA}",
+        "textName": "\\text{TECMA}",
+        "inorganicaFormula": "C5H14ClN",
+        "mathrmFormula": "\\mathrm{C_{5}H_{14}ClN}",
+        "textFormula": "\\text{C}_{5}\\text{H}_{14}\\text{ClN}",
+        "radiusA_UDC": 3.5437,
+        "Volume": 186.41,
+        "globularity": 0.868,
+        "composition": [
+          "C",
+          "H",
+          "Cl",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(CC)[N+](CCl)(CCC)CCC",
+        "abbreviature": "Pr3(CH2Cl)N",
+        "name": "tripropylchloromethylammonium",
+        "mathrmName": "\\mathrm{Pr_3(CH_2Cl)N}",
+        "textName": "\\text{Pr}_3(\\text{CH}_2\\text{Cl})\\text{N}",
+        "inorganicaFormula": "C10H24NCl",
+        "mathrmFormula": "\\mathrm{C_{10}H_{24}NCl}",
+        "textFormula": "\\text{C}_{10}\\text{H}_{24}\\text{NCl}",
+        "radiusA_UDC": 3.8829,
+        "Volume": 245.23,
+        "globularity": 0.796,
+        "composition": [
+          "C",
+          "H",
+          "N",
+          "Cl"
+        ]
+      },
+      {
+        "smiles": "C(C)[N+](CBr)(CC)CC",
+        "abbreviature": "TEBMA",
+        "name": "Triethylbromomethylammonium",
+        "mathrmName": "\\mathrm{TEBMA}",
+        "textName": "\\text{TEBMA}",
+        "inorganicaFormula": "C5H14BrN",
+        "mathrmFormula": "\\mathrm{C_{5}H_{14}BrN}",
+        "textFormula": "\\text{C}_{5}\\text{H}_{14}\\text{BrN}",
+        "radiusA_UDC": 3.5579,
+        "Volume": 188.65,
+        "globularity": 0.879,
+        "composition": [
+          "C",
+          "H",
+          "Cr",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(C)(=[NH2+])N",
+        "abbreviature": "Ac",
+        "name": "acetamidinium",
+        "mathrmName": "\\text{Ac}",
+        "textName": "\\text{Ac}",
+        "inorganicaFormula": "C2H6N",
+        "mathrmFormula": "\\mathrm{C_{2}H_{6}N}",
+        "textFormula": "\\text{C}_{2}\\text{H}_{6}\\text{N}",
+        "radiusA_UDC": 2.6765,
+        "Volume": 80.31,
+        "globularity": 0.911,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(C)[NH3+]",
+        "abbreviature": "EtN",
+        "name": "ethylammonium",
+        "mathrmName": "\\mathrm{EtN}",
+        "textName": "\\text{EtN}",
+        "inorganicaFormula": "C2H8N",
+        "mathrmFormula": "\\mathrm{C_{2}H_{8}N}",
+        "textFormula": "\\text{C}_{2}\\text{H}_{8}\\text{N}",
+        "radiusA_UDC": 2.5684,
+        "Volume": 70.97,
+        "globularity": 0.917,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[N+](CCC)(CCC)CCC",
+        "abbreviature": "PPN",
+        "name": "bistriphenlyphosphineiminium",
+        "mathrmName": "\\mathrm{PPN}",
+        "textName": "\\text{PPN}",
+        "inorganicaFormula": "C36H30N",
+        "mathrmFormula": "\\mathrm{C_{36}H_{30}N}",
+        "textFormula": "\\text{C}_{36}\\text{H}_{30}\\text{N}",
+        "radiusA_UDC": 5.2187,
+        "Volume": 595.37,
+        "globularity": 0.672,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(=[NH2+])N",
+        "abbreviature": "Fmd",
+        "name": "formamidinium",
+        "mathrmName": "\\text{Fmd}",
+        "textName": "\\text{Fmd}",
+        "inorganicaFormula": "CH4N",
+        "mathrmFormula": "\\mathrm{CH_{4}N}",
+        "textFormula": "\\text{CH}_{4}\\text{N}",
+        "radiusA_UDC": 2.3996,
+        "Volume": 57.88,
+        "globularity": 0.926,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[NH2+]N",
+        "abbreviature": "MeHym",
+        "name": "methylhydrazinium",
+        "mathrmName": "\\mathrm{Me_Hym}",
+        "textName": "\\text{MeHym}",
+        "inorganicaFormula": "CH6N2",
+        "mathrmFormula": "\\mathrm{CH_{6}N_{2}}",
+        "textFormula": "\\text{CH}_{6}\\text{N}_{2}",
+        "radiusA_UDC": 2.5371,
+        "Volume": 68.41,
+        "globularity": 0.919,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "C[N+](O)(C)C",
+        "abbreviature": "Me3NOH",
+        "name": "Trimethylhydroxylammonium",
+        "mathrmName": "\\mathrm{Me_3NOH}",
+        "textName": "\\text{Me}_3\\text{NOH}",
+        "inorganicaFormula": "C3H10NO",
+        "mathrmFormula": "\\mathrm{C_{3}H_{10}NO}",
+        "textFormula": "\\text{C}_{3}\\text{H}_{10}\\text{NO}",
+        "radiusA_UDC": 2.8919,
+        "Volume": 101.31,
+        "globularity": 0.899,
+        "composition": [
+          "C",
+          "H",
+          "F",
+          "O"
+        ]
+      },
+      {
+        "smiles": "C[S+](C)C",
+        "abbreviature": "Me3S",
+        "name": "trimethylsulfonium",
+        "mathrmName": "\\mathrm{Me_3S}",
+        "textName": "\\text{Me}_3\\text{S}",
+        "inorganicaFormula": "C3H9S",
+        "mathrmFormula": "\\mathrm{C_{3}H_{9}S}",
+        "textFormula": "\\text{C}_{3}\\text{H}_{9}\\text{S}",
+        "radiusA_UDC": 2.9293,
+        "Volume": 105.29,
+        "globularity": 0.899,
+        "composition": [
+          "C",
+          "H",
+          "S"
+        ]
+      },
+      {
+        "smiles": "N1C=[NH+]C=C1",
+        "abbreviature": "Im",
+        "name": "imidazolium",
+        "mathrmName": "\\text{Im}",
+        "textName": "\\text{Im}",
+        "inorganicaFormula": "C3H5N2",
+        "mathrmFormula": "\\mathrm{C_{3}H_{5}N_{2}}",
+        "textFormula": "\\text{C}_{3}\\text{H}_{5}\\text{N}_{2}",
+        "radiusA_UDC": 2.6654,
+        "Volume": 79.32,
+        "globularity": 0.922,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "NC(=[NH2+])N",
+        "abbreviature": "Gua",
+        "name": "guanidinium",
+        "mathrmName": "\\text{Gua}",
+        "textName": "\\text{Gua}",
+        "inorganicaFormula": "C(NH2)3",
+        "mathrmFormula": "\\mathrm{C(NH_{2})_{3}}",
+        "textFormula": "\\text{C}(\\text{NH}_{2})_{3}",
+        "radiusA_UDC": 2.5715,
+        "Volume": 71.23,
+        "globularity": 0.91,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH+]=1NN=CC1",
+        "abbreviature": "Trz",
+        "name": "triazolium",
+        "mathrmName": "\\mathrm{Trz}",
+        "textName": "\\text{Trz}",
+        "inorganicaFormula": "C2H4N3",
+        "mathrmFormula": "\\mathrm{C_{2}H_{4}N_{3}}",
+        "textFormula": "\\text{C}_{2}\\text{H}_{4}\\text{N}_{3}",
+        "radiusA_UDC": 2.5984,
+        "Volume": 73.49,
+        "globularity": 0.929,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH2+]1CCC1",
+        "abbreviature": "Az",
+        "name": "azetidinium",
+        "mathrmName": "\\text{Az}",
+        "textName": "\\text{Az}",
+        "inorganicaFormula": "C3H8N",
+        "mathrmFormula": "\\mathrm{C_{3}H_{8}N}",
+        "textFormula": "\\text{C}_{3}\\text{H}_{8}\\text{N}",
+        "radiusA_UDC": 2.6828,
+        "Volume": 80.88,
+        "globularity": 0.924,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH2+]1CCCC1",
+        "abbreviature": "Pyr",
+        "name": "pyrrolidinium",
+        "mathrmName": "\\mathrm{Pyr}",
+        "textName": "\\text{Pyr}",
+        "inorganicaFormula": "C4H10N",
+        "mathrmFormula": "\\mathrm{C_{4}H_{10}N}",
+        "textFormula": "\\text{C}_{4}\\text{H}_{10}\\text{N}",
+        "radiusA_UDC": 2.8568,
+        "Volume": 97.66,
+        "globularity": 0.917,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH2+]1CCNCCC1",
+        "abbreviature": "H2hpz",
+        "name": "homopiperazinium",
+        "mathrmName": "\\mathrm{H_2hpz}",
+        "textName": "\\text{H}_2\\text{hpz}",
+        "inorganicaFormula": "C5H14N2",
+        "mathrmFormula": "\\mathrm{C_{5}H_{14}N_{2}}",
+        "textFormula": "\\text{C}_{5}\\text{H}_{14}\\text{N}_{2}",
+        "radiusA_UDC": 3.1761,
+        "Volume": 134.21,
+        "globularity": 0.903,
+        "composition": [
+          "C",
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH3+]N",
+        "abbreviature": "Hym",
+        "name": "hydrazinium",
+        "mathrmName": "\\mathrm{Hym}",
+        "textName": "\\text{Hym}",
+        "inorganicaFormula": "H4N2",
+        "mathrmFormula": "\\mathrm{H_{4}N_{2}}",
+        "textFormula": "\\text{H}_{4}\\text{N}_{2}",
+        "radiusA_UDC": 2.2124,
+        "Volume": 45.36,
+        "globularity": 0.943,
+        "composition": [
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[NH4+]",
+        "abbreviature": "NH4",
+        "name": "ammonium",
+        "mathrmName": "\\mathrm{NH_4}",
+        "textName": "\\text{NH}_4",
+        "inorganicaFormula": "NH4",
+        "mathrmFormula": "\\mathrm{NH_{4}}",
+        "textFormula": "\\text{NH}_{4}",
+        "radiusA_UDC": 1.8574,
+        "Volume": 26.84,
+        "globularity": 0.961,
+        "composition": [
+          "H",
+          "N"
+        ]
+      },
+      {
+        "smiles": "OCC[NH3+]",
+        "abbreviature": "HyEt",
+        "name": "hydroxyethylammonium",
+        "mathrmName": "\\mathrm{HyEt}",
+        "textName": "\\text{HyEt}",
+        "inorganicaFormula": "C2H8NO",
+        "mathrmFormula": "\\mathrm{C_{2}H_{8}NO}",
+        "textFormula": "\\text{C}_{2}\\text{H}_{8}\\text{NO}",
+        "radiusA_UDC": 2.6805,
+        "Volume": 80.67,
+        "globularity": 0.905,
+        "composition": [
+          "C",
+          "H",
+          "N",
+          "O"
+        ]
+      }
+    ],
+    "cationB": [
+      {
+        "smiles": "[Ac+3]",
+        "ion": "Ac",
+        "charge": 3,
+        "ionicRadius": 1.12,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ag+]",
+        "ion": "Ag",
+        "charge": 1,
+        "ionicRadius": 1.15,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ag+2]",
+        "ion": "Ag",
+        "charge": 2,
+        "ionicRadius": 0.94,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ag+3]",
+        "ion": "Ag",
+        "charge": 3,
+        "ionicRadius": 0.75,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Al+3]",
+        "ion": "Al",
+        "charge": 3,
+        "ionicRadius": 0.535,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Am+3]",
+        "ion": "Am",
+        "charge": 3,
+        "ionicRadius": 0.975,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Am+4]",
+        "ion": "Am",
+        "charge": 4,
+        "ionicRadius": 0.85,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[As+4]",
+        "ion": "As",
+        "charge": 4,
+        "ionicRadius": 0.58,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[As+5]",
+        "ion": "As",
+        "charge": 5,
+        "ionicRadius": 0.46,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[At+7]",
+        "ion": "At",
+        "charge": 7,
+        "ionicRadius": 0.62,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Au+]",
+        "ion": "Au",
+        "charge": 1,
+        "ionicRadius": 1.37,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Au+3]",
+        "ion": "Au",
+        "charge": 3,
+        "ionicRadius": 0.85,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Au+5]",
+        "ion": "Au",
+        "charge": 5,
+        "ionicRadius": 0.57,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[B+3]",
+        "ion": "B",
+        "charge": 3,
+        "ionicRadius": 0.27,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ba+2]",
+        "ion": "Ba",
+        "charge": 2,
+        "ionicRadius": 1.35,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Be+2]",
+        "ion": "Be",
+        "charge": 2,
+        "ionicRadius": 0.45,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Bi+3]",
+        "ion": "Bi",
+        "charge": 3,
+        "ionicRadius": 1.03,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Bi+5]",
+        "ion": "Bi",
+        "charge": 5,
+        "ionicRadius": 0.76,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Bk+3]",
+        "ion": "Bk",
+        "charge": 3,
+        "ionicRadius": 0.96,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Bk+4]",
+        "ion": "Bk",
+        "charge": 4,
+        "ionicRadius": 0.83,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Br+7]",
+        "ion": "Br",
+        "charge": 7,
+        "ionicRadius": 0.39,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[C+4]",
+        "ion": "C",
+        "charge": 4,
+        "ionicRadius": 0.16,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ca+2]",
+        "ion": "Ca",
+        "charge": 2,
+        "ionicRadius": 1,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cd+2]",
+        "ion": "Cd",
+        "charge": 2,
+        "ionicRadius": 0.95,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ce+3]",
+        "ion": "Ce",
+        "charge": 3,
+        "ionicRadius": 1.01,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ce+4]",
+        "ion": "Ce",
+        "charge": 4,
+        "ionicRadius": 0.87,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cf+3]",
+        "ion": "Cf",
+        "charge": 3,
+        "ionicRadius": 0.95,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cf+4]",
+        "ion": "Cf",
+        "charge": 4,
+        "ionicRadius": 0.821,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cl+7]",
+        "ion": "Cl",
+        "charge": 7,
+        "ionicRadius": 0.27,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cm+3]",
+        "ion": "Cm",
+        "charge": 3,
+        "ionicRadius": 0.97,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cm+4]",
+        "ion": "Cm",
+        "charge": 4,
+        "ionicRadius": 0.85,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Co+2]",
+        "ion": "Co",
+        "charge": 2,
+        "ionicRadius": 0.65,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Co+2]",
+        "ion": "Co",
+        "charge": 2,
+        "ionicRadius": 0.745,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Co+3]",
+        "ion": "Co",
+        "charge": 3,
+        "ionicRadius": 0.545,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Co+3]",
+        "ion": "Co",
+        "charge": 3,
+        "ionicRadius": 0.61,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Co+4]",
+        "ion": "Co",
+        "charge": 4,
+        "ionicRadius": 0.53,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Cr+2]",
+        "ion": "Cr",
+        "charge": 2,
+        "ionicRadius": 0.73,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Cr+2]",
+        "ion": "Cr",
+        "charge": 2,
+        "ionicRadius": 0.8,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Cr+3]",
+        "ion": "Cr",
+        "charge": 3,
+        "ionicRadius": 0.615,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cr+4]",
+        "ion": "Cr",
+        "charge": 4,
+        "ionicRadius": 0.55,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cr+5]",
+        "ion": "Cr",
+        "charge": 5,
+        "ionicRadius": 0.49,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cr+6]",
+        "ion": "Cr",
+        "charge": 6,
+        "ionicRadius": 0.44,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cs+]",
+        "ion": "Cs",
+        "charge": 1,
+        "ionicRadius": 1.67,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cu+]",
+        "ion": "Cu",
+        "charge": 1,
+        "ionicRadius": 0.77,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cu+2]",
+        "ion": "Cu",
+        "charge": 2,
+        "ionicRadius": 0.73,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Cu+3]",
+        "ion": "Cu",
+        "charge": 3,
+        "ionicRadius": 0.54,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Dy+2]",
+        "ion": "Dy",
+        "charge": 2,
+        "ionicRadius": 1.07,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Dy+3]",
+        "ion": "Dy",
+        "charge": 3,
+        "ionicRadius": 0.912,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Er+3]",
+        "ion": "Er",
+        "charge": 3,
+        "ionicRadius": 0.89,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Eu+2]",
+        "ion": "Eu",
+        "charge": 2,
+        "ionicRadius": 1.17,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Eu+3]",
+        "ion": "Eu",
+        "charge": 3,
+        "ionicRadius": 0.947,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[F+7]",
+        "ion": "F",
+        "charge": 7,
+        "ionicRadius": 0.08,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Fe+2]",
+        "ion": "Fe",
+        "charge": 2,
+        "ionicRadius": 0.61,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Fe+2]",
+        "ion": "Fe",
+        "charge": 2,
+        "ionicRadius": 0.78,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Fe+3]",
+        "ion": "Fe",
+        "charge": 3,
+        "ionicRadius": 0.55,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Fe+3]",
+        "ion": "Fe",
+        "charge": 3,
+        "ionicRadius": 0.645,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Fe+4]",
+        "ion": "Fe",
+        "charge": 4,
+        "ionicRadius": 0.585,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Fr+]",
+        "ion": "Fr",
+        "charge": 1,
+        "ionicRadius": 1.8,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ga+3]",
+        "ion": "Ga",
+        "charge": 3,
+        "ionicRadius": 0.62,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Gd+3]",
+        "ion": "Gd",
+        "charge": 3,
+        "ionicRadius": 0.938,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ge+2]",
+        "ion": "Ge",
+        "charge": 2,
+        "ionicRadius": 0.73,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ge+4]",
+        "ion": "Ge",
+        "charge": 4,
+        "ionicRadius": 0.53,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Hf+4]",
+        "ion": "Hf",
+        "charge": 4,
+        "ionicRadius": 0.71,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Hg+]",
+        "ion": "Hg",
+        "charge": 1,
+        "ionicRadius": 1.19,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Hg+2]",
+        "ion": "Hg",
+        "charge": 2,
+        "ionicRadius": 1.02,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ho+3]",
+        "ion": "Ho",
+        "charge": 3,
+        "ionicRadius": 0.901,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[I+5]",
+        "ion": "I",
+        "charge": 5,
+        "ionicRadius": 0.95,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[I+7]",
+        "ion": "I",
+        "charge": 7,
+        "ionicRadius": 0.53,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[In+3]",
+        "ion": "In",
+        "charge": 3,
+        "ionicRadius": 0.8,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ir+3]",
+        "ion": "Ir",
+        "charge": 3,
+        "ionicRadius": 0.68,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ir+4]",
+        "ion": "Ir",
+        "charge": 4,
+        "ionicRadius": 0.625,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ir+5]",
+        "ion": "Ir",
+        "charge": 5,
+        "ionicRadius": 0.57,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[K+]",
+        "ion": "K",
+        "charge": 1,
+        "ionicRadius": 1.38,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[La+3]",
+        "ion": "La",
+        "charge": 3,
+        "ionicRadius": 1.032,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Li+]",
+        "ion": "Li",
+        "charge": 1,
+        "ionicRadius": 0.76,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Lu+3]",
+        "ion": "Lu",
+        "charge": 3,
+        "ionicRadius": 0.861,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mg+2]",
+        "ion": "Mg",
+        "charge": 2,
+        "ionicRadius": 0.72,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mn+2]",
+        "ion": "Mn",
+        "charge": 2,
+        "ionicRadius": 0.67,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Mn+2]",
+        "ion": "Mn",
+        "charge": 2,
+        "ionicRadius": 0.83,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Mn+3]",
+        "ion": "Mn",
+        "charge": 3,
+        "ionicRadius": 0.645,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Mn+3]",
+        "ion": "Mn",
+        "charge": 3,
+        "ionicRadius": 0.58,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Mn+4]",
+        "ion": "Mn",
+        "charge": 4,
+        "ionicRadius": 0.53,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mn+7]",
+        "ion": "Mn",
+        "charge": 7,
+        "ionicRadius": 0.46,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mo+3]",
+        "ion": "Mo",
+        "charge": 3,
+        "ionicRadius": 0.69,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mo+4]",
+        "ion": "Mo",
+        "charge": 4,
+        "ionicRadius": 0.65,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mo+5]",
+        "ion": "Mo",
+        "charge": 5,
+        "ionicRadius": 0.61,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Mo+6]",
+        "ion": "Mo",
+        "charge": 6,
+        "ionicRadius": 0.59,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[N+3]",
+        "ion": "N",
+        "charge": 3,
+        "ionicRadius": 0.16,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[N+5]",
+        "ion": "N",
+        "charge": 5,
+        "ionicRadius": 0.13,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Na+]",
+        "ion": "Na",
+        "charge": 1,
+        "ionicRadius": 1.02,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Nb+3]",
+        "ion": "Nb",
+        "charge": 3,
+        "ionicRadius": 0.72,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Nb+4]",
+        "ion": "Nb",
+        "charge": 4,
+        "ionicRadius": 0.68,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Nb+5]",
+        "ion": "Nb",
+        "charge": 5,
+        "ionicRadius": 0.64,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Nd+3]",
+        "ion": "Nd",
+        "charge": 3,
+        "ionicRadius": 0.983,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ni+2]",
+        "ion": "Ni",
+        "charge": 2,
+        "ionicRadius": 0.69,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ni+3]",
+        "ion": "Ni",
+        "charge": 3,
+        "ionicRadius": 0.6,
+        "spinState": "HS"
+      },
+      {
+        "smiles": "[Ni+3]",
+        "ion": "Ni",
+        "charge": 3,
+        "ionicRadius": 0.56,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[Ni+4]",
+        "ion": "Ni",
+        "charge": 4,
+        "ionicRadius": 0.48,
+        "spinState": "LS"
+      },
+      {
+        "smiles": "[No+2]",
+        "ion": "No",
+        "charge": 2,
+        "ionicRadius": 1.1,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Np+2]",
+        "ion": "Np",
+        "charge": 2,
+        "ionicRadius": 1.1,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Np+3]",
+        "ion": "Np",
+        "charge": 3,
+        "ionicRadius": 1.01,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Np+4]",
+        "ion": "Np",
+        "charge": 4,
+        "ionicRadius": 0.87,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Np+5]",
+        "ion": "Np",
+        "charge": 5,
+        "ionicRadius": 0.75,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Np+6]",
+        "ion": "Np",
+        "charge": 6,
+        "ionicRadius": 0.72,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Np+7]",
+        "ion": "Np",
+        "charge": 7,
+        "ionicRadius": 0.71,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Os+4]",
+        "ion": "Os",
+        "charge": 4,
+        "ionicRadius": 0.63,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Os+5]",
+        "ion": "Os",
+        "charge": 5,
+        "ionicRadius": 0.575,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Os+6]",
+        "ion": "Os",
+        "charge": 6,
+        "ionicRadius": 0.545,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Os+7]",
+        "ion": "Os",
+        "charge": 7,
+        "ionicRadius": 0.525,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[P+3]",
+        "ion": "P",
+        "charge": 3,
+        "ionicRadius": 0.44,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[P+5]",
+        "ion": "P",
+        "charge": 5,
+        "ionicRadius": 0.38,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pa+3]",
+        "ion": "Pa",
+        "charge": 3,
+        "ionicRadius": 1.04,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pa+4]",
+        "ion": "Pa",
+        "charge": 4,
+        "ionicRadius": 0.9,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pa+5]",
+        "ion": "Pa",
+        "charge": 5,
+        "ionicRadius": 0.78,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pb+2]",
+        "ion": "Pb",
+        "charge": 2,
+        "ionicRadius": 1.19,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pb+4]",
+        "ion": "Pb",
+        "charge": 4,
+        "ionicRadius": 0.775,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pd+2]",
+        "ion": "Pd",
+        "charge": 2,
+        "ionicRadius": 0.86,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pd+3]",
+        "ion": "Pd",
+        "charge": 3,
+        "ionicRadius": 0.76,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pd+4]",
+        "ion": "Pd",
+        "charge": 4,
+        "ionicRadius": 0.615,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pm+3]",
+        "ion": "Pm",
+        "charge": 3,
+        "ionicRadius": 0.97,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Po+4]",
+        "ion": "Po",
+        "charge": 4,
+        "ionicRadius": 0.94,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Po+6]",
+        "ion": "Po",
+        "charge": 6,
+        "ionicRadius": 0.67,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pr+3]",
+        "ion": "Pr",
+        "charge": 3,
+        "ionicRadius": 0.99,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pr+4]",
+        "ion": "Pr",
+        "charge": 4,
+        "ionicRadius": 0.85,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pt+2]",
+        "ion": "Pt",
+        "charge": 2,
+        "ionicRadius": 0.8,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pt+4]",
+        "ion": "Pt",
+        "charge": 4,
+        "ionicRadius": 0.625,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pt+5]",
+        "ion": "Pt",
+        "charge": 5,
+        "ionicRadius": 0.57,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pu+3]",
+        "ion": "Pu",
+        "charge": 3,
+        "ionicRadius": 1,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pu+4]",
+        "ion": "Pu",
+        "charge": 4,
+        "ionicRadius": 0.86,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pu+5]",
+        "ion": "Pu",
+        "charge": 5,
+        "ionicRadius": 0.74,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Pu+6]",
+        "ion": "Pu",
+        "charge": 6,
+        "ionicRadius": 0.71,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Rb+]",
+        "ion": "Rb",
+        "charge": 1,
+        "ionicRadius": 1.52,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Re+4]",
+        "ion": "Re",
+        "charge": 4,
+        "ionicRadius": 0.63,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Re+5]",
+        "ion": "Re",
+        "charge": 5,
+        "ionicRadius": 0.58,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Re+6]",
+        "ion": "Re",
+        "charge": 6,
+        "ionicRadius": 0.55,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Re+7]",
+        "ion": "Re",
+        "charge": 7,
+        "ionicRadius": 0.53,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Rh+3]",
+        "ion": "Rh",
+        "charge": 3,
+        "ionicRadius": 0.665,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Rh+4]",
+        "ion": "Rh",
+        "charge": 4,
+        "ionicRadius": 0.6,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Rh+5]",
+        "ion": "Rh",
+        "charge": 5,
+        "ionicRadius": 0.55,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ru+3]",
+        "ion": "Ru",
+        "charge": 3,
+        "ionicRadius": 0.68,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ru+4]",
+        "ion": "Ru",
+        "charge": 4,
+        "ionicRadius": 0.62,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ru+5]",
+        "ion": "Ru",
+        "charge": 5,
+        "ionicRadius": 0.565,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[S+4]",
+        "ion": "S",
+        "charge": 4,
+        "ionicRadius": 0.37,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[S+6]",
+        "ion": "S",
+        "charge": 6,
+        "ionicRadius": 0.29,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Sb+3]",
+        "ion": "Sb",
+        "charge": 3,
+        "ionicRadius": 0.76,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Sb+5]",
+        "ion": "Sb",
+        "charge": 5,
+        "ionicRadius": 0.6,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Sc+3]",
+        "ion": "Sc",
+        "charge": 3,
+        "ionicRadius": 0.745,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Se+4]",
+        "ion": "Se",
+        "charge": 4,
+        "ionicRadius": 0.5,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Se+6]",
+        "ion": "Se",
+        "charge": 6,
+        "ionicRadius": 0.42,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Si+4]",
+        "ion": "Si",
+        "charge": 4,
+        "ionicRadius": 0.4,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Sm+3]",
+        "ion": "Sm",
+        "charge": 3,
+        "ionicRadius": 0.958,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Sn+4]",
+        "ion": "Sn",
+        "charge": 4,
+        "ionicRadius": 0.69,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Sr+2]",
+        "ion": "Sr",
+        "charge": 2,
+        "ionicRadius": 1.18,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ta+3]",
+        "ion": "Ta",
+        "charge": 3,
+        "ionicRadius": 0.72,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ta+4]",
+        "ion": "Ta",
+        "charge": 4,
+        "ionicRadius": 0.68,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ta+5]",
+        "ion": "Ta",
+        "charge": 5,
+        "ionicRadius": 0.64,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tb+3]",
+        "ion": "Tb",
+        "charge": 3,
+        "ionicRadius": 0.923,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tb+4]",
+        "ion": "Tb",
+        "charge": 4,
+        "ionicRadius": 0.76,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tc+4]",
+        "ion": "Tc",
+        "charge": 4,
+        "ionicRadius": 0.645,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tc+5]",
+        "ion": "Tc",
+        "charge": 5,
+        "ionicRadius": 0.6,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tc+7]",
+        "ion": "Tc",
+        "charge": 7,
+        "ionicRadius": 0.56,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Te+4]",
+        "ion": "Te",
+        "charge": 4,
+        "ionicRadius": 0.97,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Te+6]",
+        "ion": "Te",
+        "charge": 6,
+        "ionicRadius": 0.56,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Th+4]",
+        "ion": "Th",
+        "charge": 4,
+        "ionicRadius": 0.94,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ti+2]",
+        "ion": "Ti",
+        "charge": 2,
+        "ionicRadius": 0.86,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ti+3]",
+        "ion": "Ti",
+        "charge": 3,
+        "ionicRadius": 0.67,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Ti+4]",
+        "ion": "Ti",
+        "charge": 4,
+        "ionicRadius": 0.605,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tl+]",
+        "ion": "Tl",
+        "charge": 1,
+        "ionicRadius": 1.5,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tl+3]",
+        "ion": "Tl",
+        "charge": 3,
+        "ionicRadius": 0.885,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tm+2]",
+        "ion": "Tm",
+        "charge": 2,
+        "ionicRadius": 1.03,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Tm+3]",
+        "ion": "Tm",
+        "charge": 3,
+        "ionicRadius": 0.88,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[U+3]",
+        "ion": "U",
+        "charge": 3,
+        "ionicRadius": 1.025,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[U+4]",
+        "ion": "U",
+        "charge": 4,
+        "ionicRadius": 0.89,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[U+5]",
+        "ion": "U",
+        "charge": 5,
+        "ionicRadius": 0.76,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[U+6]",
+        "ion": "U",
+        "charge": 6,
+        "ionicRadius": 0.73,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[V+2]",
+        "ion": "V",
+        "charge": 2,
+        "ionicRadius": 0.79,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[V+3]",
+        "ion": "V",
+        "charge": 3,
+        "ionicRadius": 0.64,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[V+4]",
+        "ion": "V",
+        "charge": 4,
+        "ionicRadius": 0.58,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[V+5]",
+        "ion": "V",
+        "charge": 5,
+        "ionicRadius": 0.54,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[W+4]",
+        "ion": "W",
+        "charge": 4,
+        "ionicRadius": 0.66,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[W+5]",
+        "ion": "W",
+        "charge": 5,
+        "ionicRadius": 0.62,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[W+6]",
+        "ion": "W",
+        "charge": 6,
+        "ionicRadius": 0.6,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Xe+8]",
+        "ion": "Xe",
+        "charge": 8,
+        "ionicRadius": 0.48,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Y+3]",
+        "ion": "Y",
+        "charge": 3,
+        "ionicRadius": 0.9,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Yb+2]",
+        "ion": "Yb",
+        "charge": 2,
+        "ionicRadius": 1.02,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Yb+3]",
+        "ion": "Yb",
+        "charge": 3,
+        "ionicRadius": 0.868,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Zn+2]",
+        "ion": "Zn",
+        "charge": 2,
+        "ionicRadius": 0.74,
+        "spinState": "NoS"
+      },
+      {
+        "smiles": "[Zr+4]",
+        "ion": "Zr",
+        "charge": 4,
+        "ionicRadius": 0.72,
+        "spinState": "NoS"
+      }
+    ],
+    "anion": [
+      {
+        "smiles": "[N-](C#N)C#N",
+        "abbreviature": "DCA",
+        "name": "Dicyanamide",
+        "mathrm": "\\mathrm{DCA}",
+        "textName": "\\text{DCA}",
+        "radiusA": 1.9,
+        "lenghtA": 7.56,
+        "inorganicFormula": "N(CN)2",
+        "composition": [
+          "C",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[F-]",
+        "abbreviature": "F",
+        "name": "Fluoride",
+        "mathrm": "\\mathrm{F}",
+        "textName": "\\text{F}",
+        "radiusA": 1.285,
+        "lenghtA": 2.57,
+        "inorganicFormula": "F",
+        "composition": [
+          "F"
+        ]
+      },
+      {
+        "smiles": "[Cl-]",
+        "abbreviature": "Cl",
+        "name": "Chloride",
+        "mathrm": "\\mathrm{Cl}",
+        "textName": "\\text{Cl}",
+        "radiusA": 1.81,
+        "lenghtA": 3.62,
+        "inorganicFormula": "Cl",
+        "composition": [
+          "Cl"
+        ]
+      },
+      {
+        "smiles": "[Br-]",
+        "abbreviature": "Br",
+        "name": "Bromide",
+        "mathrm": "\\mathrm{Br}",
+        "textName": "\\text{Br}",
+        "radiusA": 1.96,
+        "lenghtA": 3.92,
+        "inorganicFormula": "Br",
+        "composition": [
+          "Br"
+        ]
+      },
+      {
+        "smiles": "[I-]",
+        "abbreviature": "I",
+        "name": "Iodide",
+        "mathrm": "\\mathrm{I}",
+        "textName": "\\text{I}",
+        "radiusA": 2.2,
+        "lenghtA": 4.4,
+        "inorganicFormula": "I",
+        "composition": [
+          "I"
+        ]
+      },
+      {
+        "smiles": "[S-]C#N",
+        "abbreviature": "SCN",
+        "name": "Thiocyanate",
+        "mathrm": "\\mathrm{SCN}",
+        "textName": "\\text{SCN}",
+        "radiusA": 1.84,
+        "lenghtA": 6.3,
+        "inorganicFormula": "SCN",
+        "composition": [
+          "S",
+          "C",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[BH4-]",
+        "abbreviature": "BH4",
+        "name": "Borohydride",
+        "mathrm": "\\mathrm{BH_4}",
+        "textName": "\\text{BH}_4",
+        "radiusA": 2.03,
+        "lenghtA": 4.06,
+        "inorganicFormula": "BH4",
+        "composition": [
+          "B",
+          "H"
+        ]
+      },
+      {
+        "smiles": "F[B-](F)(F)F",
+        "abbreviature": "BF4",
+        "name": "Tetrafluoroborate",
+        "mathrm": "\\mathrm{BF_4}",
+        "textName": "\\text{BF}_4",
+        "radiusA": 2.41,
+        "lenghtA": 4.82,
+        "inorganicFormula": "BF4",
+        "composition": [
+          "B",
+          "F"
+        ]
+      },
+      {
+        "smiles": "Cl(=O)(=O)(=O)[O-]",
+        "abbreviature": "ClO4",
+        "name": "Perchlorate",
+        "mathrm": "\\mathrm{ClO_4}",
+        "textName": "\\text{ClO}_4",
+        "radiusA": 2.62,
+        "lenghtA": 5.24,
+        "inorganicFormula": "ClO4",
+        "composition": [
+          "Cl",
+          "O"
+        ]
+      },
+      {
+        "smiles": "[C#N-][Ag+][C#N-]",
+        "abbreviature": "Ag(CN)2",
+        "name": "Dicyanometallate (Ag)",
+        "mathrm": "\\mathrm{Ag(CN)_2}",
+        "textName": "\\text{Ag(CN)}_2",
+        "radiusA": 1.95,
+        "lenghtA": 9.52,
+        "inorganicFormula": "Ag(CN)2",
+        "composition": [
+          "Ag",
+          "C",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[C#N-][Au+][C#N-]",
+        "abbreviature": "Au(CN)2",
+        "name": "Dicyanometallate (Au)",
+        "mathrm": "\\mathrm{Au(CN)_2}",
+        "textName": "\\text{Au(CN)}_2",
+        "radiusA": 2.04,
+        "lenghtA": 9.49,
+        "inorganicFormula": "Au(CN)2",
+        "composition": [
+          "Au",
+          "C",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[Br-][Ga+][Br-]",
+        "abbreviature": "GaBr2",
+        "name": "Dibromometallate (Ga)",
+        "mathrm": "\\mathrm{GaBr_2}",
+        "textName": "\\text{GaBr}_2",
+        "radiusA": 2.11,
+        "lenghtA": 9.4,
+        "inorganicFormula": "GaBr2",
+        "composition": [
+          "Ga",
+          "B"
+        ]
+      },
+      {
+        "smiles": "[Br-][In+][Br-]",
+        "abbreviature": "InBr2",
+        "name": "Dibromometallate (In)",
+        "mathrm": "\\mathrm{InBr_2}",
+        "textName": "\\text{InBr}_2",
+        "radiusA": 2.25,
+        "lenghtA": 9.43,
+        "inorganicFormula": "InBr2",
+        "composition": [
+          "In",
+          "Br"
+        ]
+      },
+      {
+        "smiles": "[Cl-][Ga+][Cl-]",
+        "abbreviature": "GaCl2",
+        "name": "Dichlorometallate (Ga)",
+        "mathrm": "\\mathrm{GaCl_2}",
+        "textName": "\\text{GaCl}_2",
+        "radiusA": 2.12,
+        "lenghtA": 8.86,
+        "inorganicFormula": "GaCl2",
+        "composition": [
+          "Ga",
+          "Cl"
+        ]
+      },
+      {
+        "smiles": "[PH2](=O)[O-]",
+        "abbreviature": "H2PO2",
+        "name": "Hypophosphite",
+        "mathrm": "\\mathrm{H_2PO_2}",
+        "textName": "\\text{H}_2\\text{PO}_2",
+        "radiusA": 2.3,
+        "lenghtA": 5.585,
+        "inorganicFormula": "H2PO2",
+        "composition": [
+          "H",
+          "P",
+          "O"
+        ]
+      },
+      {
+        "smiles": "[C-]#N",
+        "abbreviature": "CN",
+        "name": "Cyanide",
+        "mathrm": "\\mathrm{CN}",
+        "textName": "\\text{CN}",
+        "radiusA": 1.46,
+        "lenghtA": 3.95,
+        "inorganicFormula": "CN",
+        "composition": [
+          "C",
+          "N"
+        ]
+      },
+      {
+        "smiles": "[N-]=[N+]=[N-]",
+        "abbreviature": "N3",
+        "name": "Azide",
+        "mathrm": "\\mathrm{N_3}",
+        "textName": "\\text{N}_3",
+        "radiusA": 1.45,
+        "lenghtA": 4.47,
+        "inorganicFormula": "N3",
+        "composition": [
+          "N"
+        ]
+      },
+      {
+        "smiles": "C(=O)[O-]",
+        "abbreviature": "HCOO",
+        "name": "Formate",
+        "mathrm": "\\mathrm{HCOO}",
+        "textName": "\\text{HCOO}",
+        "radiusA": 1.37,
+        "lenghtA": 4.47,
+        "inorganicFormula": "HCOO",
+        "composition": [
+          "H",
+          "C",
+          "O"
+        ]
+      }
+    ]
+  },
+  "counts": {
+    "perovsData": 136,
+    "cationA": 58,
+    "cationB": 188,
+    "anion": 18
+  }
+}

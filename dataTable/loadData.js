@@ -18,7 +18,7 @@ export async function loadAllData() {
     table.className = 'errorTabla'; // reutiliza tu CSS
 
     const tbody = document.createElement('tbody');
-    ['Error uploading data …', 'Please contact: ferran.gberenguer@udc.com / ferran.gberenguer@udc.es']
+    ['Error uploading data …', 'Please contact: ferran.gb.04@gmail.com ']
       .forEach(msg => {
         const tr = document.createElement('tr');
         const td = document.createElement('td');
@@ -34,6 +34,7 @@ export async function loadAllData() {
 
   return { perovs, cationA, cationB, anion };
 }
+
 
 /* ------------------------------------------------------------------
   2. Paginación – botones ✱flex✱ horizontales

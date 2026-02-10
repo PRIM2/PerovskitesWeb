@@ -72,7 +72,10 @@ window.calculo = async function calculo(event) {
         document.getElementById("ecuacionVolumen").innerHTML = `\\[ ${latexCationA} \\] `;
     }
 
-    let latexEcuacionTolerancia = `\\alpha = \\frac{${cationA} + ${anionr}}{(${cationB} + \\frac{${anionh}}{2}) \\cdot \\sqrt{2}} `;
+    const f = n => Number(n).toFixed(4);
+
+    let latexEcuacionTolerancia = 
+    `\\alpha = \\frac{${f(cationA)} + ${f(anionr)}}{(${f(cationB)} + \\frac{${f(anionh)}}{2}) \\cdot \\sqrt{2}}`;
     document.getElementById("ecuacion").innerHTML = `\\[ ${latexEcuacionTolerancia} \\] `;
     
     let latexTolerancia = `\\alpha = ${tolerancia}`;
